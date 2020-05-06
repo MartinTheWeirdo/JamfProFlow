@@ -1,5 +1,6 @@
 # Jamf Flow
 
+![](doc/head.png)
 
 ## What is it? 
 A database application that lets you:
