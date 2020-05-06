@@ -1,0 +1,268 @@
+﻿{
+	"methods": {
+		"myModJamfProServers": {
+			"timeStamp": "2020-05-06T12:53:44.897Z"
+		},
+		"Import_GetDependencies_": {
+			"timeStamp": "2020-05-06T12:53:44.887Z"
+		},
+		"deploy_JamfPro_Push": {
+			"timeStamp": "2020-05-06T12:53:44.877Z"
+		},
+		"Import_GetJamfProServerList": {
+			"timeStamp": "2020-05-06T12:53:44.889Z"
+		},
+		"import_GetItemListing_arrays": {
+			"timeStamp": "2020-05-06T12:53:44.884Z"
+		},
+		"sh_arr_textLinesToArray": {
+			"timeStamp": "2020-05-06T12:53:44.885Z"
+		},
+		"Progress": {
+			"timeStamp": "2020-05-06T12:53:44.882Z"
+		},
+		"sh_str_getPluralUpperForm": {
+			"timeStamp": "2020-05-06T12:53:44.856Z"
+		},
+		"Login": {
+			"timeStamp": "2020-05-06T12:53:44.862Z"
+		},
+		"deploy_git_push_stage_stateCode": {
+			"timeStamp": "2020-05-06T12:53:44.905Z"
+		},
+		"Import_UpdateExistingSet": {
+			"timeStamp": "2020-05-06T12:53:44.857Z"
+		},
+		"Import_UpdateExistingSet_Prep": {
+			"timeStamp": "2020-05-06T12:53:44.867Z"
+		},
+		"Import_Selected_GetIDs_": {
+			"timeStamp": "2020-05-06T12:53:44.860Z"
+		},
+		"sh_xml_getXpath": {
+			"timeStamp": "2020-05-06T12:53:44.855Z"
+		},
+		"api_get_urlToItemByID": {
+			"timeStamp": "2020-05-06T12:53:44.881Z"
+		},
+		"Login_": {
+			"timeStamp": "2020-05-06T12:53:44.888Z"
+		},
+		"Login_LDAP_": {
+			"timeStamp": "2020-05-06T12:53:44.864Z"
+		},
+		"endpoint_getUniqueValue_Xpaths": {
+			"timeStamp": "2020-05-06T12:53:44.874Z"
+		},
+		"deploy_JamfPro_Push_logSendErr": {
+			"timeStamp": "2020-05-06T12:53:44.910Z"
+		},
+		"Login_LDAP": {
+			"timeStamp": "2020-05-06T12:53:44.863Z"
+		},
+		"sh_msg_Alert": {
+			"timeStamp": "2020-05-06T14:05:16.258Z"
+		},
+		"Login_LDAP_evaluate": {
+			"timeStamp": "2020-05-06T12:53:44.864Z"
+		},
+		"myModUsers": {
+			"timeStamp": "2020-05-06T12:53:44.895Z"
+		},
+		"deploy": {
+			"timeStamp": "2020-05-06T12:53:44.872Z"
+		},
+		"import_GetItemListing_": {
+			"timeStamp": "2020-05-06T12:53:44.836Z"
+		},
+		"myModEndpointCategories": {
+			"timeStamp": "2020-05-06T12:53:44.896Z",
+			"attributes": {
+				"access": "admins",
+				"owner": "admins"
+			}
+		},
+		"progressOpen": {
+			"timeStamp": "2020-05-06T12:53:44.883Z"
+		},
+		"Progress_Close": {
+			"timeStamp": "2020-05-06T12:53:44.893Z"
+		},
+		"deploy_jamfPro_precheck": {
+			"timeStamp": "2020-05-06T12:53:44.873Z"
+		},
+		"sh_arr_getCurrentValue": {
+			"timeStamp": "2020-05-06T12:53:44.861Z"
+		},
+		"import_GetItemListing": {
+			"timeStamp": "2020-05-06T12:53:44.849Z"
+		},
+		"deploy_JamfPro_Push_": {
+			"timeStamp": "2020-05-06T12:53:44.892Z"
+		},
+		"Import_SaveItemList": {
+			"timeStamp": "2020-05-06T12:53:44.867Z"
+		},
+		"sh_str_dq": {
+			"timeStamp": "2020-05-06T12:53:44.859Z"
+		},
+		"myModLogs": {
+			"timeStamp": "2020-05-06T12:53:44.897Z"
+		},
+		"myStartup": {
+			"timeStamp": "2020-05-06T13:01:54.765Z"
+		},
+		"git_getSyncStatus": {
+			"timeStamp": "2020-05-06T12:53:44.902Z"
+		},
+		"deploy_git_saveToLocalRepo": {
+			"timeStamp": "2020-05-06T12:53:44.902Z"
+		},
+		"deploy_git_push_": {
+			"timeStamp": "2020-05-06T12:53:44.904Z"
+		},
+		"sh_err_call": {
+			"timeStamp": "2020-05-06T12:53:44.837Z"
+		},
+		"sh_html_stripTags": {
+			"timeStamp": "2020-05-06T12:53:44.847Z"
+		},
+		"deploy_jamfPro_precheck_set_XML": {
+			"timeStamp": "2020-05-06T12:53:44.876Z"
+		},
+		"LogMessage": {
+			"timeStamp": "2020-05-06T12:53:44.866Z"
+		},
+		"git_run": {
+			"timeStamp": "2020-05-06T12:53:44.906Z"
+		},
+		"deploy_git_listOps": {
+			"timeStamp": "2020-05-06T12:53:44.906Z"
+		},
+		"Import_CreateNewSet": {
+			"timeStamp": "2020-05-06T12:53:44.857Z"
+		},
+		"import_GetItemListing_arrays_": {
+			"timeStamp": "2020-05-06T12:53:44.846Z"
+		},
+		"_data_Fill_Endpoints": {
+			"timeStamp": "2020-05-06T12:53:44.879Z"
+		},
+		"import_GetItemCounts": {
+			"timeStamp": "2020-05-06T12:53:44.852Z"
+		},
+		"endpoint_getUniqueValue_URLs": {
+			"timeStamp": "2020-05-06T12:53:44.874Z"
+		},
+		"Import_Selected_GetIDs": {
+			"timeStamp": "2020-05-06T12:53:44.854Z"
+		},
+		"deploy_JamfPro_Push_prune": {
+			"timeStamp": "2020-05-06T12:53:44.909Z"
+		},
+		"_dataClean": {
+			"timeStamp": "2020-05-06T12:53:44.910Z"
+		},
+		"sh_prefs_getValueForKey": {
+			"timeStamp": "2020-05-06T12:53:44.850Z"
+		},
+		"sh_path_getApiUrl": {
+			"timeStamp": "2020-05-06T12:53:44.871Z"
+		},
+		"deploy_git_push": {
+			"timeStamp": "2020-05-06T12:53:44.903Z"
+		},
+		"sh_http_urlEncode": {
+			"timeStamp": "2020-05-06T12:53:44.877Z"
+		},
+		"deploy_git_listOps_import": {
+			"timeStamp": "2020-05-06T12:53:44.907Z"
+		},
+		"login_localUser": {
+			"timeStamp": "2020-05-06T13:40:30.594Z"
+		},
+		"myModSettings": {
+			"timeStamp": "2020-05-06T12:53:44.898Z",
+			"attributes": {
+				"access": "admins",
+				"owner": "admins"
+			}
+		},
+		"git_get_PathToExistingRepo": {
+			"timeStamp": "2020-05-06T12:53:44.901Z"
+		},
+		"deploy_git": {
+			"timeStamp": "2020-05-06T12:53:44.899Z"
+		},
+		"deploy_JamfPro_Push_prune_smart": {
+			"timeStamp": "2020-05-06T12:53:44.908Z"
+		},
+		"deploy_git_push_stage": {
+			"timeStamp": "2020-05-06T12:53:44.904Z"
+		},
+		"deploy_SaveToDisk": {
+			"timeStamp": "2020-05-06T12:53:44.894Z"
+		},
+		"Import_GetDependencies": {
+			"timeStamp": "2020-05-06T12:53:44.853Z"
+		},
+		"get_ItemDetailURL": {
+			"timeStamp": "2020-05-06T12:53:44.868Z"
+		},
+		"git_get": {
+			"timeStamp": "2020-05-06T12:53:44.900Z"
+		},
+		"Import_Selected_GetIDs_id": {
+			"timeStamp": "2020-05-06T12:53:44.886Z"
+		},
+		"API_GetItemXMLSavable": {
+			"timeStamp": "2020-05-06T12:53:44.839Z"
+		},
+		"Progress_New": {
+			"timeStamp": "2020-05-06T12:53:44.893Z"
+		},
+		"API_GetItemXML": {
+			"timeStamp": "2020-05-06T12:53:44.836Z"
+		},
+		"_test": {
+			"timeStamp": "2020-05-06T12:53:44.859Z"
+		},
+		"api_get_urlToUniqueNameItem": {
+			"timeStamp": "2020-05-06T12:53:44.881Z"
+		},
+		"sh_str_getLastWord": {
+			"timeStamp": "2020-05-06T12:53:44.878Z"
+		},
+		"progressClose": {
+			"timeStamp": "2020-05-06T12:53:44.883Z"
+		},
+		"deploy_jamfPro": {
+			"timeStamp": "2020-05-06T12:53:44.891Z"
+		},
+		"deploy_jamfPro_precheck_Set": {
+			"timeStamp": "2020-05-06T12:53:44.875Z"
+		},
+		"Login_LDAP_evaluate_stdout": {
+			"timeStamp": "2020-05-06T12:53:44.865Z"
+		},
+		"myMain": {
+			"timeStamp": "2020-05-06T12:53:44.895Z"
+		},
+		"sh_str_xml_strpEmtpyTags": {
+			"timeStamp": "2020-05-06T12:53:44.855Z"
+		},
+		"sh_str_getSingularForm": {
+			"timeStamp": "2020-05-06T12:53:44.851Z"
+		},
+		"Import_GetJamfProServerLogin": {
+			"timeStamp": "2020-05-06T12:53:44.890Z"
+		},
+		"myModEndpoints": {
+			"timeStamp": "2020-05-06T12:53:44.896Z",
+			"attributes": {
+				"access": "admins",
+				"owner": "admins"
+			}
+		}
+	}
+}

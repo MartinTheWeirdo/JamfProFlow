@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="11">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<general startup_environnement="1">
+			<auto_comment activated="false" use_template="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGYxNjcxXGNvY29hc3VicnRmNjAwCntcZm9udHRibH0Ke1xjb2xvcnRibDtccmVkMjU1XGdyZWVuMjU1XGJsdWUyNTU7fQp7XCpcZXhwYW5kZWRjb2xvcnRibDs7fQp9"/>
+		</general>
+		<interface>
+			<user can_change_password="true" default_user="3" splash_screen="false"/>
+			<developper design_acces="15001"/>
+		</interface>
+		<server>
+			<network>
+				<options publication_name="JamfConfig"/>
+			</network>
+		</server>
+		<web>
+			<standalone_server>
+				<configuration port_number="80"/>
+				<options>
+					<keep_alive requests_number="100"/>
+				</options>
+				<webservices>
+					<server name="A_WebService"/>
+				</webservices>
+			</standalone_server>
+		</web>
+		<sql>
+			<publication port_number="19812"/>
+		</sql>
+		<php ip_address="127.0.0.1"/>
+		<compiler>
+			<typage default_for_button="2"/>
+			<options error_file="true" symbol_file="true"/>
+			<method_suffix interprocess_arrays="Arrays_Inter"/>
+		</compiler>
+	</com.4d>
+</preferences>

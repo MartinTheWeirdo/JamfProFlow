@@ -1,0 +1,119 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onOutsideCall",
+		"onDragOver"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"savedItemsSummary": {
+					"type": "input",
+					"top": 82,
+					"left": 25,
+					"width": 398,
+					"height": 289,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vt_ProgressLog",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ThermoSaveSelected": {
+					"type": "progress",
+					"top": 52,
+					"left": 238,
+					"width": 200,
+					"height": 10,
+					"sizingX": "grow",
+					"dataSource": "vl_Progress_xml_Percent",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 4,
+					"step": 4,
+					"enterable": true,
+					"class": "default",
+					"method": "ObjectMethods/ThermoSaveSelected.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"savedItemsSummary1": {
+					"type": "input",
+					"top": 22,
+					"left": 25,
+					"width": 207,
+					"height": 17,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_Progress_CurrentSet",
+					"fontWeight": "bold",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"savedItemsSummary2": {
+					"type": "input",
+					"top": 50,
+					"left": 25,
+					"width": 207,
+					"height": 16,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_Progress_CurrentXml",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ThermoSaveSelected1": {
+					"type": "progress",
+					"top": 22,
+					"left": 238,
+					"width": 200,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "vl_Progress_Set_Percent",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 4,
+					"step": 4,
+					"enterable": true,
+					"class": "default",
+					"method": "ObjectMethods/ThermoSaveSelected1.4dm",
+					"events": [
+						"onLoad"
+					]
+				}
+			}
+		}
+	]
+}

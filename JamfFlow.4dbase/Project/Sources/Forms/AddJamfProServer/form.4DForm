@@ -1,0 +1,195 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "Add Jamf Pro Server",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerBody": 268,
+	"markerBreak": 268,
+	"markerFooter": 278,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 311,
+					"left": 316,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 359,
+					"left": 304,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Cancel"
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 311,
+					"left": 388,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bValidate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 359,
+					"left": 376,
+					"width": 72,
+					"height": 17,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 45,
+					"left": 187,
+					"width": 242,
+					"height": 17,
+					"dataSource": "vt_newJamfProServerURL",
+					"placeholder": "https://your.jamfcloud.com",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 45,
+					"left": 44,
+					"width": 123,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Jamf Pro URL"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 105,
+					"left": 187,
+					"width": 242,
+					"height": 17,
+					"dataSource": "vt_newJamfProServerUsername",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 105,
+					"left": 44,
+					"width": 123,
+					"height": 17,
+					"textAlign": "right",
+					"text": "API User Name"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 145,
+					"left": 187,
+					"width": 242,
+					"height": 17,
+					"dataSource": "vt_newJamfProServerPassword",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 145,
+					"left": 44,
+					"width": 123,
+					"height": 17,
+					"textAlign": "right",
+					"text": "API Password"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 200,
+					"left": 44,
+					"width": 404,
+					"height": 81,
+					"stroke": "#9400D3",
+					"textAlign": "left",
+					"text": "Server Names will be stored in the database.\rUsername and password will be saved in your local keychain. \r\rSafety tip... Use an auditor (i.e. read-only) service account for API calls or limit the account's write access to only required objects. "
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 311,
+					"left": 44,
+					"width": 242,
+					"height": 65,
+					"dataSource": "vt_newJamfProServerMessage",
+					"stroke": "#FF6347",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Radio Button": {
+					"type": "checkbox",
+					"top": 68,
+					"left": 183,
+					"width": 245,
+					"height": 21,
+					"dataSource": "vl_isNewJProServerPublic",
+					"text": "Share with all users",
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

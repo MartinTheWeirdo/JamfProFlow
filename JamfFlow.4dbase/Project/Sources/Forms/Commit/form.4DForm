@@ -1,0 +1,202 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 35,
+					"left": 39,
+					"width": 374,
+					"height": 18,
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Changes"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 322,
+					"left": 39,
+					"width": 864,
+					"height": 17,
+					"dataSource": "vt_CommitComment",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 58,
+					"left": 39,
+					"width": 864,
+					"height": 217,
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "automatic",
+					"events": [
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "at_commit_path",
+							"width": 338,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "File"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "at_commit_localStatus",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Local Status"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "at_commit_serverStatus",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Server Status"
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "at_commit_Action",
+							"width": 271,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "automatic",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Action"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 295,
+					"left": 39,
+					"width": 374,
+					"height": 18,
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "Enter a change comment (required): "
+				},
+				"Button": {
+					"type": "button",
+					"top": 371,
+					"left": 785,
+					"width": 118,
+					"height": 34,
+					"text": "Commit",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 371,
+					"left": 634,
+					"width": 118,
+					"height": 34,
+					"action": "cancel",
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

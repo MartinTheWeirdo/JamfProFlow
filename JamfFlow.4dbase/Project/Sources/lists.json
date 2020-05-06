@@ -1,0 +1,350 @@
+﻿{
+	"data": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "Computer",
+				"ref": 1,
+				"editable": false,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "Computers",
+							"ref": 4,
+							"editable": false
+						},
+						{
+							"text": "Policies",
+							"ref": 11,
+							"editable": false
+						},
+						{
+							"text": "OS X Configuration Profiles",
+							"ref": 9,
+							"editable": false
+						},
+						{
+							"text": "Computer Groups",
+							"ref": 51,
+							"editable": false
+						},
+						{
+							"text": "Computer Applications",
+							"ref": 52,
+							"editable": false
+						}
+					]
+				}
+			},
+			{
+				"text": "Mobile Device",
+				"ref": 2,
+				"editable": false,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "Mobile Devices",
+							"ref": 3,
+							"editable": false
+						},
+						{
+							"text": "Mobile Device Configuration Profiles",
+							"ref": 8,
+							"editable": false
+						},
+						{
+							"text": "Mobile Device Applications",
+							"ref": 54,
+							"editable": false
+						},
+						{
+							"text": "Mobile Device Groups",
+							"ref": 55,
+							"editable": false
+						},
+						{
+							"text": "Mobile Device Applications",
+							"ref": 51,
+							"editable": false
+						}
+					]
+				}
+			},
+			{
+				"text": "User",
+				"ref": 22,
+				"editable": false,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "Users",
+							"ref": 22,
+							"editable": false
+						},
+						{
+							"text": "User Groups",
+							"ref": 58,
+							"editable": false
+						}
+					]
+				}
+			},
+			{
+				"text": "Settings",
+				"ref": 23,
+				"editable": false,
+				"subTree": {
+					"lineHeight": 18,
+					"editable": false,
+					"items": [
+						{
+							"text": "System Settings",
+							"ref": 12,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Accounts",
+										"ref": 25,
+										"editable": false
+									},
+									{
+										"text": "LDAP Servers",
+										"ref": 28,
+										"editable": false
+									},
+									{
+										"text": "SMTP Server",
+										"ref": 29,
+										"editable": false
+									},
+									{
+										"text": "Activation Code",
+										"ref": 23,
+										"editable": false
+									},
+									{
+										"text": "Log Flush",
+										"ref": 30,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "Global Managment",
+							"ref": 14,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Categories",
+										"ref": 31,
+										"editable": false
+									},
+									{
+										"text": "GSX Connection",
+										"ref": 32,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "Server Infrastructure",
+							"ref": 16,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Distribution Points",
+										"ref": 33,
+										"editable": false
+									},
+									{
+										"text": "Software Update Servers",
+										"ref": 34,
+										"editable": false
+									},
+									{
+										"text": "Netboot Servers",
+										"ref": 35,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "Network Organization",
+							"ref": 17,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Buildings",
+										"ref": 37,
+										"editable": false
+									},
+									{
+										"text": "Departments",
+										"ref": 38,
+										"editable": false
+									},
+									{
+										"text": "Network Segments",
+										"ref": 39,
+										"editable": false
+									},
+									{
+										"text": "Sites",
+										"ref": 40,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "Computer Management",
+							"ref": 18,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Packages",
+										"ref": 42,
+										"editable": false
+									},
+									{
+										"text": "Scripts",
+										"ref": 48,
+										"editable": false
+									},
+									{
+										"text": "Printers",
+										"ref": 43,
+										"editable": false
+									},
+									{
+										"text": "Directory Bindings",
+										"ref": 44,
+										"editable": false
+									},
+									{
+										"text": "Disk Encryption Configurations",
+										"ref": 45,
+										"editable": false
+									},
+									{
+										"text": "Dock Items",
+										"ref": 46,
+										"editable": false
+									},
+									{
+										"text": "Computer Configurations",
+										"ref": 47,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "Computer Management Framework",
+							"ref": 19,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Computer Inventory Collection",
+										"ref": 49,
+										"editable": false
+									},
+									{
+										"text": "Computer Checkin",
+										"ref": 50,
+										"editable": false
+									},
+									{
+										"text": "Computer Extension Attributes",
+										"ref": 52,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "Device Management",
+							"ref": 20,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "Mobile Device Extension Attributes",
+										"ref": 53,
+										"editable": false
+									}
+								]
+							}
+						},
+						{
+							"text": "User Management",
+							"ref": 21,
+							"editable": false,
+							"subTree": {
+								"lineHeight": 18,
+								"editable": false,
+								"items": [
+									{
+										"text": "User Extension Attributes",
+										"ref": 56,
+										"editable": false
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"text": "All Settings",
+				"ref": 26,
+				"editable": false
+			},
+			{
+				"text": "Everything except devices",
+				"ref": 54,
+				"editable": false
+			},
+			{
+				"text": "Everything",
+				"ref": 53,
+				"editable": false
+			},
+			{
+				"text": "",
+				"ref": 52,
+				"editable": false
+			}
+		]
+	}
+}

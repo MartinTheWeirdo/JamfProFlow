@@ -1,0 +1,228 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Picture7": {
+					"type": "picture",
+					"top": 192,
+					"left": 319,
+					"width": 22,
+					"height": 29,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture7.tif"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 25,
+					"left": 28,
+					"width": 126,
+					"height": 76,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture2.png"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 441,
+					"height": 338,
+					"stroke": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 511,
+					"height": 338,
+					"fill": "#434552"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 176,
+					"left": 235,
+					"width": 43,
+					"height": 17,
+					"fill": "transparent",
+					"stroke": "#C0C0C0"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 135,
+					"left": 36,
+					"width": 242,
+					"height": 17,
+					"dataSource": "vt_username",
+					"stroke": "#FFFFFF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"placeholder": "username",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": 152,
+					"left": 36,
+					"width": 242,
+					"stroke": "#C0C0C0",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 174,
+					"left": 36,
+					"width": 185,
+					"height": 17,
+					"dataSource": "vt_password",
+					"stroke": "#FFFFFF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"placeholder": "password",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 192,
+					"left": 36,
+					"width": 185,
+					"stroke": "#C0C0C0",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 272,
+					"left": 371,
+					"width": 106,
+					"height": 31,
+					"fill": "#0067B8",
+					"stroke": "transparent"
+				},
+				"Text": {
+					"type": "text",
+					"top": 279,
+					"left": 371,
+					"width": 106,
+					"height": 18,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"text": "Login"
+				},
+				"Button": {
+					"type": "button",
+					"top": 272,
+					"left": 371,
+					"width": 106,
+					"height": 31,
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 211,
+					"left": 36,
+					"width": 295,
+					"height": 81,
+					"dataSource": "vt_login_error",
+					"stroke": "#B1C4DD",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Invisible Button": {
+					"type": "button",
+					"top": 25,
+					"left": 453,
+					"width": 24,
+					"height": 19,
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 176,
+					"left": 235,
+					"width": 43,
+					"height": 17,
+					"stroke": "#C0C0C0",
+					"textAlign": "center",
+					"text": "Save"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 176,
+					"left": 235,
+					"width": 43,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Flow.",
+					"top": 30,
+					"left": 36,
+					"width": 185,
+					"height": 52,
+					"fontWeight": "bold",
+					"stroke": "#b1c4dd",
+					"fontFamily": "Helvetica Bold",
+					"fontSize": 52
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

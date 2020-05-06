@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="3B3AD12D93B9412F9C46FE40D7E07842" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Sets" uuid="359C6DF30FB448A5A7882B7665A5B0BD" id="1">
+		<field name="ID" uuid="C0442D9103E74D3EB310A84B1231F8CD" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="F3EADDA4F14346D1804BB64F7E250BE7" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Description" uuid="056ABC9E7A7C46B083C3391082564B1D" type="10" never_null="true" id="3" styled_text="true"/>
+		<field name="SelectedItemsSummary" uuid="FD311751D29A437C92493B9AE68E6122" type="10" never_null="true" id="4"/>
+		<field name="LastModifiedDate" uuid="0AB4A8713E504DF2868EE5740086E6A6" type="8" never_null="true" id="5"/>
+		<field name="ChangeControl_Note" uuid="C10FAF5E5DD4414D956E627A7187A3A9" type="10" never_null="true" id="6"/>
+		<field name="CreatedDate" uuid="61059AAD5C5E45C7A08A4CA9EED8B5C2" type="8" never_null="true" id="7"/>
+		<field name="CreatedBy" uuid="89865873E1784E14A1F3F3C85F2350A1" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="LastModifiedTime" uuid="E4D096AA9CA74A0FB95E086CA66FE00F" type="9" never_null="true" id="9"/>
+		<field name="CreatedTime" uuid="F317DAAFC5A4409299CA1884CF799BE2" type="9" never_null="true" id="10"/>
+		<field name="ApprovedBy_User" uuid="B70526DA0D8C444793BE8FBE5364D23D" type="10" limiting_length="255" never_null="true" id="11"/>
+		<field name="Approved_Date" uuid="54A79B54723543CB9EDD347B4DA38E2D" type="8" never_null="true" id="12"/>
+		<field name="Approved_Time" uuid="0138E6AFF4974EFF90DEC86FAEE726F9" type="9" never_null="true" id="13"/>
+		<field name="Approval_Requested" uuid="505E8AD52EE14E418080855695B5728E" type="1" never_null="true" id="14"/>
+		<field name="LastModifiedBy" uuid="84FD131D1A004D8C8A20FCE47B302021" type="10" limiting_length="255" never_null="true" id="15"/>
+		<field name="Approved_YN" uuid="BA263E64CA924CB4B8F4A83639449236" type="1" never_null="true" id="16"/>
+		<field name="Shared_YN" uuid="5D37714AD98B406C89008C2091009D65" type="1" never_null="true" id="17"/>
+		<field name="Category" uuid="F710C7643B7248208A0D65ACFD56D5FC" type="10" limiting_length="255" never_null="true" id="18"/>
+		<primary_key field_name="ID" field_uuid="C0442D9103E74D3EB310A84B1231F8CD"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="18">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="28.18359375" top="0" width="185.5859375" height="433.52734375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="XML" uuid="F5BCBB0FD6064D16902D7F5322D82686" id="2">
+		<field name="ID" uuid="F869AA88CF46429281EBD1D71693A006" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="XML" uuid="8AC56DF4D2D14D6F9F9EF9320D3101C4" type="10" never_null="true" id="2"/>
+		<field name="API_Unique_Item_Name" uuid="899AA1F731414EC4BF957AAE4C3993EF" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="set_id" uuid="03B8C34F0FBD4355B62F92F066C47D60" type="4" never_null="true" id="4"/>
+		<field name="SourceServerURL" uuid="370FC83A3BE34EC19733D01F7F0E7F96" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="ItemType" uuid="1420FBCB039C45AC90C3683BF1BF6F44" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="SourceServerItemID" uuid="2601F3ED451B4B209FBE22C3CDE22098" type="4" never_null="true" id="7"/>
+		<field name="SourceServerItemDetailURL" uuid="B2EB7C7199704E7F92A106A8AC87F154" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="HumanReadableItemName" uuid="91C805FBE77041778764B5B0BDE390C2" type="10" limiting_length="255" never_null="true" id="9"/>
+		<field name="Endpoint_Type_ID" uuid="0E21BA7BF80740B3845D55F5AD8F1B91" type="4" never_null="true" id="10"/>
+		<primary_key field_name="ID" field_uuid="F869AA88CF46429281EBD1D71693A006"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="11">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="526.08203125" top="1" width="203.0078125" height="281.1484375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="JamfProServers" uuid="13C7C3D4E33B435B90444B6859C95A5B" id="3">
+		<field name="ID" uuid="586D5DA92EAF4E93B4926F474C38D601" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="URL" uuid="9A0850CE5561447882FD3EECC1A284D7" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="CreatedBy_UserName" uuid="8169533385A64CEBB77C01B4D1FCD998" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="API_User_Name" uuid="7E9FBCF5C92343C3B862A217082E99E8" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="API_Password" uuid="827A5E371B8747B7B7647D96D88E083B" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Notes" uuid="41FE0394196C4B2B95A3F1C70C9996BA" type="10" never_null="true" id="6"/>
+		<field name="isPublic" uuid="F3B2C928F24B47C7B653287F255FE08B" type="1" never_null="true" id="7"/>
+		<primary_key field_name="ID" field_uuid="586D5DA92EAF4E93B4926F474C38D601"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="775.98828125" top="421.42578125" width="120" height="227.6796875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="KeyValuePairs" uuid="148D72B287864EA98CFAE29552383365" id="4">
+		<field name="ID" uuid="86E398EC167347959EA2E48E694C0887" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="KeyName" uuid="BCFF8363B4F342F492EF4C11C4FF73B0" type="10" limiting_length="40" never_null="true" id="2"/>
+		<field name="ValueString" uuid="4B32B39B810A415E9947A59C27D3324A" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="ExampleValue" uuid="C20C50F434B840BEAD41F24B20444333" type="10" limiting_length="255" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="86E398EC167347959EA2E48E694C0887"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="938.16015625" top="417.1328125" width="120" height="158.28125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="UserTable" uuid="AFAC41897A6C4A4A9DB41002E4C11E7A" id="5">
+		<field name="ID" uuid="CA7C6BB9444F4E8F876B0B23C9112BCC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="user_name" uuid="A67979A6FDB84A52AC63D428978A69F2" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="user_password_hash" uuid="CFFF03DAC6754494BC6F769AA6F35A3F" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="ad_server_name" uuid="C9B92419F8CF42D6A5B51304C5D7D492" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="login_count_ok" uuid="9A1FF72296F44195B27C5934DF64877B" type="4" never_null="true" id="5"/>
+		<field name="login_count_fail" uuid="E699C7D824944EFD91AD3A10B7C9B328" type="4" never_null="true" id="6"/>
+		<field name="last_login_ok_date" uuid="F4C67F20153B4FD69CE3695A20ECB265" type="8" never_null="true" id="7"/>
+		<field name="last_login_ok_time" uuid="842AAC4C1CA548758D85C8FC34EB432C" type="9" never_null="true" id="8"/>
+		<field name="first_login_ok_date" uuid="DE5BCB62892145D1973FFF5D67E7FE17" type="8" never_null="true" id="9"/>
+		<field name="first_login_ok_time" uuid="62F5B187C9434DCC9C506ADA97B7CB66" type="9" never_null="true" id="10"/>
+		<field name="last_password_update_date" uuid="EB005F347562476FBDFC2779F9FA4822" type="8" never_null="true" id="11"/>
+		<field name="User_Initials" uuid="89B210330C454D4D9F2EDEB40192CBE9" type="10" limiting_length="255" never_null="true" id="12"/>
+		<field name="isApprover" uuid="05CC01FD8226464781AB41F4CCD51FF1" type="1" never_null="true" id="13"/>
+		<field name="isAdmin" uuid="52010C777BA645869A4C267E8B8E1CDC" type="1" never_null="true" id="14"/>
+		<primary_key field_name="ID" field_uuid="CA7C6BB9444F4E8F876B0B23C9112BCC"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="15">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="835.82421875" top="0" width="197.3828125" height="369.62109375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="LogItems" uuid="3C06DBF9F5DE40B18E38AF790D52176D" id="6">
+		<field name="ID" uuid="D61E1B0ECB91441A89A2F5652B47064A" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Item_date" uuid="F1A86992727F4EACA7F310BA21CD4381" type="8" never_null="true" id="2"/>
+		<field name="Item_time" uuid="D5254618067A46508DFA1B901829BDDC" type="9" never_null="true" id="3"/>
+		<field name="Message" uuid="1A2F0006346241DCBA6EEB0C8A8FE300" type="10" never_null="true" id="4"/>
+		<field name="Level" uuid="53073BB3A915491D96B6B800F59C0377" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="App_area" uuid="26D368FF61E841FCA048E0232502C2F1" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="method_name" uuid="10488647FB49495799C8D90EA792DEBB" type="10" never_null="true" id="7"/>
+		<field name="method_path" uuid="82425E4086814402B1A9B5EC721EA408" type="10" never_null="true" id="8"/>
+		<primary_key field_name="ID" field_uuid="D61E1B0ECB91441A89A2F5652B47064A"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="8">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="939.69140625" top="623.0625" width="120" height="228.328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Endpoints" uuid="EA5718E663BB4189813EAD91B1FF1D8F" id="7">
+		<field name="ID" uuid="EADFA66ACDD54133907CDC8CDC98DB0E" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Human_Readable_Plural_Name" uuid="6382903F8BB04257AA0CA880B36A25BC" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Human_Readable_Singular_Name" uuid="58EFC986769B4AED95BDC6D9813F5E79" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Detail_Web_Page" uuid="5B250E55AB4748EFBC0FBC2DA70DBA47" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Detail_XML_Root_Element_xpath" uuid="63C7070F2CC3461A85A4D750B3C62B46" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Import_XPathToItemElement" uuid="EB056C90F90E4B859DC87413C835BC0C" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="detail_xml_scoping_xpath" uuid="3CD6E4032B1740DE9D5397E40DF33395" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="API_Endpoint_Name" uuid="B48EB3128D794735B67F9B5B7176B68F" type="10" limiting_length="255" never_null="true" id="8"/>
+		<field name="Example_listing_XML" uuid="5A3EDD3F1F7F4FA98EF02B8DC40D2128" type="10" never_null="true" id="9"/>
+		<field name="Example_detail_XML" uuid="D19B3EABC1394DA681681836FDDBFCDE" type="10" never_null="true" id="10"/>
+		<field name="Category_ID" uuid="5EB6245596184401B75A41A82619A786" type="4" never_null="true" id="11"/>
+		<field name="Has_Method_Get" uuid="F6A2A106AE794E6A93062DC123E654B2" type="1" never_null="true" id="12"/>
+		<field name="Has_Method_Post" uuid="27063CED3E8545E5BDDEBF03F399D48D" type="1" never_null="true" id="13"/>
+		<field name="Has_Method_Put" uuid="FC1AAFE24634444B99C4733B174B31BD" type="1" never_null="true" id="14"/>
+		<field name="Has_Mathod_Delete" uuid="83D4D85580504E66B7F6A3153EFF0338" type="1" never_null="true" id="15"/>
+		<field name="isSingleton" uuid="AFD6FFC2D1B240FDB06BF84B38BF4612" type="1" never_null="true" id="16"/>
+		<field name="XML_UniquenessConstraint_Xpaths" uuid="BDFB8933215140F58CB274B1279147EE" type="10" never_null="true" id="17"/>
+		<field name="XML_UniquenessConstraint_URLs" uuid="C2BF2056BBC745FAACD076372B2AEFCC" type="10" never_null="true" id="18"/>
+		<field name="xpath_to_displayed_Name" uuid="410D1FF4F9AB469B94D0E8DA37A70CB3" type="10" limiting_length="255" never_null="true" id="19"/>
+		<field name="push priority" uuid="207023FD7ABE44FD98926F165EBF1D9B" type="3" never_null="true" id="20"/>
+		<field name="API_URL_to_lookup_by_Name" uuid="F9E7BF00A9BF4A1792EE4BA463573302" type="10" limiting_length="255" never_null="true" id="21"/>
+		<field name="xpath_to_lookup_by_Name" uuid="C924C3AB9D7343779DAAEB86B08B92F3" type="10" limiting_length="255" never_null="true" id="22"/>
+		<field name="API_URL_to_lookup_by_id" uuid="A02DC3B3FA5048E5A6CDBE484DC6011F" type="10" limiting_length="255" never_null="true" id="23"/>
+		<field name="DeployJamfProPruningXpaths" uuid="433FEF14F6B8440196593B3A2C4C444D" type="10" never_null="true" id="24"/>
+		<field name="Import_DisplayNameElementName" uuid="FA4EBD631FA248A1B15F2DDC365529A5" type="10" limiting_length="255" never_null="true" id="25"/>
+		<field name="Import_XPathToRootElement" uuid="E8CE621988B34521B08A895E49BFADC1" type="10" limiting_length="255" never_null="true" id="26"/>
+		<field name="_ListingXmlDisplayNameElement" uuid="12F69C970A6A4486B8A6F7C98F8C116C" type="10" limiting_length="255" never_null="true" id="27"/>
+		<field name="_Import_ItemElementName" uuid="30EB0A2658294ED0A8D59ABB7DAC3D3C" type="10" limiting_length="255" never_null="true" id="28"/>
+		<field name="isDepreciated" uuid="E42F7DDDE3244DD89A4CC70EA3431974" type="1" never_null="true" id="29"/>
+		<field name="Notes" uuid="4BA274371DD24B66971A31AE5CC09ADE" type="10" never_null="true" id="30"/>
+		<field name="Detail_XML_ID_Element_xpath" uuid="A68DBB42D08D45058E0B7F15A402F472" type="10" limiting_length="255" never_null="true" id="31"/>
+		<primary_key field_name="ID" field_uuid="EADFA66ACDD54133907CDC8CDC98DB0E"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="32">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="23.12890625" top="471.9140625" width="249.04296875" height="716.58203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="EndpointCategories" uuid="26E803FD72F648C8BCE527C31493ECD3" id="8">
+		<field name="ID" uuid="6042119ADE5C48FB9097F269587AE1CC" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Category_Name" uuid="70FFBD5AD75B4DADBC9C38D7583FF844" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Parent Category" uuid="AC05AFFDC0CF40E6B87953D731FA9763" type="4" never_null="true" id="3"/>
+		<primary_key field_name="ID" field_uuid="6042119ADE5C48FB9097F269587AE1CC"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="432.80078125" top="681.625" width="148.53515625" height="129.57421875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="SetVersions_Unused" uuid="06A8737BACD64284B89ED0ADE6E477E6" id="9">
+		<field name="ID" uuid="DBAE984894464BB48A7BCC2AAC8DBB54" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Version_Number" uuid="2AE51D6658B24E598CA86DA373B7D827" type="4" never_null="true" id="2"/>
+		<field name="Set_ID" uuid="B5764EA56FA949A3983C7003EE45E967" type="4" never_null="true" id="3"/>
+		<field name="XML_ID" uuid="A06B3717CAE44905AEC93B3D165F68A7" type="4" never_null="true" id="4"/>
+		<primary_key field_name="ID" field_uuid="DBAE984894464BB48A7BCC2AAC8DBB54"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="5">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="589.79296875" top="420.29296875" width="146.4296875" height="162.640625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Tags" uuid="E02377F3D6874BF989D7F0B58472215B" id="10">
+		<field name="ID" uuid="72A136E2ECA24471869515B2EDAC24AD" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="Name" uuid="F05C193FCCC943B7ABE0C9E8054FCEB7" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="ID" field_uuid="72A136E2ECA24471869515B2EDAC24AD"/>
+		<table_extra input_form="In" output_form="Out">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="775.07421875" top="685.8828125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="7FCF1F2C8F47441E90BEB5C2F3960F04" name_Nto1="Link_1" name_1toN="Link_1_return" auto_load_Nto1="false" auto_load_1toN="true" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="03B8C34F0FBD4355B62F92F066C47D60" name="set_id">
+				<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="C0442D9103E74D3EB310A84B1231F8CD" name="ID">
+				<table_ref uuid="359C6DF30FB448A5A7882B7665A5B0BD" name="Sets"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="true" entry_create="true" choice_field="2" entry_autofill="true">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="35BD12771513476EA425DF4DFAFC8EDA" name_Nto1="Link_2" name_1toN="Link_2_return" auto_load_Nto1="true" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="5EB6245596184401B75A41A82619A786" name="Category_ID">
+				<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="6042119ADE5C48FB9097F269587AE1CC" name="ID">
+				<table_ref uuid="26E803FD72F648C8BCE527C31493ECD3" name="EndpointCategories"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="BEB8CB801B574F41944EE8BD506789F0" name_Nto1="Link_3" name_1toN="Link_3_return" auto_load_Nto1="true" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="0E21BA7BF80740B3845D55F5AD8F1B91" name="Endpoint_Type_ID">
+				<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="EADFA66ACDD54133907CDC8CDC98DB0E" name="ID">
+				<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="1559220B842C4593B1159659641C64C8" type="7">
+		<field_ref uuid="03B8C34F0FBD4355B62F92F066C47D60" name="set_id">
+			<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="20BC60EE26A348D0BB8C8E8E003F6D8F" type="7">
+		<field_ref uuid="F869AA88CF46429281EBD1D71693A006" name="ID">
+			<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3F3CE8A048E94D92ABC0AAFA8E4819AC" type="7">
+		<field_ref uuid="CA7C6BB9444F4E8F876B0B23C9112BCC" name="ID">
+			<table_ref uuid="AFAC41897A6C4A4A9DB41002E4C11E7A" name="UserTable"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="423693E77C154DBBB7F2F70CD1220EC4" type="7">
+		<field_ref uuid="D61E1B0ECB91441A89A2F5652B47064A" name="ID">
+			<table_ref uuid="3C06DBF9F5DE40B18E38AF790D52176D" name="LogItems"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="649063B85CB149D0BF6264B362642E12" type="7">
+		<field_ref uuid="DBAE984894464BB48A7BCC2AAC8DBB54" name="ID">
+			<table_ref uuid="06A8737BACD64284B89ED0ADE6E477E6" name="SetVersions_Unused"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6725DAEA8B3A416FA3EFC0659C1BE71A" type="7">
+		<field_ref uuid="72A136E2ECA24471869515B2EDAC24AD" name="ID">
+			<table_ref uuid="E02377F3D6874BF989D7F0B58472215B" name="Tags"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="88AC584C4EE6401280F87D67C1FA3CB4" type="7">
+		<field_ref uuid="C0442D9103E74D3EB310A84B1231F8CD" name="ID">
+			<table_ref uuid="359C6DF30FB448A5A7882B7665A5B0BD" name="Sets"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="98467F2C9FDF4A6CB5D72384C07CC090" type="7">
+		<field_ref uuid="6042119ADE5C48FB9097F269587AE1CC" name="ID">
+			<table_ref uuid="26E803FD72F648C8BCE527C31493ECD3" name="EndpointCategories"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="98510D44C2A141CDB5605DB0879A1098" type="7">
+		<field_ref uuid="586D5DA92EAF4E93B4926F474C38D601" name="ID">
+			<table_ref uuid="13C7C3D4E33B435B90444B6859C95A5B" name="JamfProServers"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B039A08608674373832AFB6494965028" type="7">
+		<field_ref uuid="207023FD7ABE44FD98926F165EBF1D9B" name="push priority">
+			<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B4623F2710EE4BFDBF99A2DC95FCAEDD" type="7">
+		<field_ref uuid="86E398EC167347959EA2E48E694C0887" name="ID">
+			<table_ref uuid="148D72B287864EA98CFAE29552383365" name="KeyValuePairs"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B967705801A44D2AA197FAE0A16C3FCB" type="7">
+		<field_ref uuid="EADFA66ACDD54133907CDC8CDC98DB0E" name="ID">
+			<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E968DD21404040E499F6E61A6A52566A" type="7">
+		<field_ref uuid="0E21BA7BF80740B3845D55F5AD8F1B91" name="Endpoint_Type_ID">
+			<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="EC4302236B3B4D08B6A221310662384C" type="7">
+		<field_ref uuid="BCFF8363B4F342F492EF4C11C4FF73B0" name="KeyName">
+			<table_ref uuid="148D72B287864EA98CFAE29552383365" name="KeyValuePairs"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="JamfFlow" structure_file_name="JamfConfig" data_file_path=":JamfConfig.4DD">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

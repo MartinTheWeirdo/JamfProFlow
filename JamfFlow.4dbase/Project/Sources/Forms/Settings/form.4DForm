@@ -1,0 +1,379 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "Settings",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 26,
+					"left": 30,
+					"width": 870,
+					"height": 659,
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Settings",
+						"API Test",
+						"Git Test"
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 699,
+					"left": 777,
+					"width": 123,
+					"height": 35,
+					"action": "accept",
+					"text": "Done",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button7": {
+					"type": "button",
+					"top": 699,
+					"left": 620,
+					"width": 123,
+					"height": 35,
+					"action": "cancel",
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 92,
+					"left": 61,
+					"width": 682,
+					"height": 552,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "ab_Settings_KVPairsListBox",
+					"movableRows": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"highlightSet": "$ListboxSet",
+					"table": 4,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onLoad"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "[KeyValuePairs:4]KeyName:2",
+							"width": 228,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Key"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[KeyValuePairs:4]ValueString:3",
+							"width": 236,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Value"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[KeyValuePairs:4]ExampleValue:4",
+							"width": 203,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Example"
+							},
+							"footer": {
+								"name": "Footer5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Button4": {
+					"type": "button",
+					"top": 92,
+					"left": 763,
+					"width": 118,
+					"height": 31,
+					"text": "Show All",
+					"focusable": false,
+					"method": "ObjectMethods/Button4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button5": {
+					"type": "button",
+					"top": 176,
+					"left": 266,
+					"width": 284,
+					"height": 31,
+					"text": "Test API Permissions",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 71,
+					"left": 341,
+					"width": 209,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 101,
+					"left": 341,
+					"width": 209,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 131,
+					"left": 341,
+					"width": 209,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 75,
+					"left": 200,
+					"width": 134,
+					"height": 17,
+					"text": "Username"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 298,
+					"left": 52,
+					"width": 825,
+					"height": 367,
+					"fill": "#0000CD"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 301,
+					"left": 55,
+					"width": 817,
+					"height": 360,
+					"dataSource": "vt_settings_gitTerminal",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Monaco",
+					"fontSize": 13,
+					"fill": "#0000CD",
+					"borderStyle": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 69,
+					"left": 55,
+					"width": 702,
+					"height": 20,
+					"dataSource": "vt_git_cmd",
+					"fontFamily": "Monaco",
+					"fontSize": 13,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 64,
+					"left": 809,
+					"width": 68,
+					"height": 25,
+					"shortcutKey": "[Return]",
+					"text": "Run ⮐",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 112,
+					"left": 100,
+					"width": 777,
+					"height": 164,
+					"resizingMode": "legacy",
+					"dataSource": "ab_settings_cmdHx_Rows_isSelctd",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Monaco",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "at_setting_cmds",
+							"width": 186,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Monaco",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Command",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "at_settings_stdouts",
+							"width": 653,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Monaco",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "stdout",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Monaco",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 112,
+					"left": 55,
+					"width": 27,
+					"height": 26,
+					"text": "-",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

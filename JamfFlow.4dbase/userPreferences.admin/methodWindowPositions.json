@@ -1,0 +1,1076 @@
+﻿{
+	"Trash/Methods/(UI_SetStyle).4dm": {
+		"left": 1179,
+		"top": 219,
+		"width": 1158,
+		"height": 960
+	},
+	"Trash/Methods/(UI_SetFontColor).4dm": {
+		"left": 891,
+		"top": 386,
+		"width": 778,
+		"height": 488
+	},
+	"Trash/Methods/(UI_SetBackground).4dm": {
+		"left": 891,
+		"top": 386,
+		"width": 778,
+		"height": 488
+	},
+	"Trash/Methods/(UI_FillArrays).4dm": {
+		"left": 891,
+		"top": 386,
+		"width": 778,
+		"height": 488
+	},
+	"Trash/Methods/(m_quit).4dm": {
+		"left": 891,
+		"top": 386,
+		"width": 778,
+		"height": 488
+	},
+	"Trash/Methods/(Feed_Samples).4dm": {
+		"left": 465,
+		"top": 294,
+		"width": 1532,
+		"height": 995
+	},
+	"Trash/Methods/(Demo_SetColor).4dm": {
+		"left": 891,
+		"top": 386,
+		"width": 778,
+		"height": 488
+	},
+	"Trash/Methods/(Demo_FillColorArrays).4dm": {
+		"left": 891,
+		"top": 386,
+		"width": 778,
+		"height": 488
+	},
+	"Trash/Methods/(FORM METHOD).4dm": {
+		"left": 1696,
+		"top": 126,
+		"width": 860,
+		"height": 1228
+	},
+	"Sources/Methods/import_GetItemListing_.4dm": {
+		"left": 89,
+		"top": 146,
+		"width": 2424,
+		"height": 1228
+	},
+	"Sources/Methods/API_GetItemXML.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Methods/sh_err_call.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/API_GetItemXMLSavable.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Trash/Methods/(Compiler_Variables).4dm": {
+		"left": 554,
+		"top": 260,
+		"width": 1532,
+		"height": 995
+	},
+	"Trash/Methods/(Compiler_Arrays).4dm": {
+		"left": 554,
+		"top": 260,
+		"width": 1532,
+		"height": 995
+	},
+	"Sources/Methods/import_GetItemListing_arrays_.4dm": {
+		"left": 535,
+		"top": 158,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/sh_html_stripTags.4dm": {
+		"left": 275,
+		"top": 132,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/myStartup.4dm": {
+		"left": 523,
+		"top": 270,
+		"width": 1537,
+		"height": 1167
+	},
+	"Sources/Methods/import_GetItemListing.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Trash/Methods/(mySetup).4dm": {
+		"left": 351,
+		"top": 146,
+		"width": 1496,
+		"height": 1278
+	},
+	"Sources/Methods/sh_prefs_getValueForKey.4dm": {
+		"left": 14,
+		"top": 139,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Methods/sh_str_getSingularForm.4dm": {
+		"left": 169,
+		"top": 197,
+		"width": 2112,
+		"height": 994
+	},
+	"Sources/Methods/import_GetItemCounts.4dm": {
+		"left": 83,
+		"top": 156,
+		"width": 1667,
+		"height": 1211
+	},
+	"Sources/Methods/Import_GetDependencies.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/Import_Selected_GetIDs.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/sh_str_xml_strpEmtpyTags.4dm": {
+		"left": 584,
+		"top": 150,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/sh_xml_getXpath.4dm": {
+		"left": 767,
+		"top": 336,
+		"width": 1443,
+		"height": 994
+	},
+	"Sources/Methods/sh_str_getPluralUpperForm.4dm": {
+		"left": 1052,
+		"top": 154,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/Import_CreateNewSet.4dm": {
+		"left": 222,
+		"top": 342,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Methods/Import_UpdateExistingSet.4dm": {
+		"left": 222,
+		"top": 342,
+		"width": 1597,
+		"height": 960
+	},
+	"Trash/Methods/(Import_GetDependencies_parse).4dm": {
+		"left": 403,
+		"top": 140,
+		"width": 1443,
+		"height": 1299
+	},
+	"Sources/Methods/_test.4dm": {
+		"left": 496,
+		"top": 136,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/sh_str_dq.4dm": {
+		"left": 230,
+		"top": 368,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/Import_Selected_GetIDs_.4dm": {
+		"left": 417,
+		"top": 129,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/sh_arr_getCurrentValue.4dm": {
+		"left": 478,
+		"top": 156,
+		"width": 1341,
+		"height": 1229
+	},
+	"Sources/Methods/Login.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/login_localUser.4dm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Methods/Login_LDAP.4dm": {
+		"left": 308,
+		"top": 281,
+		"width": 1609,
+		"height": 990
+	},
+	"Sources/Methods/Login_LDAP_.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/Login_LDAP_evaluate.4dm": {
+		"left": 308,
+		"top": 281,
+		"width": 1609,
+		"height": 990
+	},
+	"Sources/Methods/Login_LDAP_evaluate_stdout.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/LogMessage.4dm": {
+		"left": 594,
+		"top": 203,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/Import_UpdateExistingSet_Prep.4dm": {
+		"left": 275,
+		"top": 132,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/Import_SaveItemList.4dm": {
+		"left": 89,
+		"top": 146,
+		"width": 2424,
+		"height": 1228
+	},
+	"Sources/Methods/get_ItemDetailURL.4dm": {
+		"left": 95,
+		"top": 144,
+		"width": 1591,
+		"height": 985
+	},
+	"Trash/Methods/(pushTo_GitHub).4dm": {
+		"left": 169,
+		"top": 197,
+		"width": 2112,
+		"height": 994
+	},
+	"Sources/Methods/sh_path_getApiUrl.4dm": {
+		"left": 830,
+		"top": 131,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/deploy.4dm": {
+		"left": 222,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/deploy_jamfPro_precheck.4dm": {
+		"left": 222,
+		"top": 342,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Methods/endpoint_getUniqueValue_Xpaths.4dm": {
+		"left": 759,
+		"top": 378,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/endpoint_getUniqueValue_URLs.4dm": {
+		"left": 759,
+		"top": 378,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/deploy_jamfPro_precheck_Set.4dm": {
+		"left": 122,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Methods/deploy_jamfPro_precheck_set_XML.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Methods/deploy_JamfPro_Push.4dm": {
+		"left": 222,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/sh_http_urlEncode.4dm": {
+		"left": 360,
+		"top": 548,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/sh_str_getLastWord.4dm": {
+		"left": 328,
+		"top": 336,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/_data_Fill_Endpoints.4dm": {
+		"left": 222,
+		"top": 342,
+		"width": 1597,
+		"height": 960
+	},
+	"Trash/Methods/(___Orphan___45).4dm": {
+		"left": 465,
+		"top": 294,
+		"width": 1532,
+		"height": 995
+	},
+	"Sources/Methods/api_get_urlToUniqueNameItem.4dm": {
+		"left": 641,
+		"top": 390,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Methods/api_get_urlToItemByID.4dm": {
+		"left": 535,
+		"top": 158,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/Progress.4dm": {
+		"left": 89,
+		"top": 146,
+		"width": 2424,
+		"height": 1228
+	},
+	"Sources/Methods/progressOpen.4dm": {
+		"left": 685,
+		"top": 141,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/progressClose.4dm": {
+		"left": 366,
+		"top": 296,
+		"width": 1537,
+		"height": 1015
+	},
+	"Sources/Methods/import_GetItemListing_arrays.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/sh_arr_textLinesToArray.4dm": {
+		"left": 523,
+		"top": 220,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/sh_msg_Alert.4dm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Methods/Import_Selected_GetIDs_id.4dm": {
+		"left": 417,
+		"top": 129,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Methods/Import_GetDependencies_.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/Login_.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/Import_GetJamfProServerList.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Methods/Import_GetJamfProServerLogin.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Methods/deploy_jamfPro.4dm": {
+		"left": 222,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/deploy_JamfPro_Push_.4dm": {
+		"left": 222,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/Progress_New.4dm": {
+		"left": 89,
+		"top": 146,
+		"width": 2424,
+		"height": 1228
+	},
+	"Sources/Methods/Progress_Close.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Methods/deploy_SaveToDisk.4dm": {
+		"left": 523,
+		"top": 270,
+		"width": 1537,
+		"height": 1167
+	},
+	"Sources/Methods/myMain.4dm": {
+		"left": 478,
+		"top": 156,
+		"width": 1341,
+		"height": 1229
+	},
+	"Sources/Methods/myModUsers.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/myModEndpoints.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/myModEndpointCategories.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/myModLogs.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/myModJamfProServers.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/myModSettings.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/deploy_git.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Trash/Methods/(m_settings).4dm": {
+		"left": 152,
+		"top": 133,
+		"width": 2408,
+		"height": 985
+	},
+	"Sources/Methods/git_get.4dm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Methods/git_get_PathToExistingRepo.4dm": {
+		"left": 478,
+		"top": 156,
+		"width": 1341,
+		"height": 1229
+	},
+	"Sources/Methods/git_getSyncStatus.4dm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Methods/deploy_git_saveToLocalRepo.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/deploy_git_push.4dm": {
+		"left": 523,
+		"top": 270,
+		"width": 1537,
+		"height": 1167
+	},
+	"Sources/Methods/deploy_git_push_.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Methods/deploy_git_push_stage.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Methods/deploy_git_push_stage_stateCode.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Methods/git_run.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Methods/deploy_git_listOps.4dm": {
+		"left": 221,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/deploy_git_listOps_import.4dm": {
+		"left": 729,
+		"top": 197,
+		"width": 1597,
+		"height": 1061
+	},
+	"Sources/Methods/deploy_JamfPro_Push_prune_smart.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/deploy_JamfPro_Push_prune.4dm": {
+		"left": 222,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/deploy_JamfPro_Push_logSendErr.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Methods/_dataClean.4dm": {
+		"left": 729,
+		"top": 172,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/DatabaseMethods/onStartup.4dm": {
+		"left": 274,
+		"top": 309,
+		"width": 1786,
+		"height": 1035
+	},
+	"Sources/Forms/main/ObjectMethods/Tab Control.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Forms/main/ObjectMethods/Variable.4dm": {
+		"left": 492,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/Tab Control1.4dm": {
+		"left": 575,
+		"top": 150,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/serverpopup.4dm": {
+		"left": 639,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/SourceItemsClearButton.4dm": {
+		"left": 1052,
+		"top": 154,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/SearchPicker.4dm": {
+		"left": 639,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/sourceItemsListBox.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Forms/main/ObjectMethods/sourceItemsHTTPResponseHeadersListBox.4dm": {
+		"left": 585,
+		"top": 290,
+		"width": 1409,
+		"height": 971
+	},
+	"Sources/Forms/main/ObjectMethods/SelectSourceItemsButton.4dm": {
+		"left": 152,
+		"top": 133,
+		"width": 1591,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/ClearSelectedItemsButton.4dm": {
+		"left": 534,
+		"top": 257,
+		"width": 1443,
+		"height": 994
+	},
+	"Sources/Forms/main/ObjectMethods/SelectSourceItemsDependencies.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/selectedItemsListBox.4dm": {
+		"left": 390,
+		"top": 243,
+		"width": 1532,
+		"height": 995
+	},
+	"Sources/Forms/main/ObjectMethods/Variable3.4dm": {
+		"left": 585,
+		"top": 290,
+		"width": 1409,
+		"height": 971
+	},
+	"Sources/Forms/main/ObjectMethods/ImportOps_Modify_Popup.4dm": {
+		"left": 83,
+		"top": 156,
+		"width": 1667,
+		"height": 1211
+	},
+	"Sources/Forms/main/ObjectMethods/ImportSetOperationsButtonFill.4dm": {
+		"left": 684,
+		"top": 116,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/Popup Dropdown List.4dm": {
+		"left": 707,
+		"top": 380,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Forms/main/ObjectMethods/SourceDataHierarcicalPopupMenu.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/ImportSetOperationsButton.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Forms/main/ObjectMethods/Variable5.4dm": {
+		"left": 431,
+		"top": 312,
+		"width": 1532,
+		"height": 995
+	},
+	"Sources/Forms/main/ObjectMethods/ImportOps_Modify_ListTab.4dm": {
+		"left": 275,
+		"top": 132,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy.4dm": {
+		"left": 133,
+		"top": 139,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy1.4dm": {
+		"left": 133,
+		"top": 139,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy2.4dm": {
+		"left": 133,
+		"top": 139,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/Highlight Button.4dm": {
+		"left": 575,
+		"top": 150,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/Invisible Button.4dm": {
+		"left": 14,
+		"top": 139,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/manageSetsListBox.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Forms/main/ObjectMethods/manageXMLListBox.4dm": {
+		"left": 221,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Forms/main/ObjectMethods/Button.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/Button1.4dm": {
+		"left": 496,
+		"top": 161,
+		"width": 1537,
+		"height": 1217
+	},
+	"Sources/Forms/main/ObjectMethods/bDelete.4dm": {
+		"left": 478,
+		"top": 156,
+		"width": 1341,
+		"height": 1229
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy4.4dm": {
+		"left": 492,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/DeployOps_ListTab.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Forms/main/ObjectMethods/Deploy_go_button.4dm": {
+		"left": 222,
+		"top": 131,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Forms/main/ObjectMethods/DeploySetsLIstBox.4dm": {
+		"left": 594,
+		"top": 203,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/Forms/main/ObjectMethods/deploy_jp_serverpopup1.4dm": {
+		"left": 639,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/deploy_jp_MergeOrCreateNew.4dm": {
+		"left": 433,
+		"top": 336,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/deployedItemsSummary.4dm": {
+		"left": 275,
+		"top": 132,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy3.4dm": {
+		"left": 275,
+		"top": 132,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/main/ObjectMethods/List Box.4dm": {
+		"left": 222,
+		"top": 140,
+		"width": 1597,
+		"height": 1300
+	},
+	"Sources/Forms/main/ObjectMethods/deploy_save_lineEndingPopup.4dm": {
+		"left": 95,
+		"top": 145,
+		"width": 1591,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/Button2.4dm": {
+		"left": 14,
+		"top": 139,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/Button3.4dm": {
+		"left": 523,
+		"top": 320,
+		"width": 1537,
+		"height": 1117
+	},
+	"Sources/Forms/main/ObjectMethods/Button6.4dm": {
+		"left": 92,
+		"top": 239,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/deploy_git_saveLocalOnly.4dm": {
+		"left": 92,
+		"top": 239,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/deploy_git_saveAndPush.4dm": {
+		"left": 92,
+		"top": 239,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy5.4dm": {
+		"left": 92,
+		"top": 239,
+		"width": 1597,
+		"height": 985
+	},
+	"Sources/Forms/main/ObjectMethods/Popup Dropdown List1.4dm": {
+		"left": 523,
+		"top": 320,
+		"width": 1537,
+		"height": 1117
+	},
+	"Sources/Forms/Login/ObjectMethods/Variable.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Forms/Login/ObjectMethods/Variable1.4dm": {
+		"left": 274,
+		"top": 309,
+		"width": 1786,
+		"height": 1035
+	},
+	"Sources/Forms/Login/ObjectMethods/Button.4dm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Forms/Login/ObjectMethods/Variable4.4dm": {
+		"left": 1036,
+		"top": 274,
+		"width": 1050,
+		"height": 876
+	},
+	"Sources/Forms/Login/ObjectMethods/Button2.4dm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Forms/Progress/method.4dm": {
+		"left": 366,
+		"top": 296,
+		"width": 1537,
+		"height": 1015
+	},
+	"Sources/Forms/message/ObjectMethods/Button.4dm": {
+		"left": 523,
+		"top": 320,
+		"width": 1537,
+		"height": 1117
+	},
+	"Sources/Forms/message/ObjectMethods/bCopy3.4dm": {
+		"left": 639,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/message/ObjectMethods/Button1.4dm": {
+		"left": 523,
+		"top": 320,
+		"width": 1537,
+		"height": 1117
+	},
+	"Sources/Forms/AddJamfProServer/ObjectMethods/bCancel.4dm": {
+		"left": 639,
+		"top": 147,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/Forms/AddJamfProServer/ObjectMethods/bValidate.4dm": {
+		"left": 523,
+		"top": 270,
+		"width": 1537,
+		"height": 1167
+	},
+	"Sources/Forms/Settings/ObjectMethods/List Box.4dm": {
+		"left": 523,
+		"top": 270,
+		"width": 1537,
+		"height": 1167
+	},
+	"Sources/Forms/Settings/ObjectMethods/Button4.4dm": {
+		"left": 523,
+		"top": 270,
+		"width": 1537,
+		"height": 1167
+	},
+	"Sources/Forms/Settings/ObjectMethods/Button.4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Sources/Forms/Settings/ObjectMethods/Button1.4dm": {
+		"left": 311,
+		"top": 138,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Forms/Commit/ObjectMethods/Variable1.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Forms/Commit/ObjectMethods/Button.4dm": {
+		"left": 92,
+		"top": 137,
+		"width": 1597,
+		"height": 1086
+	},
+	"Sources/Forms/deploy_outcome/ObjectMethods/List Box3.4dm": {
+		"left": 413,
+		"top": 144,
+		"width": 1553,
+		"height": 671
+	},
+	"Sources/TableForms/2/In/method.4dm": {
+		"left": 257,
+		"top": 145,
+		"width": 1532,
+		"height": 995
+	},
+	"Sources/TableForms/2/Out/method.4dm": {
+		"left": 257,
+		"top": 145,
+		"width": 1532,
+		"height": 995
+	},
+	"Sources/TableForms/7/In/ObjectMethods/Button1.4dm": {
+		"left": 638,
+		"top": 146,
+		"width": 1537,
+		"height": 1242
+	},
+	"Sources/TableForms/7/In/ObjectMethods/Button.4dm": {
+		"left": 169,
+		"top": 254,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/TableForms/7/Out/ObjectMethods/bShowAll.4dm": {
+		"left": 227,
+		"top": 203,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/TableForms/7/Out/ObjectMethods/PasteDataButton.4dm": {
+		"left": 339,
+		"top": 172,
+		"width": 1669,
+		"height": 994
+	},
+	"Sources/TableForms/7/Out/ObjectMethods/ApplyFormulaButton1.4dm": {
+		"left": 230,
+		"top": 368,
+		"width": 1669,
+		"height": 994
+	},
+	"Trash/Methods/(___Orphan___204).4dm": {
+		"left": 230,
+		"top": 368,
+		"width": 1669,
+		"height": 994
+	},
+	"Trash/Methods/(Compiler_Arrays_1).4dm": {
+		"left": 124,
+		"top": 343,
+		"width": 1597,
+		"height": 960
+	},
+	"Trash/Methods/(Compiler_Arrays_Inter).4dm": {
+		"left": 14,
+		"top": 139,
+		"width": 1597,
+		"height": 985
+	},
+	"Trash/Methods/(Compiler_Methods_1).4dm": {
+		"left": 92,
+		"top": 238,
+		"width": 1597,
+		"height": 985
+	},
+	"Trash/Methods/(Compiler_Variables_1).4dm": {
+		"left": 523,
+		"top": 220,
+		"width": 1537,
+		"height": 1217
+	},
+	"Trash/Methods/(Compiler_Variables_Inter).4dm": {
+		"left": 169,
+		"top": 254,
+		"width": 1669,
+		"height": 994
+	}
+}

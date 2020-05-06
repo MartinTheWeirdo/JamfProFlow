@@ -1,0 +1,111 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 35,
+	"bottomMargin": 35,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 87,
+					"left": 36,
+					"width": 664,
+					"height": 126,
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"text": "Please see the important warnings in the readme that accompanies this project. \r\r\rBy continuing, you agree that you will not use this with a Jamf Pro instance that manages production devices. If you read items from a server that you do not intend to modify, always use a read-only (\"Auditor\") user account. "
+				},
+				"Button": {
+					"type": "button",
+					"top": 370,
+					"left": 588,
+					"width": 112,
+					"height": 36,
+					"dataSource": "vl_customAlertMessageButton",
+					"action": "accept",
+					"text": "OK",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 110,
+					"left": 36,
+					"width": 568,
+					"height": 18,
+					"stroke": "#FF6347",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "[!] Not for use with Jamf Pro instances that manage production devices.  "
+				},
+				"Text1": {
+					"type": "text",
+					"top": 220,
+					"left": 36,
+					"width": 664,
+					"height": 130,
+					"fontFamily": "Courier",
+					"fontSize": 14,
+					"text": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OR SUPPORT OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Licensing for any underlying software, operating systems, or utilities are available separately from their respecive owners. "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 28,
+					"left": 36,
+					"width": 553,
+					"height": 29,
+					"fontFamily": "System Font Regular",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"text": "Welcome"
+				},
+				"Line": {
+					"type": "line",
+					"top": 66,
+					"left": 37,
+					"width": 663,
+					"height": 0,
+					"startPoint": "topLeft"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

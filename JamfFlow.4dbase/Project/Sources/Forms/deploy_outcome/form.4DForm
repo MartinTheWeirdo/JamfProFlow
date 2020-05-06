@@ -1,0 +1,181 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 30,
+	"bottomMargin": 30,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 26,
+					"left": 30,
+					"width": 498,
+					"height": 29,
+					"fontFamily": "System Font Regular",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"text": "Outcome of Deployment to Jamf Pro"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 357,
+					"left": 31,
+					"width": 673,
+					"height": 65,
+					"sizingY": "move",
+					"dataSource": "vt_deployJamfProSummary",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 385,
+					"left": 791,
+					"width": 138,
+					"height": 37,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box3": {
+					"type": "listbox",
+					"top": 75,
+					"left": 30,
+					"width": 899,
+					"height": 272,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"movableRows": false,
+					"staticColumnCount": 1,
+					"scrollbarHorizontal": "automatic",
+					"rowFillSource": "at_deploy_rowColors",
+					"method": "ObjectMethods/List Box3.4dm",
+					"events": [
+						"onLoad"
+					],
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": [
+								"at_deployed_Set",
+								"at_deployed_ItemType",
+								"at_deployed_ItemName"
+							],
+							"width": 342,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Set"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "at_deployed_AddedOrUpdated",
+							"width": 112,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Add or Update?"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "at_deployed_Outcome",
+							"width": 106,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"header": {
+								"name": "Header8",
+								"text": "Status"
+							},
+							"footer": {
+								"name": "Footer8",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column10",
+							"dataSource": "at_deployed_Note",
+							"width": 372,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "Note"
+							},
+							"footer": {
+								"name": "Footer10",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

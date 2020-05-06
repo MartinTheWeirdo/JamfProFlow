@@ -1,0 +1,14 @@
+﻿{
+	"Sources/Forms/License/form.4DForm": {
+		"left": 523,
+		"top": 295,
+		"width": 1537,
+		"height": 1142
+	},
+	"Sources/Forms/message/form.4DForm": {
+		"left": 523,
+		"top": 320,
+		"width": 1537,
+		"height": 1117
+	}
+}

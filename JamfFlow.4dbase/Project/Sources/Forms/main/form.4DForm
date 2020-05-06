@@ -1,0 +1,2337 @@
+﻿{
+	"windowTitle": "Jamf Pro Configuration Utility",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 13,
+					"left": 25,
+					"width": 1322,
+					"height": 809,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "at_MainTabControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Import",
+						"Manage",
+						"Deploy"
+					],
+					"action": "GotoPage",
+					"method": "ObjectMethods/Tab Control.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 838,
+					"left": 0,
+					"width": 1372,
+					"height": 24,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#696969",
+					"stroke": "transparent"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 843,
+					"left": 1169,
+					"width": 197,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "<>vt_currentUser",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"multiline": "no",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 843,
+					"left": 62,
+					"width": 147,
+					"height": 16,
+					"sizingY": "move",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Bold",
+					"fontSize": 12,
+					"text": "| Configuration Manager"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 844,
+					"left": 7,
+					"width": 53,
+					"height": 15,
+					"sizingY": "move",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"text": "Jamf Pro"
+				},
+				"Picture31": {
+					"type": "picture",
+					"top": 13,
+					"left": 53,
+					"width": 21,
+					"height": 22,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture31.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle6": {
+					"type": "rectangle",
+					"top": 65,
+					"left": 479,
+					"width": 374,
+					"height": 744,
+					"sizingY": "grow",
+					"fill": "#B1C4DD",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 2
+				},
+				"Round Rectangle3": {
+					"type": "rectangle",
+					"top": 527,
+					"left": 816,
+					"width": 25,
+					"height": 25,
+					"borderRadius": 5
+				},
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 65,
+					"left": 873,
+					"width": 463,
+					"height": 744,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#B1C4DD",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 2
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 65,
+					"left": 37,
+					"width": 422,
+					"height": 744,
+					"sizingY": "grow",
+					"fill": "#B1C4DD",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 2
+				},
+				"Picture26": {
+					"type": "picture",
+					"top": 534,
+					"left": 382,
+					"width": 15,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture26.tif"
+				},
+				"Tab Control1": {
+					"type": "tab",
+					"top": 82,
+					"left": 886,
+					"width": 437,
+					"height": 719,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "at_ImportSetOperations",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"New",
+						"Update"
+					],
+					"method": "ObjectMethods/Tab Control1.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Picture27": {
+					"type": "picture",
+					"top": 573,
+					"left": 977,
+					"width": 15,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture27.tif"
+				},
+				"Picture25": {
+					"type": "picture",
+					"top": 534,
+					"left": 672,
+					"width": 15,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture25.tif"
+				},
+				"Picture30": {
+					"type": "picture",
+					"top": 162,
+					"left": 413,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture30.tif"
+				},
+				"Round Rectangle": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 37,
+					"width": 422,
+					"height": 19,
+					"fill": "#DDA0DD",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 69,
+					"left": 37,
+					"width": 422,
+					"height": 6,
+					"fill": "#DDA0DD",
+					"stroke": "transparent"
+				},
+				"Round Rectangle1": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 479,
+					"width": 374,
+					"height": 19,
+					"fill": "#DDA0DD",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 69,
+					"left": 479,
+					"width": 374,
+					"height": 6,
+					"fill": "#DDA0DD",
+					"stroke": "transparent"
+				},
+				"Text17": {
+					"type": "text",
+					"top": 57,
+					"left": 488,
+					"width": 77,
+					"height": 17,
+					"stroke": "#000000",
+					"fontWeight": "bold",
+					"text": "Select..."
+				},
+				"Text16": {
+					"type": "text",
+					"top": 57,
+					"left": 46,
+					"width": 62,
+					"height": 17,
+					"stroke": "#000000",
+					"fontWeight": "bold",
+					"text": "List..."
+				},
+				"Round Rectangle2": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 873,
+					"width": 463,
+					"height": 19,
+					"sizingX": "grow",
+					"fill": "#DDA0DD",
+					"stroke": "transparent",
+					"borderRadius": 5
+				},
+				"Rectangle7": {
+					"type": "rectangle",
+					"top": 69,
+					"left": 873,
+					"width": 463,
+					"height": 6,
+					"sizingX": "grow",
+					"fill": "#DDA0DD",
+					"stroke": "transparent"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 57,
+					"left": 885,
+					"width": 147,
+					"height": 17,
+					"stroke": "#000000",
+					"fontWeight": "bold",
+					"text": "Save..."
+				},
+				"Text12": {
+					"type": "text",
+					"top": 538,
+					"left": 46,
+					"width": 325,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Item Details (Double-click items above to show...)"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 670,
+					"left": 46,
+					"width": 273,
+					"height": 17,
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"text": "API Response Information"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 27,
+					"left": 45,
+					"width": 1,
+					"height": 1,
+					"fill": "transparent"
+				},
+				"serverpopup": {
+					"type": "dropdown",
+					"top": 93,
+					"left": 118,
+					"width": 328,
+					"height": 24,
+					"dataSource": "at_SelectSourceServer",
+					"method": "ObjectMethods/serverpopup.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"SourceItemsClearButton": {
+					"type": "button",
+					"top": 132,
+					"left": 376,
+					"width": 70,
+					"height": 24,
+					"text": "Clear",
+					"focusable": false,
+					"method": "ObjectMethods/SourceItemsClearButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SearchPicker": {
+					"type": "subform",
+					"top": 163,
+					"left": 202,
+					"width": 199,
+					"height": 30,
+					"dataSource": "vt_SourceItemSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 97,
+					"left": 46,
+					"width": 54,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Server"
+				},
+				"sourceItemsListBox": {
+					"type": "listbox",
+					"top": 198,
+					"left": 46,
+					"width": 400,
+					"height": 318,
+					"resizingMode": "legacy",
+					"dataSource": "ab_SourceItems_LB_SelectedRows",
+					"movableRows": false,
+					"dragging": "custom",
+					"staticColumnCount": 1,
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"method": "ObjectMethods/sourceItemsListBox.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "sourceItemsLB_c_type",
+							"dataSource": [
+								"at_sourceItemLB_types",
+								"al_sourceItemLB_IDs"
+							],
+							"width": 66,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "sourceItemsLB_Category_Hdr",
+								"text": "ID"
+							},
+							"footer": {
+								"name": "Footer4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "sourceItemLB.c.Names",
+							"dataSource": "at_sourceItemLB_Names",
+							"width": 349,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "sourceItemsLB_Name_Hdr",
+								"text": "Name"
+							},
+							"footer": {
+								"name": "Footer6",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"sourceItemsHTTPResponseHeadersListBox": {
+					"type": "listbox",
+					"top": 690,
+					"left": 46,
+					"width": 400,
+					"height": 111,
+					"sizingY": "move",
+					"resizingMode": "legacy",
+					"focusable": false,
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"fill": "transparent",
+					"method": "ObjectMethods/sourceItemsHTTPResponseHeadersListBox.4dm",
+					"events": [
+						"onLoad"
+					],
+					"columns": [
+						{
+							"name": "sourceItemsHTTPHeadersKey",
+							"dataSource": "at_httpHeader_Keys",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "httpHdrKey",
+								"text": "Key"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "sourceItemsHTTPHeadersValue",
+							"dataSource": "at_httpHeader_Values",
+							"width": 295,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HTTPHdrValue",
+								"text": "Value"
+							},
+							"footer": {
+								"name": "Footer5",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"SelectSourceItemsButton": {
+					"type": "button",
+					"top": 92,
+					"left": 495,
+					"width": 153,
+					"height": 24,
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "Add Items [⌥⌘→]",
+					"focusable": false,
+					"method": "ObjectMethods/SelectSourceItemsButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ClearSelectedItemsButton": {
+					"type": "button",
+					"top": 127,
+					"left": 495,
+					"width": 153,
+					"height": 24,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RemoveSelected"
+					},
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "[⌥⌘←] Remove Item(s)",
+					"focusable": false,
+					"method": "ObjectMethods/ClearSelectedItemsButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"SelectSourceItemsDependencies": {
+					"type": "button",
+					"top": 92,
+					"left": 677,
+					"width": 163,
+					"height": 24,
+					"shortcutKey": "l",
+					"shortcutAccel": true,
+					"text": "Load Dependencies [⌘L]",
+					"focusable": false,
+					"method": "ObjectMethods/SelectSourceItemsDependencies.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"top": 118,
+					"left": 675,
+					"width": 160,
+					"height": 19,
+					"dataSource": "vl_ImportScopeDependeciesChkbox",
+					"text": "Include Scope",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 675,
+					"width": 177,
+					"height": 17,
+					"dataSource": "vl_ImportGroupMembersChkbox",
+					"text": "Include Group Members",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"selectedItemsListBox": {
+					"type": "listbox",
+					"top": 171,
+					"left": 495,
+					"width": 345,
+					"height": 345,
+					"resizingMode": "legacy",
+					"dataSource": "ab_selectedItemsListBox",
+					"movableRows": false,
+					"dropping": "custom",
+					"staticColumnCount": 1,
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"method": "ObjectMethods/selectedItemsListBox.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "selectedItemsListBox_types",
+							"dataSource": [
+								"at_selectedItemsListBox_types",
+								"al_selectedItemsListBox_ids"
+							],
+							"width": 56,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "selectedItemsListBox.h.type",
+								"text": "ID"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "selectedItemsListBox_names",
+							"dataSource": "at_selectedItemsListBox_names",
+							"width": 289,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onLoad",
+								"onClick"
+							],
+							"header": {
+								"name": "selectedItemsListBox.h.name",
+								"text": "Name"
+							},
+							"footer": {
+								"name": "Footer3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 560,
+					"left": 495,
+					"width": 330,
+					"height": 225,
+					"sizingY": "grow",
+					"dataSource": "vt_selectedItemsSummary",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"fill": "transparent",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"ImportOps_Modify_Popup": {
+					"type": "dropdown",
+					"top": 21,
+					"left": 1018,
+					"width": 277,
+					"height": 23,
+					"sizingX": "grow",
+					"dataSource": "at_ImportOps_SetListPopup",
+					"focusable": false,
+					"method": "ObjectMethods/ImportOps_Modify_Popup.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ImportSetOperationsButtonFill": {
+					"type": "button",
+					"top": 130,
+					"left": 982,
+					"width": 41,
+					"height": 20,
+					"text": "Fill",
+					"focusable": false,
+					"method": "ObjectMethods/ImportSetOperationsButtonFill.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ImportOps_NewSet_f1": {
+					"type": "input",
+					"top": 132,
+					"left": 1030,
+					"width": 277,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "vt_NewConfigSetName",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"top": 162,
+					"left": 982,
+					"width": 326,
+					"height": 21,
+					"dataSource": "vl_ImportScopeCheckbox",
+					"text": "Include Scoping for Policies and Profiles",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"top": 190,
+					"left": 982,
+					"width": 189,
+					"height": 21,
+					"dataSource": "vl_ImportReqApprovalCheckbox",
+					"text": "Request Approval",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"top": 256,
+					"left": 982,
+					"width": 128,
+					"height": 22,
+					"dataSource": "at_ImportSetCategory",
+					"focusable": false,
+					"method": "ObjectMethods/Popup Dropdown List.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"ImportOps_NewSet_F2": {
+					"type": "input",
+					"top": 291,
+					"left": 982,
+					"width": 323,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "vt_NewConfigSetDescription",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"ImportOps_NewSet_F3": {
+					"type": "input",
+					"top": 451,
+					"left": 982,
+					"width": 323,
+					"height": 65,
+					"sizingX": "grow",
+					"dataSource": "vt_NewConfigSet_ChangeControl",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"SourceDataHierarcicalPopupMenu": {
+					"type": "dropdown",
+					"top": 132,
+					"left": 118,
+					"width": 233,
+					"height": 24,
+					"dataSource": "vl_selectSourceData",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/data"
+					},
+					"method": "ObjectMethods/SourceDataHierarcicalPopupMenu.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 136,
+					"left": 46,
+					"width": 67,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Data"
+				},
+				"ImportSetOperationsButton": {
+					"type": "button",
+					"top": 535,
+					"left": 1205,
+					"width": 100,
+					"height": 28,
+					"sizingX": "move",
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/ImportSetOperationsButton.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"ImportOps_NewSet_L1": {
+					"type": "text",
+					"top": 132,
+					"left": 899,
+					"width": 68,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Set Name"
+				},
+				"ImportOps_NewSet_L2": {
+					"type": "text",
+					"top": 289,
+					"left": 899,
+					"width": 78,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Description"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 171,
+					"left": 46,
+					"width": 89,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Items"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 538,
+					"left": 495,
+					"width": 170,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Selected Items Summary"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 560,
+					"left": 46,
+					"width": 384,
+					"height": 81,
+					"sizingY": "grow",
+					"dataSource": "vt_sourceSetSummary",
+					"fill": "transparent",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"ImportOps_NewSet_L3": {
+					"type": "text",
+					"top": 449,
+					"left": 899,
+					"width": 63,
+					"height": 65,
+					"fontWeight": "bold",
+					"text": "Testing & Change Control Notes"
+				},
+				"savedItemsSummary": {
+					"type": "input",
+					"top": 597,
+					"left": 899,
+					"width": 389,
+					"height": 177,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_savedItemsSummary",
+					"fill": "transparent",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 575,
+					"left": 899,
+					"width": 83,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Transcript"
+				},
+				"Picture17": {
+					"type": "picture",
+					"top": 129,
+					"left": 637,
+					"width": 9,
+					"height": 10,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture17.tif"
+				},
+				"ImportOps_Modify_ListTab": {
+					"type": "tab",
+					"top": 535,
+					"left": 982,
+					"width": 122,
+					"height": 23,
+					"dataSource": "at_Import_Mod_Options",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Merge",
+						"Reset"
+					],
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SetUpdateOption"
+					},
+					"method": "ObjectMethods/ImportOps_Modify_ListTab.4dm"
+				},
+				"Onglet3": {
+					"type": "tab",
+					"top": 221,
+					"left": 982,
+					"width": 134,
+					"height": 25,
+					"dataSource": "at_ImportSet_PrivateOrShared",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Private",
+						"Shared"
+					],
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ImportOps_Set_Category": {
+					"type": "text",
+					"top": 256,
+					"left": 899,
+					"width": 63,
+					"height": 17,
+					"fontWeight": "bold",
+					"text": "Category"
+				},
+				"ImportOps_Modify_ListTabTip": {
+					"type": "picture",
+					"top": 535,
+					"left": 1095,
+					"width": 9,
+					"height": 10,
+					"pictureFormat": "scaled",
+					"picture": "Images/ImportOps_Modify_ListTabTip.tif"
+				},
+				"bCopy": {
+					"type": "button",
+					"top": 534,
+					"left": 672,
+					"width": 15,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"bCopy1": {
+					"type": "button",
+					"top": 534,
+					"left": 381,
+					"width": 15,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy1.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"bCopy2": {
+					"type": "button",
+					"top": 572,
+					"left": 977,
+					"width": 15,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy2.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Picture24": {
+					"type": "picture",
+					"top": 171,
+					"left": 119,
+					"width": 19,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture24.tif"
+				},
+				"Highlight Button": {
+					"type": "button",
+					"top": 171,
+					"left": 118,
+					"width": 20,
+					"height": 19,
+					"display": false,
+					"method": "ObjectMethods/Highlight Button.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Invisible Button": {
+					"type": "button",
+					"top": 164,
+					"left": 413,
+					"width": 30,
+					"height": 29,
+					"display": false,
+					"method": "ObjectMethods/Invisible Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture34": {
+					"type": "picture",
+					"top": 530,
+					"left": 820,
+					"width": 20,
+					"height": 18,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture34.tif"
+				},
+				"Picture38": {
+					"type": "picture",
+					"top": 530,
+					"left": 758,
+					"width": 50,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture38.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 58,
+					"left": 47,
+					"width": 246,
+					"height": 22,
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Saved Configuration Sets"
+				},
+				"manageSetsListBox": {
+					"type": "listbox",
+					"top": 88,
+					"left": 47,
+					"width": 1275,
+					"height": 354,
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "listBox_ManageSetsLIst",
+					"movableRows": false,
+					"headerHeight": "2em",
+					"doubleClickInRowAction": "editSubrecord",
+					"highlightSet": "$set_ManageSetsListbox",
+					"table": 1,
+					"detailForm": "In",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/manageSetsListBox.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column7",
+							"dataSource": "[Sets:1]Category:18",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "Category"
+							},
+							"footer": {
+								"name": "Footer13",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column1",
+							"dataSource": "[Sets:1]Name:2",
+							"width": 229,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Name"
+							},
+							"footer": {
+								"name": "Footer7",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "[Sets:1]Description:3",
+							"width": 336,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Description"
+							},
+							"footer": {
+								"name": "Footer8",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column15",
+							"dataSource": "[Sets:1]Approval_Requested:14",
+							"dataSourceTypeHint": "boolean",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header15",
+								"text": "Approval\\Required?"
+							},
+							"footer": {
+								"name": "Footer21",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column18",
+							"dataSource": "[Sets:1]Approved_YN:16",
+							"dataSourceTypeHint": "boolean",
+							"width": 64,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header18",
+								"text": "Apprvd?"
+							},
+							"footer": {
+								"name": "Footer24",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column12",
+							"dataSource": "[Sets:1]ApprovedBy_User:11",
+							"width": 98,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header12",
+								"text": "Approved By"
+							},
+							"footer": {
+								"name": "Footer18",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column19",
+							"dataSource": "[Sets:1]Shared_YN:17",
+							"dataSourceTypeHint": "boolean",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header19",
+								"text": "Shared?"
+							},
+							"footer": {
+								"name": "Footer25",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column13",
+							"dataSource": "[Sets:1]ChangeControl_Note:6",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header13",
+								"text": "Change Control Notes"
+							},
+							"footer": {
+								"name": "Footer19",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column4",
+							"dataSource": "[Sets:1]LastModifiedDate:5",
+							"dataSourceTypeHint": "date",
+							"width": 97,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Last Modified"
+							},
+							"footer": {
+								"name": "Footer10",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"manageXMLListBox": {
+					"type": "listbox",
+					"top": 502,
+					"left": 47,
+					"width": 634,
+					"height": 306,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "listbox_manageXMLListbox",
+					"movableRows": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"highlightSet": "$ListboxSetManageXML",
+					"table": 2,
+					"detailForm": "In",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/manageXMLListBox.4dm",
+					"events": [
+						"onLoad",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Column3",
+							"dataSource": "[XML:2]ItemType:6",
+							"width": 129,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Type"
+							},
+							"footer": {
+								"name": "Footer9",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column6",
+							"dataSource": "[XML:2]HumanReadableItemName:9",
+							"width": 321,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header6",
+								"text": "Item Name"
+							},
+							"footer": {
+								"name": "Footer12",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column5",
+							"dataSource": "[XML:2]SourceServerURL:5",
+							"width": 169,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Source Server"
+							},
+							"footer": {
+								"name": "Footer11",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 51,
+					"left": 1202,
+					"width": 120,
+					"height": 29,
+					"text": "Show All",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 466,
+					"left": 561,
+					"width": 120,
+					"height": 29,
+					"text": "Show All",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 473,
+					"left": 47,
+					"width": 246,
+					"height": 22,
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Set Components"
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 1158,
+					"width": 24,
+					"height": 27,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/SmallDeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 504,
+					"left": 707,
+					"width": 598,
+					"height": 289,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_manageXMLDisplay",
+					"focusable": false,
+					"fill": "#B1C4DD",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 475,
+					"left": 734,
+					"width": 49,
+					"height": 22,
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "XML"
+				},
+				"Picture15": {
+					"type": "picture",
+					"top": 475,
+					"left": 797,
+					"width": 15,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture15.tif"
+				},
+				"bCopy4": {
+					"type": "button",
+					"top": 475,
+					"left": 797,
+					"width": 15,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy4.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture14": {
+					"type": "picture",
+					"top": 460,
+					"left": 773,
+					"width": 15,
+					"height": 20,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture14.tif"
+				},
+				"DeployOps_ListTab": {
+					"type": "tab",
+					"top": 457,
+					"left": 47,
+					"width": 617,
+					"height": 345,
+					"sizingY": "move",
+					"dataSource": "at_DeployOps_ListTab",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Upload to Jamf Pro",
+						"Save to disk",
+						"Git"
+					],
+					"method": "ObjectMethods/DeployOps_ListTab.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Deploy_go_button": {
+					"type": "button",
+					"top": 745,
+					"left": 515,
+					"width": 120,
+					"height": 28,
+					"sizingY": "move",
+					"dataSource": "vl_Deploy_go_button",
+					"text": "Upload",
+					"focusable": false,
+					"method": "ObjectMethods/Deploy_go_button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DeploySetsLIstBox": {
+					"type": "listbox",
+					"top": 75,
+					"left": 47,
+					"width": 907,
+					"height": 362,
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"dataSource": "ab_DeploySetsListBox",
+					"movableRows": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"lockedColumnCount": 1,
+					"highlightSet": "$ab_DeploySetsHighlightedSet",
+					"table": 1,
+					"detailForm": "In",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/DeploySetsLIstBox.4dm",
+					"events": [
+						"onLoad"
+					],
+					"columns": [
+						{
+							"name": "Column10",
+							"dataSource": "[Sets:1]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header10",
+								"text": "ID"
+							},
+							"footer": {
+								"name": "Footer16",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column23",
+							"dataSource": "[Sets:1]Category:18",
+							"width": 98,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header23",
+								"text": "Category"
+							},
+							"footer": {
+								"name": "Footer29",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "[Sets:1]Name:2",
+							"width": 236,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "Name"
+							},
+							"footer": {
+								"name": "Footer14",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column9",
+							"dataSource": "[Sets:1]Description:3",
+							"width": 145,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header9",
+								"text": "Description"
+							},
+							"footer": {
+								"name": "Footer15",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column14",
+							"dataSource": "[Sets:1]LastModifiedBy:15",
+							"width": 103,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header14",
+								"text": "Last Modified By"
+							},
+							"footer": {
+								"name": "Footer20",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column11",
+							"dataSource": "[Sets:1]LastModifiedDate:5",
+							"dataSourceTypeHint": "date",
+							"width": 91,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header11",
+								"text": "Last Modified"
+							},
+							"footer": {
+								"name": "Footer17",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column21",
+							"dataSource": "[Sets:1]Approved_YN:16",
+							"dataSourceTypeHint": "boolean",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header21",
+								"text": "Approved?"
+							},
+							"footer": {
+								"name": "Footer27",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column20",
+							"dataSource": "[Sets:1]ApprovedBy_User:11",
+							"width": 102,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header20",
+								"text": "Approved By"
+							},
+							"footer": {
+								"name": "Footer26",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"deploy_jp_serverpopup1": {
+					"type": "dropdown",
+					"top": 524,
+					"left": 166,
+					"width": 272,
+					"height": 28,
+					"sizingY": "move",
+					"dataSource": "at_SelectTargetJamfProServers",
+					"method": "ObjectMethods/deploy_jp_serverpopup1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"deploy_jp_svrpopup lable": {
+					"type": "text",
+					"top": 530,
+					"left": 55,
+					"width": 105,
+					"height": 17,
+					"sizingY": "move",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Target Server :"
+				},
+				"deploy_jp_MergeOrCreateNew": {
+					"type": "tab",
+					"top": 563,
+					"left": 166,
+					"width": 160,
+					"height": 27,
+					"sizingY": "move",
+					"dataSource": "at_Push_MergeOrNew_Options",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Merge",
+						"Create New"
+					],
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/SaveSetMergeOpt"
+					},
+					"method": "ObjectMethods/deploy_jp_MergeOrCreateNew.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"deploy_jp_includeScopeCB": {
+					"type": "checkbox",
+					"top": 596,
+					"left": 164,
+					"width": 272,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "vl_DeployScopeCheckbox",
+					"text": "Include Scoping for Policies and Profiles",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"deploy_jp_AddDateCheckbox": {
+					"type": "checkbox",
+					"top": 619,
+					"left": 164,
+					"width": 272,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "vl_DeployAddDateCheckbox",
+					"text": "Add datetime to names",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"deploy_jp_helpavailDot": {
+					"type": "picture",
+					"top": 562,
+					"left": 314,
+					"width": 9,
+					"height": 10,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/deploy_jp_helpavailDot.tif"
+				},
+				"deployedItemsSummary": {
+					"type": "input",
+					"top": 492,
+					"left": 694,
+					"width": 618,
+					"height": 145,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vt_deployedItemsSummary",
+					"fontFamily": "Courier",
+					"fontSize": 13,
+					"fill": "transparent",
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/deployedItemsSummary.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"bCopy3": {
+					"type": "button",
+					"top": 460,
+					"left": 773,
+					"width": 15,
+					"height": 20,
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy3.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 462,
+					"left": 694,
+					"width": 74,
+					"height": 17,
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"text": "Transcript"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 658,
+					"left": 694,
+					"width": 175,
+					"height": 17,
+					"sizingY": "move",
+					"fontWeight": "bold",
+					"text": "Links to created items"
+				},
+				"deploy_jp_PruneDeviceDetails": {
+					"type": "checkbox",
+					"top": 642,
+					"left": 164,
+					"width": 272,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "vl_DeployPruneDeviceDetails",
+					"tooltip": "Remove all but the basic device data and let the rest populate on first recon",
+					"text": "Pune Device Details",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"deploy_jp_PruneDeviceUser": {
+					"type": "checkbox",
+					"top": 665,
+					"left": 164,
+					"width": 272,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "vl_DeployPruneDeviceUser",
+					"text": "Pune Device User and Location",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 677,
+					"left": 694,
+					"width": 634,
+					"height": 125,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "ab_CreatedItemsListBox",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onLoad"
+					],
+					"columns": [
+						{
+							"name": "Column16",
+							"dataSource": "at_DeployLinks_Names",
+							"width": 250,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"events": [
+								"onLoad"
+							],
+							"header": {
+								"name": "Header16",
+								"text": "Configuration"
+							},
+							"footer": {
+								"name": "Footer22",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Column17",
+							"dataSource": "at_DeployLinks_Links",
+							"width": 369,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"header": {
+								"name": "Header17",
+								"text": "Link"
+							},
+							"footer": {
+								"name": "Footer23",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"deploy_save_lineEndingPopup": {
+					"type": "dropdown",
+					"top": 790,
+					"left": 161,
+					"width": 180,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "at_deploy_save_lineEndingPopup",
+					"focusable": false,
+					"method": "ObjectMethods/deploy_save_lineEndingPopup.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"deploy_save_EOLLabel": {
+					"type": "text",
+					"top": 795,
+					"left": 53,
+					"width": 105,
+					"height": 17,
+					"sizingY": "move",
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Line Endings :"
+				},
+				"Button2": {
+					"type": "button",
+					"top": 649,
+					"left": 1259,
+					"width": 70,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Show",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"deploy_setlist_label": {
+					"type": "text",
+					"top": 48,
+					"left": 47,
+					"width": 475,
+					"height": 22,
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Saved Configuration Sets – Local"
+				},
+				"DeploySetsLIstBox1": {
+					"type": "listbox",
+					"top": 75,
+					"left": 974,
+					"width": 354,
+					"height": 152,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "ab_DeploySetsListBoxGit",
+					"rowControlSource": "ab_GitSetListingRowControlArray",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onLoad"
+					],
+					"columns": [
+						{
+							"name": "Column24",
+							"dataSource": "at_deployLocalGitSetNames",
+							"width": 338,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header24",
+								"text": "Set Name"
+							},
+							"footer": {
+								"name": "Footer30",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"githubinfo": {
+					"type": "input",
+					"top": 280,
+					"left": 974,
+					"width": 339,
+					"height": 156,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "vt_gitInfo",
+					"fontFamily": "Courier",
+					"fontSize": 13,
+					"fill": "transparent",
+					"borderStyle": "solid",
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"deploy_setlist_label1": {
+					"type": "text",
+					"top": 48,
+					"left": 974,
+					"width": 213,
+					"height": 22,
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Local Git Sets"
+				},
+				"deploy_setlist_label2": {
+					"type": "text",
+					"top": 249,
+					"left": 974,
+					"width": 106,
+					"height": 22,
+					"fontFamily": "System Font Regular",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Sync Status"
+				},
+				"Button3": {
+					"type": "button",
+					"top": 249,
+					"left": 1245,
+					"width": 84,
+					"height": 23,
+					"sizingX": "move",
+					"text": "Show",
+					"focusable": false,
+					"method": "ObjectMethods/Button3.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"top": 43,
+					"left": 834,
+					"width": 120,
+					"height": 27,
+					"text": "Show All",
+					"focusable": false,
+					"method": "ObjectMethods/Button6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"deploy_git_saveLocalOnly": {
+					"type": "radio",
+					"top": 739,
+					"left": 73,
+					"width": 190,
+					"height": 27,
+					"dataSource": "vl_deploy_git_saveLocalOnly_RB",
+					"text": "Save to local repo folder",
+					"focusable": false,
+					"radioGroup": "Group5",
+					"method": "ObjectMethods/deploy_git_saveLocalOnly.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"deploy_git_saveAndPush": {
+					"type": "radio",
+					"top": 764,
+					"left": 73,
+					"width": 341,
+					"height": 27,
+					"dataSource": "vl_deploy_git_saveAndPush_RB",
+					"text": "Save to local repo folder and push changes to Git",
+					"focusable": false,
+					"radioGroup": "Group5",
+					"method": "ObjectMethods/deploy_git_saveAndPush.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 251,
+					"left": 1085,
+					"width": 15,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture1.tif"
+				},
+				"bCopy5": {
+					"type": "button",
+					"top": 251,
+					"left": 1085,
+					"width": 15,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy5.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					]
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"top": 44,
+					"left": 1169,
+					"width": 158,
+					"height": 26,
+					"dataSource": "at_gitOpsDropdownMenu",
+					"focusable": false,
+					"choiceList": [
+						"Select an action...",
+						"Refresh list from local git repo",
+						"Refresh local git repo from git server",
+						"Import git set into database"
+					],
+					"method": "ObjectMethods/Popup Dropdown List1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"deploy_jp_helpavailDot1": {
+					"type": "picture",
+					"top": 643,
+					"left": 304,
+					"width": 9,
+					"height": 10,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/deploy_jp_helpavailDot1.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture5": {
+					"type": "picture",
+					"top": 390,
+					"left": 14,
+					"width": 484,
+					"height": 303,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture5.tif"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 592,
+					"left": 549,
+					"width": 229,
+					"height": 161,
+					"text": "A tool to migrate data granularly between Jamf Pro servers\r\ralt text\r\rMigrate items from one Jamf server, or XML file(s), to another. If an item (based on name) within a category exists on both source and destination, the destination item will be updated with values from the source server. alt text\r\rGroups, Policies, and Configuration Profiles can be targeted to a particular site. alt text\r\rFeedback in the GUI gives a simplistic overview of the success of a transfer:\r\rGreen - everything transferred.\rYellow - some items transferred.\rRed - nothing transferred.\rWhite - nothing to transfer.\rLimitations/requirements to be aware of:\r\rPasswords can not be extracted through the API which impacts migrating distribution points, computer management account, account used for LDAP - credentials must be reset on the destination server.\rIcons associated with Mac App Store apps are not migrated (can't be migrated).\rOnly AFP and SMB shares can be migrated.\rPatch management is not available through the API impacting smart groups dependent on patch management extension attributes.\rBuildings - the API only allows the name to be migrated.\rIf endpoints (computers, policies, configuration profiles...) have duplicate names on the source server issues will arise if the app is used to update those items from the source to destination server. As each item is migrited it will overwrite the previous item with the same name.\rMigrating smart/static groups with criteria containing groups will fail if the parent group tries to migrate before the group in the criteria. Migrating groups several times should allow all the nested groups to migrate before the parent group.\rInstitutional disk encryptions that contain the private key cannot be migrated.\rApproved Kernel Extension payloads that contain bundle IDs will be dropped from the Configuration Profile.\rApproved Kernel Extension - the display name for the Approved Team ID does not migrate.\rThe 'Selective' tab provides the ability to select a subset of items within a category. For example you might only want to transfer 4 new scripts from a larger pool of existing scripts. alt text\r\rNote: Policies are listed along with the their ID. They'll be listed with a format of: policy name (ID)\r\rAlso, policies may have their dependencies checked/migrated using the Migrate Dependencies button. Only 'top-level' dependencies are checked. i.e. if the scope is being migrated and contains nested computer groups or groups assigned to a site that doesn't exist on the destination server the policy migration will likely fail. Adding smart migrations is planned for other items. alt text\r\rWhen importing XML files they must be organized into folders that, for the most part, mirror their respective API nodes. i.e. computer XML files in a folder labeled computers, mobile devices in a folder called mobiledevices. Exceptions to this are group items, for example computer groups are split into a smartcomputergroups folder and staticcomputergroups folder. This is also how jamf-migrator exports files. Then when importing, select the folder that contains the API nodes we wish to update. For example, if selecting files generated by exporting data with jamf-migrator we would select the folder called raw.\r\ralt text\r\rImportant: Trimmed XML files cannot be used as they are missing data required for the migration.\r\rPreferences:\r\rmacOS Configuration Profiles\rmacOS Applications\rRestrictions\rPolicies\rMobile Device Configuration Profiles\rMobile Device Applications\rStatic Computer Groups\rStatic Mobile Device Groups\rStatic User Groups\rIn addition, Policies can be copied in a disabled state.\r\r\r\rOptions to export XML from the source server are also available.\r\r\r\rRaw Source XML gives you the XML from the source server before any modifications, like removing the id tag(s) and value(s).\rTrimmed Source XML give you the XML that is sent to the destination server.\rSave only saves the XML files and does not send them to the destination server.\rSave the object XML either with or without its scope. Unchecked removes the scope.\rNote Save only and Raw Source XML options should not be selected when File Import is being used.\rOptions for migrating object(s) (groups, policies, and configuration profiles) to a particular site can be set.\r\r\r\rWhen copying an object to a site, the site name is appended to the object name.\rGroups with groups as a criteria will not copy properly, moving them should be fine.\rMigration Summary:\r\rTo get details on how many items were created/updated or failed to migrate type ⌘S, or select Show Summary under the File menu.\r\ralt text\r\rAdditional information about each count can be obtained by clicking on the number. For example, if we want to see a list of the 28 failed scripts, click on the 28.\r\ralt text\r\rInformation about successes/failures can be found in the log, located in\r\r~/Library/Containers/com.jamf.jamf-migrator/Data/Library/Logs/jamf-migrator/<date>_<time>_migration.log\rIf you have used jamf-migrator and saved passwords you will see the following after launching a new version. alt text\r\rIf you'd like the new version to access existing credentials select the desired option.\r\rImportant:\r\rThere are many dependencies between items, if they are not met transfers fail. For example, if a policy is site specific the site must be migrated before the policy; if a distribution point has a building and/or department defined those need to migrate first... If everything is migrated the order of sections is already taken care of, if you choose not to move some items that's where you can have issues.\rSummary window doesn't seem to be the most responsive. May need to click the window or give the cursor some extra motion before the detailed summary appears.\rNote: the app can also be used to clear out a Jamf server. Typing the following after launching the app will set it into removal mode. Items from the destination server are deleted once Go is clicked.\r\rtouch ~/Library/Containers/com.jamf.jamf-migrator/Data/Library/Application\\ Support/jamf-migrator/delete\rYou can also toggle the mode using ⌘D.\r"
+				},
+				"Picture12": {
+					"type": "picture",
+					"top": 290,
+					"left": 549,
+					"width": 480,
+					"height": 282,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture12.tif"
+				},
+				"Picture13": {
+					"type": "picture",
+					"top": 63,
+					"left": 549,
+					"width": 420,
+					"height": 216,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture13.tif"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 51,
+					"left": 25,
+					"width": 462,
+					"height": 298,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture2.tif"
+				},
+				"Picture4": {
+					"type": "picture",
+					"top": 609,
+					"left": 817,
+					"width": 499,
+					"height": 127,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture4.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture7": {
+					"type": "picture",
+					"top": 55,
+					"left": 41,
+					"width": 720,
+					"height": 448,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture7.tif"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 462,
+					"left": 705,
+					"width": 614,
+					"height": 325,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture6.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture3": {
+					"type": "picture",
+					"top": 15,
+					"left": 21,
+					"width": 800,
+					"height": 190,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture3.tif"
+				},
+				"Picture8": {
+					"type": "picture",
+					"top": 15,
+					"left": 849,
+					"width": 360,
+					"height": 334,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture8.tif"
+				},
+				"Picture9": {
+					"type": "picture",
+					"top": 387,
+					"left": 926,
+					"width": 360,
+					"height": 334,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture9.tif"
+				},
+				"Picture10": {
+					"type": "picture",
+					"top": 422,
+					"left": 426,
+					"width": 480,
+					"height": 282,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture10.tif"
+				},
+				"Picture11": {
+					"type": "picture",
+					"top": 422,
+					"left": 21,
+					"width": 360,
+					"height": 344,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture11.tif"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group5": [
+				"deploy_git_saveLocalOnly",
+				"deploy_git_saveAndPush"
+			]
+		}
+	}
+}

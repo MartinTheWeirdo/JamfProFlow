@@ -1,0 +1,128 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 14,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 29,
+					"left": 102,
+					"width": 432,
+					"height": 110,
+					"dataSource": "messageText",
+					"fontFamily": "System Font Regular",
+					"fontSize": 16,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"Button": {
+					"type": "button",
+					"top": 178,
+					"left": 422,
+					"width": 112,
+					"height": 36,
+					"dataSource": "vl_customAlertMessageButton",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onLoad"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Picture14": {
+					"type": "picture",
+					"top": 186,
+					"left": 207,
+					"width": 15,
+					"height": 20,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture14.tif",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"bCopy3": {
+					"type": "button",
+					"top": 186,
+					"left": 207,
+					"width": 15,
+					"height": 20,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Clipboard"
+					},
+					"display": false,
+					"method": "ObjectMethods/bCopy3.4dm",
+					"events": [
+						"onClick",
+						"onMouseMove"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 178,
+					"left": 272,
+					"width": 112,
+					"height": 36,
+					"dataSource": "vl_customAlertMessageButton_No",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"fontFamily": "System Font Regular",
+					"fontSize": 14,
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onLoad"
+					],
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 13,
+					"left": 19,
+					"width": 48,
+					"height": 211,
+					"picture": "Images/Static Picture2.tif"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

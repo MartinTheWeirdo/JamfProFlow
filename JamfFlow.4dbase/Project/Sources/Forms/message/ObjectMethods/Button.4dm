@@ -1,0 +1,1 @@
+OBJECT SET TITLE:C194(vl_customAlertMessageButton;vt_alertDialogButtonText)

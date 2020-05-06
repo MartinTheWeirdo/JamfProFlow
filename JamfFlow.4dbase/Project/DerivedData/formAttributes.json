@@ -1,0 +1,39 @@
+﻿{
+	"forms": {
+		"Commit": {
+			"timeStamp": "2020-05-06T12:53:45.178Z",
+			"destination": "detailScreen"
+		},
+		"Settings": {
+			"timeStamp": "2020-05-06T12:53:45.171Z",
+			"destination": "detailScreen"
+		},
+		"License": {
+			"timeStamp": "2020-05-06T13:51:08.300Z",
+			"destination": "detailScreen"
+		},
+		"Progress": {
+			"timeStamp": "2020-05-06T12:53:45.146Z",
+			"destination": "detailScreen"
+		},
+		"AddJamfProServer": {
+			"timeStamp": "2020-05-06T12:53:45.157Z",
+			"destination": "detailScreen"
+		},
+		"message": {
+			"timeStamp": "2020-05-06T14:04:55.785Z",
+			"destination": "detailScreen"
+		},
+		"main": {
+			"timeStamp": "2020-05-06T12:53:45.129Z"
+		},
+		"deploy_outcome": {
+			"timeStamp": "2020-05-06T12:53:45.182Z",
+			"destination": "detailScreen"
+		},
+		"Login": {
+			"timeStamp": "2020-05-06T13:41:34.189Z",
+			"destination": "detailScreen"
+		}
+	}
+}
