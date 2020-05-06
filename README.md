@@ -35,7 +35,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OR SUPPORT OF ANY KIND, EXPRE
 
 ### Setting up
 
-This project is a bundle folder that contains interface forms, code, and data. You need to install an application called "4D" to run it. 4D is a proprietary database application development environment that dates back to the early data of Mac. It has a steep learning curve and it's not as cheap and easy to deploy as as an opensource-based web or Swift app, but its tight integration of database and GUI makes allows very fast development of complex database apps. So if time is the limitting factor, as is the case with quick and dirty experiments like this one, it's perfect. 
+This project is a bundle folder that contains interface forms, code, and data. You need to install an application called "4D" to run it. 4D is a proprietary database application development environment that dates back to the early days of Mac. It has a steep learning curve and it's not as cheap and easy to deploy as as an opensource-based web or Swift app, but its tight integration of database and GUI makes allows very fast development of complex database apps. So if time is the limitting factor, as is the case with quick and dirty experiments like this one, it's perfect. 
 
 To use this project, you'll need to sign up for a 4D trial account and then download a copy of 4D. You can use it in developer mode for 30 days. After that you can still use this project, but you'll need to purchase 4D if you want to make any changes to the underlying code or interface. 
 
@@ -43,7 +43,7 @@ To use this project, you'll need to sign up for a 4D trial account and then down
 2. Download a copy of 4D from https://us.4d.com/4d-free-trial
 3. Run the 4D app. 
 4. Click new user at the setup screen and enter your trial username and password. 
-5. Open JamfProConfig.4dbase
+5. Open JamfFlow.4dbase
 
 ### Logging in
 
