@@ -1,1 +1,23 @@
-﻿[]
+﻿[
+	{
+		"line": 2,
+		"method": {
+			"type": 1,
+			"methodName": "_data_Fill_Endpoints"
+		}
+	},
+	{
+		"line": 108,
+		"method": {
+			"type": 1,
+			"methodName": "deploy_jamfPro_precheck_Set"
+		}
+	},
+	{
+		"line": 131,
+		"method": {
+			"type": 1,
+			"methodName": "sh_http_urlEncode"
+		}
+	}
+]

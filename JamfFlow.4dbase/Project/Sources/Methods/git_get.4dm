@@ -41,57 +41,59 @@ Case of
 		
 		
 	: ($vt_infoNeeded="LocalRepoPathPosix")
+		  // This variant checks to see if the path in settings is good and prompts the user to set it if it is not.
 		
 		$vt_localRepoPosixPath:=sh_prefs_getValueForKey ("setting.git.local_repo_posix_path")
-		$vb_localRepoPoxixPath_hasValue:=($vt_localRepoPosixPath#"")
-		If ($vb_localRepoPoxixPath_hasValue)
+		If ($vt_localRepoPosixPath="")
+			$vb_validGit:=False:C215
+		Else 
 			$vt_localRepoSystemPath:=Convert path POSIX to system:C1107($vt_localRepoPosixPath)
 			$vt_localRepoSystemPath_gitFile:=$vt_localRepoSystemPath+".git"
-			$vb_hasGitFile:=(Test path name:C476($vt_localRepoSystemPath_gitFile)=Is a folder:K24:2)
-		Else 
-			$vb_hasGitFile:=False:C215
+			$vb_validGit:=(Test path name:C476($vt_localRepoSystemPath_gitFile)=Is a folder:K24:2)
 		End if 
 		
-		Case of 
-			: (Not:C34($vb_hasGitFile))
-				$vt_doYaWannaPrompt:="The git repo folder "+sh_str_dq ($vt_localRepoPosixPath)+" set in prefs wasn't found. Would you like to re-set the link to another folder?"
-			: (Not:C34($vb_localRepoPoxixPath_hasValue))
-				$vt_doYaWannaPrompt:="Do you already have a local git repository folder you'd like to use?"
-			Else 
-				$vt_doYaWannaPrompt:=""
-				$vt_return:=$vt_localRepoPosixPath
-		End case 
-		
-		If ($vt_doYaWannaPrompt#"")
-			  // Ask them if they have a local repo folder
-			$vb_Yes:=sh_msg_Alert ($vt_doYaWannaPrompt;"Yes";"No")
-			If ($vb_Yes)
-				  // They answered yes. Ask them to show us where it is...
-				
-				$vt_defaultGitFolder:=System folder:C487(Documents folder:K41:18)+"GitHub"
-				If (Test path name:C476($vt_defaultGitFolder)#Is a folder:K24:2)  // Nothing doing? 
-					$vt_defaultGitFolder:=System folder:C487(Documents folder:K41:18)  // Just start with documents folder
-				End if 
-				$vt_localRepoSystemPath:=Select folder:C670("Please select the folder for the existing git repository...";$vt_defaultGitFolder)
+		If (Not:C34($vb_validGit))
+			$vt_defaultGitFolder:=System folder:C487(Documents folder:K41:18)+"GitHub"
+			If (Test path name:C476($vt_defaultGitFolder)#Is a folder:K24:2)  // Nothing doing? 
+				$vt_defaultGitFolder:=System folder:C487(Documents folder:K41:18)  // Just start with documents folder
+			End if 
+			$vt_localRepoSystemPath:=Select folder:C670("Please select your local git repo folder...";$vt_defaultGitFolder)
+			If (OK=1)
 				$vt_localRepoSystemPath_gitFile:=$vt_localRepoSystemPath+".git"
 				If (Test path name:C476($vt_localRepoSystemPath_gitFile)=Is a folder:K24:2)  // We have a winner
 					$vt_localRepoPosixPath:=Convert path system to POSIX:C1106($vt_localRepoSystemPath)
 					$vt_localRepoPosixPath:=sh_prefs_getValueForKey ("setting.git.local_repo_posix_path";$vt_localRepoPosixPath;True:C214)
 					$vt_return:=$vt_localRepoPosixPath
+					  // Change the menu options
+					ARRAY TEXT:C222(at_gitOpsDropdownMenu;0)
+					APPEND TO ARRAY:C911(at_gitOpsDropdownMenu;"Select an action...")
+					APPEND TO ARRAY:C911(at_gitOpsDropdownMenu;"Refresh list from local git repo")
+					APPEND TO ARRAY:C911(at_gitOpsDropdownMenu;"Refresh local git repo from git server")
+					APPEND TO ARRAY:C911(at_gitOpsDropdownMenu;"Import git set into database")
+				Else 
+					sh_msg_Alert ("I don't see the git folder "+sh_str_dq ())
 				End if 
 			Else 
-				sh_msg_Alert ("Create or clone a repo with git command line or Github Desktop so you have a local folder then try again.")
-			End if   //
+				$vt_localRepoPosixPath:=""
+			End if 
 		End if 
+		$vt_return:=$vt_localRepoPosixPath
 		
 		
 	: ($vt_infoNeeded="LocalRepoPathSystem")
+		  // This can return "" if path is not set
 		$vt_localRepoPosixPath:=sh_prefs_getValueForKey ("setting.git.local_repo_posix_path")
-		If ($vt_localRepoPosixPath="")
-			$vt_localRepoPosixPath:=git_get ("LocalRepoPathPosix")
-		End if 
+		  //If ($vt_localRepoPosixPath="")
+		  //$vt_localRepoPosixPath:=git_get ("LocalRepoPathPosix")
+		  //End if 
 		If ($vt_localRepoPosixPath#"")
 			$vt_localRepoSystemPath:=Convert path POSIX to system:C1107($vt_localRepoPosixPath)
+			  // Is it valid? 
+			$vt_localRepoSystemPath_gitFoldr:=$vt_localRepoSystemPath+".git"
+			If (Test path name:C476($vt_localRepoSystemPath_gitFoldr)#Is a folder:K24:2)
+				  // Pref is set, but it's not a valid repo. Return empty string
+				$vt_localRepoSystemPath_gitFoldr:=""
+			End if 
 		End if 
 		$vt_return:=$vt_localRepoSystemPath
 		

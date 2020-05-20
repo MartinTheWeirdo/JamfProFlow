@@ -64,11 +64,11 @@ If ($vt_exportFolderPath#"")
 	Else 
 		$vt_exportDestinationDescription:=sh_str_dq ($vt_exportFolderPath)
 	End if 
-	If (Records in selection:C76([Sets:1])=1)
+	If (Records in set:C195("$ab_DeploySetsHighlightedSet")=1)
 		FIRST RECORD:C50([Sets:1])
 		vt_deployedItemsSummary:=vt_deployedItemsSummary+"Exported "+sh_str_dq ([Sets:1]Name:2)+" to "+$vt_exportDestinationDescription
 	Else 
-		vt_deployedItemsSummary:=vt_deployedItemsSummary+"Exported "+String:C10(Records in selection:C76([Sets:1]))+" sets to "+$vt_exportDestinationDescription
+		vt_deployedItemsSummary:=vt_deployedItemsSummary+"Exported "+String:C10(Records in set:C195("$ab_DeploySetsHighlightedSet"))+" sets to "+$vt_exportDestinationDescription
 	End if 
 	
 	$vb_goodToGo:=True:C214

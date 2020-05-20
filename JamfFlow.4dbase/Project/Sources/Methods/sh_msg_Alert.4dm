@@ -1,4 +1,7 @@
 //%attributes = {}
+  // sh_msg_Alert
+  // $vb:=sh_msg_Alert($vt_messageText;vt_alertDialogButtonText;vt_alertDialogButtonText_No)
+
 $vt_messageText:=$1
 If (Count parameters:C259>=2)
 	vt_alertDialogButtonText:=$2

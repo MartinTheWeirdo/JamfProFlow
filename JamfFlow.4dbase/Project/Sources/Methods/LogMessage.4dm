@@ -19,3 +19,4 @@ CREATE RECORD:C68([LogItems:6])
 [LogItems:6]Level:5:=$vt_Level
 [LogItems:6]Message:4:=$vt_Message
 SAVE RECORD:C53([LogItems:6])
+UNLOAD RECORD:C212([LogItems:6])

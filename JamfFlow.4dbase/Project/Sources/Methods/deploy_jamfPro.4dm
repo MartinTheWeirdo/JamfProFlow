@@ -11,7 +11,7 @@ $vb_goodToGo:=deploy_jamfPro_precheck ($vt_targetServer;$vt_Push_MergeOrCreateNe
 
   // Now send the data to the target server
 If ($vb_goodToGo)
-	$vb_goodToGo:=deploy_JamfPro_Push ($vt_targetServer;$vt_Push_MergeOrCreateNew)
+	$vb_goodToGo:=deploy_JamfPro_1 ($vt_targetServer;$vt_Push_MergeOrCreateNew)
 End if 
 
 $0:=$vb_goodToGo

@@ -1,4 +1,18 @@
 //%attributes = {}
+QUERY:C277([Endpoints:7];[Endpoints:7]API_URL_to_lookup_by_Name:21="@​@")
+For ($i;1;Records in selection:C76([Endpoints:7]))
+	If (Locked:C147([Endpoints:7]))
+		TRACE:C157
+	End if 
+	[Endpoints:7]API_URL_to_lookup_by_Name:21:=Replace string:C233([Endpoints:7]API_URL_to_lookup_by_Name:21;"​";"")
+	SAVE RECORD:C53([Endpoints:7])
+	NEXT RECORD:C51([Endpoints:7])
+End for 
+
+BEEP:C151
+ABORT:C156
+
+
 QUERY:C277([Endpoints:7];[Endpoints:7]Detail_XML_ID_Element_xpath:31="")
 For ($i;1;Records in selection:C76([Endpoints:7]))
 	If (Locked:C147([Endpoints:7]))

@@ -80,24 +80,32 @@ If (Count parameters:C259#0)
 						  // !
 					: ($code=36)
 						  // $
+						$shouldEncode:=True:C214
 					: ($code=38)
 						  // &
+						$shouldEncode:=True:C214
 					: ($code>38) & ($code<43)
 						  // ' ( ) *
 					: ($code>42) & ($code<48)
 						  // + , - . /
+						$shouldEncode:=True:C214
 					: ($code>47) & ($code<58)
 						  // 0 1 2 3 4 5 6 7 8 9
 					: ($code=58)
 						  // :
+						$shouldEncode:=True:C214
 					: ($code=59)
 						  // ;
+						$shouldEncode:=True:C214
 					: ($code=61)
 						  // =
+						$shouldEncode:=True:C214
 					: ($code=63)
 						  // ?
+						$shouldEncode:=True:C214
 					: ($code=64)
 						  // @
+						$shouldEncode:=True:C214
 					: ($code>64) & ($code<91)
 						  // A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 					: ($code=95)
@@ -117,8 +125,12 @@ If (Count parameters:C259#0)
 						  // $
 					: ($code=38)
 						  // &
+					: ($code=43)
+						  // +
+						$shouldEncode:=True:C214
 					: ($code>42) & ($code<48)
 						  // + , - . /
+						$shouldEncode:=True:C214
 					: ($code>47) & ($code<58)
 						  // 0 1 2 3 4 5 6 7 8 9
 					: ($code=58)

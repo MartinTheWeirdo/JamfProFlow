@@ -1,7 +1,8 @@
   //aSelectSourceServer Drop-down list Object Method
 Case of 
 	: (Form event code:C388=On Load:K2:1)
-		Import_GetJamfProServerList (Self:C308)
+		ARRAY TEXT:C222(at_SelectSourceServer;0)
+		Import_GetJamfProServerList (->at_SelectSourceServer)
 		
 	: (Form event code:C388=On Data Change:K2:15)
 		  //They picked something new
@@ -21,7 +22,11 @@ Case of
 		ARRAY TEXT:C222(at_httpHeader_Keys;0)
 		ARRAY TEXT:C222(at_httpHeader_Values;0)
 		  // Reset the Data Type popup menu
-		SELECT LIST ITEMS BY POSITION:C381(vl_selectSourceData;Count list items:C380(vl_selectSourceData))
+		
+		  // Select the last item in the list -- its blank
+		  // SELECT LIST ITEMS BY POSITION(vl_selectSourceData;Count list items(vl_selectSourceData))
+		SELECT LIST ITEMS BY POSITION:C381(*;"SourceDataHierarcicalPopupMenu";Count list items:C380(*;"SourceDataHierarcicalPopupMenu"))
+		
 		vt_selectSourceData:=""
 		  // SELECT LIST ITEMS BY POSITION(*;"ComboBox1";Count list items(*;"ComboBox1"))
 		

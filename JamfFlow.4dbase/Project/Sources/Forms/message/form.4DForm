@@ -22,9 +22,9 @@
 			"objects": {
 				"Variable1": {
 					"type": "input",
-					"top": 29,
-					"left": 102,
-					"width": 432,
+					"top": 28,
+					"left": 131,
+					"width": 493,
 					"height": 110,
 					"dataSource": "messageText",
 					"fontFamily": "System Font Regular",
@@ -43,7 +43,7 @@
 				"Button": {
 					"type": "button",
 					"top": 178,
-					"left": 422,
+					"left": 526,
 					"width": 112,
 					"height": 36,
 					"dataSource": "vl_customAlertMessageButton",
@@ -59,12 +59,13 @@
 						"onLoad"
 					],
 					"sizingX": "move",
-					"sizingY": "move"
+					"sizingY": "move",
+					"style": "office"
 				},
 				"Picture14": {
 					"type": "picture",
 					"top": 186,
-					"left": 207,
+					"left": 28,
 					"width": 15,
 					"height": 20,
 					"pictureFormat": "scaled",
@@ -75,7 +76,7 @@
 				"bCopy3": {
 					"type": "button",
 					"top": 186,
-					"left": 207,
+					"left": 28,
 					"width": 15,
 					"height": 20,
 					"tooltip": {
@@ -93,7 +94,7 @@
 				"Button1": {
 					"type": "button",
 					"top": 178,
-					"left": 272,
+					"left": 376,
 					"width": 112,
 					"height": 36,
 					"dataSource": "vl_customAlertMessageButton_No",
@@ -108,15 +109,16 @@
 						"onLoad"
 					],
 					"sizingX": "move",
-					"sizingY": "move"
+					"sizingY": "move",
+					"style": "office"
 				},
-				"Static Picture2": {
+				"Static Picture1": {
 					"type": "picture",
-					"top": 13,
-					"left": 19,
-					"width": 48,
-					"height": 211,
-					"picture": "Images/Static Picture2.tif"
+					"top": 28,
+					"left": 28,
+					"width": 72,
+					"height": 72,
+					"picture": "Images/Static Picture3.tif"
 				}
 			}
 		}

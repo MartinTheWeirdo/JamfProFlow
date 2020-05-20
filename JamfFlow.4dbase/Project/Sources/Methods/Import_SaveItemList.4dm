@@ -7,7 +7,7 @@ $vl_SetID:=$1
 $vl_itemsSavedCount:=0
 $vl_NumberOfItemsToSave:=Size of array:C274(at_selectedItemsListBox_types)
 
-$vl_progressProcessRef:=Progress_New ("Saving Configuration Set";900;100)
+$vl_progressProcessRef:=sh_progress_new ("Saving Configuration Set";900;100)
 
 vt_savedItemsSummary:="Importing configuration items"+<>CRLF
 
@@ -76,6 +76,40 @@ For ($i;1;$vl_NumberOfItemsToSave)
 	End if 
 	
 	If ($vb_goodToGo)
+		If (vl_ImportAnonymize=1)
+			If (([Endpoints:7]Detail_XML_PII_XPaths:32+[Endpoints:7]Detail_XML_PII_Replacements:33)="")
+				vt_savedItemsSummary:=vt_savedItemsSummary+" [no-anon]"
+			Else 
+				$vt_xml:=Import_SaveItemList_Anon ($vt_xml)
+				
+				Case of   // If we are updating a field that acts as a lookup value, we'll need to hash that too... 
+						
+					: ($vt_endpointType="Computer")
+						$vt_API_Unique_Item_Name:=Import_SaveItemList_Anon_R_spec ($vt_API_Unique_Item_Name;"<serial>")
+						$vt_SourceServerItemName:=Import_SaveItemList_Anon_R_spec ($vt_SourceServerItemName;"Mac_<digest-8>")
+						
+					: ($vt_endpointType="Mobile device")
+						$vt_API_Unique_Item_Name:=Import_SaveItemList_Anon_R_spec ($vt_API_Unique_Item_Name;"<serial>")
+						$vt_SourceServerItemName:=Import_SaveItemList_Anon_R_spec ($vt_SourceServerItemName;"i_<digest-8>")
+						
+					: ($vt_endpointType="User")
+						$vt_API_Unique_Item_Name:=Import_SaveItemList_Anon_R_spec ($vt_API_Unique_Item_Name;"<serial>")
+						$vt_SourceServerItemName:=Import_SaveItemList_Anon_R_spec ($vt_SourceServerItemName;"i_<digest-8>")
+						
+				End case 
+				
+				
+				
+				
+				If ($vt_xml="")
+					$vb_goodToGo:=False:C215
+					$vb_skipItemsWithIssues:=False:C215  // Force hard stop
+				End if 
+			End if 
+		End if 
+	End if 
+	
+	If ($vb_goodToGo)
 		CREATE RECORD:C68([XML:2])
 		[XML:2]ID:1:=$vl_ID
 		[XML:2]set_id:4:=$vl_SetID
@@ -87,6 +121,7 @@ For ($i;1;$vl_NumberOfItemsToSave)
 		[XML:2]SourceServerItemDetailURL:8:=$vt_SourceServerItemDetailURL
 		[XML:2]API_Unique_Item_Name:3:=$vt_API_Unique_Item_Name
 		[XML:2]XML:2:=$vt_xml
+		[XML:2]PushPriority:11:=[Endpoints:7]Push_Priority:20
 		SAVE RECORD:C53([XML:2])
 		If (OK=1)
 			$vl_itemsSavedCount:=$vl_itemsSavedCount+1
@@ -107,17 +142,8 @@ For ($i;1;$vl_NumberOfItemsToSave)
 	
 End for 
 
-  // Close progress window
-Case of 
-	: ($vl_progressProcessRef=1)
-		Progress QUIT ($vl_progressProcessRef)
-	: ($vl_progressProcessRef>1)
-		ON ERR CALL:C155("sh_err_call")
-		For ($i;1;$vl_progressProcessRef)
-			Progress QUIT ($i)
-		End for 
-		ON ERR CALL:C155("")
-End case 
+sh_prg_close ($vl_progressProcessRef)  // Close progress window
+
 
   // Cleanup and messaging
 If (($vb_goodToGo) & (Not:C34($vb_skipItemsWithIssues)))  // We ended without any terminating errors and we did not have to skip any bad items? 

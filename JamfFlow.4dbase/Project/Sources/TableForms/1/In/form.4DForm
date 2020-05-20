@@ -103,7 +103,9 @@
 					"top": 94,
 					"left": 19,
 					"width": 954,
-					"sizingX": "grow"
+					"sizingX": "grow",
+					"height": 0,
+					"startPoint": "topLeft"
 				},
 				"bFirst": {
 					"type": "pictureButton",
@@ -465,7 +467,7 @@
 					"textAlign": "left",
 					"fill": "#FFFFFF",
 					"borderStyle": "sunken",
-					"styledText": true,
+					"styledText": false,
 					"scrollbarVertical": "visible",
 					"dragging": "none",
 					"dropping": "none",
@@ -998,5 +1000,9 @@
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

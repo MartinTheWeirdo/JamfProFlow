@@ -17,8 +17,11 @@ Case of
 	: ($vt_selected="Save to disk")
 		OBJECT SET VISIBLE:C603(*;"deploy_save_@";True:C214)
 		OBJECT SET TITLE:C194(vl_Deploy_go_button;"Save")
-		OBJECT SET COORDINATES:C1248(*;"deploy_save_EOLLabel";115;530)
-		OBJECT SET COORDINATES:C1248(at_deploy_save_lineEndingPopup;226;526)
+		
+		OBJECT GET COORDINATES:C663(*;"deploy_jp_svrpopup lable";$vl_l;$vl_t;$vl_r;$vl_b)
+		OBJECT SET COORDINATES:C1248(*;"deploy_save_EOLLabel";$vl_l;$vl_t)
+		OBJECT GET COORDINATES:C663(at_SelectTargetJamfProServers;$vl_l;$vl_t;$vl_r;$vl_b)
+		OBJECT SET COORDINATES:C1248(at_deploy_save_lineEndingPopup;$vl_l;$vl_t)
 		
 	: ($vt_selected="Git")
 		OBJECT SET VISIBLE:C603(*;"deploy_git_@";True:C214)

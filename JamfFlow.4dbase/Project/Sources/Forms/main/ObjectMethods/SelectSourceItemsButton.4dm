@@ -13,19 +13,28 @@ Case of
 				  // Add it to the selected items list
 				  // But first make sure the selected item is not already in the selected items list
 				$vb_itemIsAlreadySelected:=False:C215
-				For ($j;1;Size of array:C274(at_selectedItemsListBox_types))
-					If (at_selectedItemsListBox_types{$j}=at_sourceItemLB_types{$i})
-						If (String:C10(al_selectedItemsListBox_ids{$j})=String:C10(al_sourceItemLB_IDs{$i}))
+				For ($j;1;Size of array:C274(at_selectedItemsListBox_types))  // Loop the selected items
+					If (at_selectedItemsListBox_types{$j}=at_sourceItemLB_types{$i})  // Does this item have the same type as the item under consideration for add?
+						If (Shift down:C543)
+							  // This option lets me select one item per category for testing. If there's already an item in the selected list for the hightlighted item's category, skip the highlighted item. 
 							$vb_itemIsAlreadySelected:=True:C214
-							$j:=Size of array:C274(at_selectedItemsListBox_types)+1  // Pop the loop
+						Else 
+							  // If the item does not also have the same ID number, we will add it. 
+							If (String:C10(al_selectedItemsListBox_ids{$j})=String:C10(al_sourceItemLB_IDs{$i}))  // Does it have the same id as the item under consideration for add?
+								$vb_itemIsAlreadySelected:=True:C214
+								$j:=Size of array:C274(at_selectedItemsListBox_types)+1  // Pop the loop
+							End if 
 						End if 
+						
 					End if 
 				End for 
+				
 				If (Not:C34($vb_itemIsAlreadySelected))
 					APPEND TO ARRAY:C911(at_selectedItemsListBox_types;at_sourceItemLB_types{$i})
 					APPEND TO ARRAY:C911(al_selectedItemsListBox_ids;al_sourceItemLB_IDs{$i})
 					APPEND TO ARRAY:C911(at_selectedItemsListBox_names;at_sourceItemLB_Names{$i})
 				End if 
+				
 			End if 
 		End for 
 		

@@ -17,17 +17,17 @@ A database application that lets you:
 The intended use case is Jamf's who need to quickly configure instances to test and demo our solutions without having to do repetitive data entry. 
  
 ## These are not the droids you're looking for... 
-This is an experimental project and intended only for test/demo setups. Most things are only partly implemented. **Never** use any API script or app with a production Jamf Pro instance unless you completely trust, understand, and test it extensively beforehand. This software reads and writes data using the Jamf Pro API. It makes it click-button easy to break... everything. 
+This is beta software. Some things are only partly implemented and not tested in a wide variety of situations. **Never** use any API script or app with a production Jamf Pro instance unless you completely trust, understand, and test it extensively beforehand. API projects that write data using the Jamf Pro API make it single-click easy to break... everything. 
 
 > Be careful! If you need to read data from a Jamf Pro instance that you do not intend to modify, _always_ use a read-only ("Auditor") user account. 
 
 Better solution?
 
-> If you're looking for a good/simple utility for moving data in and out of Jamf Pro, take a look at the essential `https://jssmut.weebly.com/` and full-featured `https://github.com/jamf/JamfMigrator`. They handle the vast majority of what people need to do and have proven effective in real-world use. Plus they're well maintained and written in native Swift so they don't have any weird dependencies. 
+> If you're looking for a good/simple utility for moving device data in and out of Jamf Pro, take a look at the essential `https://jssmut.weebly.com/` and the full-featured `https://github.com/jamf/JamfMigrator` Jamf Pro instance data migration utility. `https://github.com/jacobschultz/scout-public` is a super-cool approach to data aggregation. These solutions handle the majority of what people need to do and have proven effective in real-world use. Plus they're actively maintained. The first two are native Swift and the latter is a standard web stack so they don't have any odd-ball dependencies. 
 
 ### License
 
-This project uses functions that are covered under commercial and open-source agreements from Apple, Jamf, git, 4D, php, and the Apache xerces C++ XML parser. Licensing for any underlying software, operating systems, or utilities are available separately from their respective owners. Jamf Pro customers can use this project with their test instances but it's not a Jamf product and not covered under any support agreement. 
+This project uses functions that are covered under commercial and open-source agreements from Apple, Jamf, git, 4D, php, and the Apache xerces C++ XML parser. Licensing for any underlying software, operating systems, or utilities are available separately from their respective owners. Jamf Pro customers can use this project with their test instances but it's not a part of Jamf's product line and not covered under any support agreement. 
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OR SUPPORT OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 
@@ -35,7 +35,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OR SUPPORT OF ANY KIND, EXPRE
 
 ### Setting up
 
-This project is a bundle folder that contains interface forms, code, and data. You need to install an application called "4D" to run it. 4D is a proprietary database application development environment that dates back to the early days of Mac. It has a steep learning curve and it's not as cheap and easy to deploy as as an opensource-based web or Swift app, but its tight integration of database and GUI makes allows very fast development of complex database apps. So if time is the limitting factor, as is the case with quick and dirty experiments like this one, it's perfect. 
+This project is a bundle folder that contains interface forms, code, and data. You need to install an application called "4D" to run it. 4D is a proprietary database application development environment that dates back to the early days of Mac. It has a steep learning curve and it's not as cheap and easy to deploy as as an opensource-based web or Swift app, but its tight integration of database and GUI allows very fast development of complex database apps. So if time is the limitting factor, as is the case with quick and dirty experiments like this one, it's perfect. 
 
 To use this project, you'll need to sign up for a 4D trial account and then download a copy of 4D. You can use it in developer mode for 30 days. After that you can still use this project, but you'll need to purchase 4D if you want to make any changes to the underlying code or interface. 
 
@@ -75,12 +75,19 @@ There are three tabs...
 
 ### Manage
 
-* Highlight a configuration set to see its component items
-* Click a set to display its XML
-* Columns are resizable and sortable by clicking in the header. 
-* Double-click an item to edit. 
-* Trash-can deletes an item (from the project's database... not from Jamf Pro)
-* Clipboard button above the XML copies contents to the clipboard 
+Here you can view and edit
+
+1. Configuration sets
+2. Set components... individual records like devices, profiles, and policies
+
+Interface:
+
+* Highlight a configuration set to list its component items
+* Click a component to display its XML
+* Columns are resizable and sortable by clicking in the header
+* Double-click an item to edit
+* The trash-can button deletes an item from Jamf Flow's database... not from Jamf Pro
+* The magnifying glass button above a text field opens the contents in your text editor
 
 ![](doc/manage.png)
 
@@ -95,6 +102,6 @@ There are three tabs...
 
 ![](doc/deploy.png)
 
-Post upload summary screen showing sets, object types, and objects with status. Note the good/warning/fail numbers at the bottom. 
+Post Jamf Pro-upload summary screen showing sets, object types, and objects with status. Note the good/warning/fail numbers at the bottom. 
 
 ![](doc/deployjamf.png)

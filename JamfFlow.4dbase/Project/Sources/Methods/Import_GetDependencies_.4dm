@@ -14,7 +14,7 @@ $vl_loopsSoFar:=$1
   // Loop through the items in the selected items list box, checking each for dependencies
   //$vl_SelectedItemsCount:=Size of array(at_selectedItemsListBox_types)
 
-$vl_progressProcessRef:=Progress_New ("Calculating dependencies (Pass "+String:C10($vl_loopsSoFar)+")";470;100)
+$vl_progressProcessRef:=sh_progress_new ("Calculating dependencies (Pass "+String:C10($vl_loopsSoFar)+")";470;100)
 
   //$vl_currentFormWindowRef:=Current form window
   //$vl_left:=10
@@ -270,6 +270,6 @@ End for   // For ($vl_selectedItemsIterator;1;Size of array(at_selectedItemsList
 
 MULTI SORT ARRAY:C718(at_selectedItemsListBox_types;>;at_selectedItemsListBox_names;>;al_selectedItemsListBox_ids;>)
 
-Progress_Close ($vl_progressProcessRef)
+sh_prg_close ($vl_progressProcessRef)  // close progress window
 
 $0:=$vb_goodToGo

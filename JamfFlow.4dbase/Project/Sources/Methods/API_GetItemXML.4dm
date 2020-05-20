@@ -17,12 +17,15 @@ ARRAY TEXT:C222(at_httpHeader_Values;0)
 $vt_XML:=""
 $vl_httpStatusCode:=0
 
+
+READ ONLY:C145([Endpoints:7])
+QUERY:C277([Endpoints:7];[Endpoints:7]Human_Readable_Plural_Name:2=$vt_SelectedItemType)
+If (Records in selection:C76([Endpoints:7])#1)
+	TRACE:C157
+End if 
+
   // Build the URL
-  // TODO - use the [Endpoints] database to calculate this. 
-$vt_urlEndpointPath:=$vt_SelectedItemType  // E.g. "/JSSResource/computers"
-$vt_urlEndpointPath:=Replace string:C233($vt_urlEndpointPath;" ";"")
-$vt_urlEndpointPath:=Replace string:C233($vt_urlEndpointPath;"_";"")
-$vt_urlEndpointPath:=Lowercase:C14($vt_urlEndpointPath)
+$vt_urlEndpointPath:=[Endpoints:7]API_Endpoint_Name:8
   // There are few oddballs where the api will use different names for things in different places. 
   // Like the path to the item directly is one way, and references to it in other endpoints use different terms
 Case of 

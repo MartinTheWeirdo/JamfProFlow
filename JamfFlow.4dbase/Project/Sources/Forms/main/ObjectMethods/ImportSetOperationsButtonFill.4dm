@@ -4,9 +4,15 @@ Case of
 		If (vt_NewConfigSetName="")
 			
 			$vt_selectedSourceDataTypeName:=""
-			$vlItemPos:=Selected list items:C379(vl_selectSourceData)
-			If ($vlItemPos>0)
-				GET LIST ITEM:C378(vl_selectSourceData;$vlItemPos;$vlItemRef;$vt_selectedSourceDataTypeName;$hSublist;$vbExpanded)
+			
+			  //$vl_ItemPos:=Selected list items(vl_selectSourceData)
+			$vl_ItemPos:=Selected list items:C379(*;"SourceDataHierarcicalPopupMenu")
+			
+			If ($vl_ItemPos>0)
+				
+				  //GET LIST ITEM(vl_selectSourceData;$vl_ItemPos;$vlItemRef;$vt_selectedSourceDataTypeName;$hSublist;$vbExpanded)
+				GET LIST ITEM:C378(*;"SourceDataHierarcicalPopupMenu";$vl_ItemPos;$vlItemRef;$vt_selectedSourceDataTypeName;$hSublist;$vbExpanded)
+				
 			Else 
 				BEEP:C151
 				ABORT:C156
@@ -14,9 +20,25 @@ Case of
 			
 			$vt_SelectSourceServer:=sh_arr_getCurrentValue (->at_SelectSourceServer)
 			
+			
+			$vl_selectedItemsCount:=Size of array:C274(at_selectedItemsListBox_types)
+			If ($vl_selectedItemsCount>1)
+				$vb_all_same_type:=True:C214
+				$vt:=at_selectedItemsListBox_types{1}
+				For ($i;2;$vl_selectedItemsCount)
+					If (at_selectedItemsListBox_types{$i-1}#at_selectedItemsListBox_types{$i})
+						$vb_all_same_type:=False:C215
+					End if 
+				End for 
+			End if 
+			
+			
 			Case of 
 				: (Size of array:C274(at_selectedItemsListBox_names)=1)
 					vt_NewConfigSetName:=sh_arr_getCurrentValue (->at_selectedItemsListBox_names;1)
+				: ($vb_all_same_type)
+					  // All the things in selected are of a single type
+					vt_NewConfigSetName:=at_selectedItemsListBox_types{1}+" from "+$vt_SelectSourceServer
 				: ($vt_selectedSourceDataTypeName="Everything")
 					vt_NewConfigSetName:="Everything from "+$vt_SelectSourceServer
 				: ($vt_selectedSourceDataTypeName="All Settings")

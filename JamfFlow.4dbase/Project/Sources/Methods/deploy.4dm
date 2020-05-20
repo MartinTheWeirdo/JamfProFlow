@@ -43,8 +43,14 @@ If ($vb_goodToGo)
 	For ($vl_pushListIterator;1;Records in selection:C76([Sets:1]))  // Loop throught the list of sets
 		If (Is in set:C273("$ab_DeploySetsHighlightedSet"))
 			QUERY:C277([XML:2];[XML:2]set_id:4=[Sets:1]ID:1)  // Load the XML records for this set
-			For ($vl_xmlIterator;1;Records in selection:C76([XML:2]))  // Loop through the xml records for the current set
-				  // Can we parse the XML? If not, Jamf Pro probably can't either. 
+			$vl_NumberOfItemsToSave:=Records in selection:C76([XML:2])  // For Progress
+			
+			  //$vl_progressProcessRef:=Progress_New ("Parsing XML for set "+sh_str_dq ([Sets]Name);900;500)
+			
+			For ($vl_xmlIterator;1;$vl_NumberOfItemsToSave)  // Loop through the xml records for the current set
+				
+				  //Progress SET PROGRESS ($vl_progressProcessRef;$vl_xmlIterator/$vl_NumberOfItemsToSave;"Parsing "+[XML]ItemType+": "+[XML]HumanReadableItemName;False)
+				
 				$vt_xml:=[XML:2]XML:2
 				vl_error:=0
 				ON ERR CALL:C155("sh_err_call")
@@ -61,6 +67,9 @@ If ($vb_goodToGo)
 					End if 
 				End if 
 			End for   // For ($vl_xmlIterator;1;Records in selection([XML]))  // Loop through the xml records for the current set
+			
+			  //sh_prg_close ($vl_progressProcessRef)  // Close progress window
+			
 		End if   // if(Is in set("$ab_DeploySetsHighlightedSet"))
 		NEXT RECORD:C51([Sets:1])
 	End for   // For ($vl_pushListIterator;1;Records in selection([Sets]))  // Loop throught the list of sets

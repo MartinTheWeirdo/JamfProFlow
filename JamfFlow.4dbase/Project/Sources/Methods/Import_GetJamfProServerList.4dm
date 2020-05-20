@@ -36,7 +36,7 @@ For ($vl_serverIterator;1;Records in selection:C76([JamfProServers:3]))
 		APPEND TO ARRAY:C911($pat_targetArrayPointer->;[JamfProServers:3]URL:2)
 		  // $vt_userPipePass:=$vt_username+"|"+$vt_password  // escape double-quotes in passwords? pipes in user?
 	End if 
-	
+	NEXT RECORD:C51([JamfProServers:3])
 End for 
 
 If (Size of array:C274($pat_targetArrayPointer->)=0)

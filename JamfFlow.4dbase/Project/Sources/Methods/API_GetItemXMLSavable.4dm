@@ -33,6 +33,7 @@ If ($vb_goodToGo)
 	$vt_xml:=$vo_API_GetItemXML.XML
 	$vl_httpStatusCode:=$vo_API_GetItemXML.httpStatusCode
 	$vt_URL:=$vo_API_GetItemXML.URL
+	CLEAR VARIABLE:C89($vo_API_GetItemXML)
 	
 	If ($vl_httpStatusCode#200)
 		$vb_goodToGo:=False:C215
@@ -75,50 +76,85 @@ If ($vb_goodToGo)
 	End if 
 End if 
 
+
 If ($vb_goodToGo)
 	  // We were able to parse the xml
 	
-	  // Prune scoping branch if the check box says to. 
-	If (vl_ImportScopeCheckbox=0)
-		Case of 
-			: ($vt_SelectedItemType="policies")
-				$vt_xpath:="/policy/scope"
-			: ($vt_SelectedItemType="OS X Configuration Profiles")
-				$vt_xpath:="/os_x_configuration_profile/scope"
-			: ($vt_SelectedItemType="Mobile Device Configuration Profiles")
-				$vt_xpath:="/configuration_profile/scope"
-			Else 
-				$vt_xpath:=""
-		End case 
-		If ($vt_xpath#"")
-			ARRAY TEXT:C222($at_elementRefs;0)
-			ON ERR CALL:C155("sh_err_call")
-			$vt_elementRef:=DOM Find XML element:C864($vt_xmlRootElementReference;$vt_xpath;$at_elementRefs)
-			If (vl_error#0)
-				  // Not neccesarily a problem... could be unscoped? 
-				  // $vb_goodToGo:=False
-				vt_savedItemsSummary:=vt_savedItemsSummary+"[warn] Scope pruning was requested but I didn't find a scope clause in the XML."
-				LogMessage (Current method name:C684;Current method path:C1201;"XML Parse";"warning";"Error finding scope element")
-			Else 
-				DOM REMOVE XML ELEMENT:C869($vt_elementRef)
-				If (vl_error#0)
-					$vb_goodToGo:=False:C215
-					$vt_errorMessage:=$vt_errorMessage+"[warn] Scope removal was requested but I was unable to prune it."+<>CRLF
-					$vt_errorMessage:=$vt_errorMessage+"-------------------- XML --------------------"+<>CRLF
-					$vt_errorMessage:=$vt_errorMessage+$vt_xml+<>CRLF
-				End if 
-			End if 
-			ON ERR CALL:C155("")
-		End if 
-	End if 
+	
+	
 End if 
+
+
 
 If ($vb_goodToGo)
 	  // Do any of the data types require additional pruning to produce POST-able XML? 
-	  //Case of 
-	  //: ($vt_SelectedItemType="Computers")
-	  //: ($vt_SelectedItemType="Mobile Devices")
-	  //End case   // Entity-specific xml pruning
+	  // Smart groups should have their members pruned so they recalculate on the target server.
+	
+	  // Find out if it is a smart group
+	Case of 
+		: ($vt_SelectedItemType="Mobile device groups")
+			$vt_xpath:="/mobile_device_group/is_smart"
+		: ($vt_SelectedItemType="Computer groups")
+			$vt_xpath:="/computer_group/is_smart"
+		: ($vt_SelectedItemType="User groups")
+			$vt_xpath:="/user_group/is_smart"
+		Else 
+			$vt_xpath:=""
+	End case   // Entity-specific xml pruning
+	
+	If ($vt_xpath#"")
+		ON ERR CALL:C155("sh_err_call")
+		$vt_elementRef:=DOM Find XML element:C864($vt_xmlRootElementReference;$vt_xpath)
+		If (vl_error#0)
+			$vb_goodToGo:=False:C215
+			vt_savedItemsSummary:=vt_savedItemsSummary+"[error] Could not find the smart/static group flag in the xml."
+			$vt_errorMessage:=$vt_errorMessage+"-------------------- XML --------------------"+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+$vt_xml+<>CRLF
+			LogMessage (Current method name:C684;Current method path:C1201;"XML Parse";"warning";"Error finding issmart element")
+		Else 
+			DOM GET XML ELEMENT VALUE:C731($vt_elementRef;$vt_isSmart_TF)
+			If (vl_error#0)
+				$vb_goodToGo:=False:C215
+				$vt_errorMessage:=$vt_errorMessage+"[error] Could not get value of the is_smart element"+<>CRLF
+				$vt_errorMessage:=$vt_errorMessage+"-------------------- XML --------------------"+<>CRLF
+				$vt_errorMessage:=$vt_errorMessage+$vt_xml+<>CRLF
+			Else 
+				Case of 
+					: ($vt_isSmart_TF="true")
+						  // Prune the device/user list
+						Case of 
+							: ($vt_SelectedItemType="Mobile device groups")
+								$vt_xpath:="/mobile_device_group/mobile_devices"
+							: ($vt_SelectedItemType="Computer groups")
+								$vt_xpath:="/computer_group/computers"
+							: ($vt_SelectedItemType="User groups")
+								$vt_xpath:="/user_group/users"
+							Else 
+								$vt_xpath:=""
+						End case   // Entity-specific xml pruning
+						
+						$vt_elementRef:=DOM Find XML element:C864($vt_xmlRootElementReference;$vt_xpath)
+						
+						
+						
+					: ($vt_isSmart_TF="false")
+						
+						_4D:C1698
+						  // @@@
+						
+					Else 
+						$vb_goodToGo:=False:C215
+						$vt_errorMessage:=$vt_errorMessage+"[error] Value of the is_smart element is expected to be either true or false"+<>CRLF
+						$vt_errorMessage:=$vt_errorMessage+"-------------------- XML --------------------"+<>CRLF
+						$vt_errorMessage:=$vt_errorMessage+$vt_xml+<>CRLF
+				End case 
+				
+				
+			End if 
+		End if 
+		ON ERR CALL:C155("")
+	End if 
+	
 End if 
 
 If ($vb_goodToGo)
@@ -144,11 +180,17 @@ If ($vb_goodToGo)
 		$vb_goodToGo:=False:C215
 		$vt_errorMessage:=$vt_errorMessage+<>CRLF
 		$vt_errorMessage:=$vt_errorMessage+"[ERROR] Could not find the unique name for an item"+<>CRLF
-		$vt_errorMessage:=$vt_errorMessage+"[INFO] Each Jamf Pro record needs to have a unique name so"+<>CRLF
-		$vt_errorMessage:=$vt_errorMessage+"we can check if it exists when we deply it to a target server."+<>CRLF
-		$vt_errorMessage:=$vt_errorMessage+"In most cases, the API will refuse to import any items that don't"+<>CRLF
-		$vt_errorMessage:=$vt_errorMessage+"have the required fields. For example, all policies need to have"+<>CRLF
-		$vt_errorMessage:=$vt_errorMessage+"a name and all devices need to have a serial number."+<>CRLF
+		If ($vt_SelectedItemType="Mobile devices")
+			$vt_errorMessage:=$vt_errorMessage+"[INFO] In the case of personally-owned mobile devices, we don't"+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+"know the device serial number so we can't upload the device to"+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+"another Jamf Pro."+<>CRLF
+		Else 
+			$vt_errorMessage:=$vt_errorMessage+"[INFO] Each Jamf Pro record needs to have a unique name so"+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+"we can check if it exists when we deply it to a target server."+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+"In most cases, the API will refuse to import any items that don't"+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+"have the required fields. For example, all policies need to have"+<>CRLF
+			$vt_errorMessage:=$vt_errorMessage+"a name and all devices need to have a serial number."+<>CRLF
+		End if 
 		$vt_errorMessage:=$vt_errorMessage+"[ITEM TYPE] "+$vt_SelectedItemType+<>CRLF
 		$vt_errorMessage:=$vt_errorMessage+"[XPATH] "+[Endpoints:7]xpath_to_lookup_by_Name:22+<>CRLF
 		$vt_errorMessage:=$vt_errorMessage+"================== START XML =================="+<>CRLF

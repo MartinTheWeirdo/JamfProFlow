@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="27">
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="87">
 	<com.4d>
 		<database>
-			<data_storage data_path="JamfConfig.4DD"/>
+			<data_storage data_path="JamfFlow.4DD"/>
 		</database>
 		<general last_opening_mode="0"/>
 	</com.4d>
 	<internal_prefs_4d>
 		<windows>
-			<window name="main" left="40" top="143" width="600" height="450"/>
+			<window name="main" left="141" top="112" width="1913" height="1273"/>
 		</windows>
 	</internal_prefs_4d>
 </preferences>

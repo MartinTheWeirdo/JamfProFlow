@@ -24,7 +24,6 @@ For ($vl_setIterator;1;Records in selection:C76([Sets:1]))  // Loop throught the
 		
 		  // Write some info about the set to a metadata file
 		$vt_jsonString:=""
-		
 		For ($vl_fieldNumber;1;Get last field number:C255(->[Sets:1]))
 			If (Is field number valid:C1000(->[Sets:1];$vl_fieldNumber))
 				$vt_fieldName:=Field name:C257(Table:C252(->[Sets:1]);$vl_fieldNumber)
@@ -36,17 +35,88 @@ For ($vl_setIterator;1;Records in selection:C76([Sets:1]))  // Loop throught the
 				End if 
 			End if 
 		End for 
-		
 		If ($vt_jsonString="@,")
 			$vt_jsonString:=Substring:C12($vt_jsonString;1;Length:C16($vt_jsonString)-1)
 		End if 
-		
 		$vt_jsonString:="[{"+$vt_jsonString+"}]"
-		
-		
 		  // $vt_jsonString:=Selection to JSON([Sets])
 		$vt_jsonFilePath:=$vt_setFolderPath+":set_info.json"
 		TEXT TO DOCUMENT:C1237($vt_jsonFilePath;$vt_jsonString;"UTF-8";Document with LF:K24:22)
+		  // [
+		  //   {
+		  //     "Name":"CIS Policies",
+		  //     "Description":"4/15/20 10:11:58 : testuser1@jamfse.io\rServer: https://trial.jamfcloud.com\rIncluding dependencies...\r\rCurrent selection summary:\r   4 : Policies\r   1 : Category\r   1 : Script\r",
+		  //     "SelectedItemsSummary":"",
+		  //     "LastModifiedDate":"2020-04-15",
+		  //     "ChangeControl_Note":"",
+		  //     "CreatedDate":"2020-04-15",
+		  //     "CreatedBy":"testuser1@jamfse.io",
+		  //     "LastModifiedTime":37195,
+		  //     "CreatedTime":37195,
+		  //     "ApprovedBy_User":"",
+		  //     "Approved_Date":"0000-00-00",
+		  //     "Approved_Time":0,
+		  //     "Approval_Requested":false,
+		  //     "LastModifiedBy":"testuser1@jamfse.io",
+		  //     "Approved_YN":false,
+		  //     "Shared_YN":false,
+		  //     "Category":"Security"
+		  //   }
+		  // ]
+		
+		
+		  // Write some info about the set to a metadata file (yaml)
+		$vt_yamlString:="---"+<>CRLF
+		$vb_isFirstField:=True:C214
+		For ($vl_fieldNumber;1;Get last field number:C255(->[Sets:1]))
+			If (Is field number valid:C1000(->[Sets:1];$vl_fieldNumber))
+				  // $vt_fieldName:=Field name(Table(->[Sets]);$vl_fieldNumber)
+				C_POINTER:C301($pf_fieldPointer)
+				$pf_fieldPointer:=Field:C253((Table:C252(->[Sets:1]));$vl_fieldNumber)
+				$vt_fieldName:=Field name:C257($pf_fieldPointer)
+				  // $vl_fieldType:=Type($pf_fieldPointer)
+				If ($vt_fieldName#"ID")
+					If ($vb_isFirstField)
+						$vt_yamlString:=$vt_yamlString+"- "
+						$vb_isFirstField:=False:C215
+					Else 
+						$vt_yamlString:=$vt_yamlString+"  "
+					End if 
+					$vt_yamlString:=$vt_yamlString+sh_str_dq ($vt_fieldName)
+					$vt_yamlString:=$vt_yamlString+":"
+					$vt_yamlString:=$vt_yamlString+JSON Stringify:C1217((Field:C253(Table:C252(->[Sets:1]);$vl_fieldNumber))->)
+					$vt_yamlString:=$vt_yamlString+<>CRLF
+				End if 
+			End if 
+		End for 
+		$vt_yamlFilePath:=$vt_setFolderPath+":set_info.yaml"
+		TEXT TO DOCUMENT:C1237($vt_yamlFilePath;$vt_yamlString;"UTF-8";Document with LF:K24:22)
+		
+		
+		  // ---
+		  // - Name: CIS Policies
+		  //   Description: "4/15/20 10:11:58 : testuser1@jamfse.io\rServer: https://trial.jamfcloud.com\rIncluding
+		  //     dependencies...\r\rCurrent selection summary:\r   4 : Policies\r   1 : Category\r
+		  //     \  1 : Script\r"
+		  //   SelectedItemsSummary: ''
+		  //   LastModifiedDate: '2020-04-15'
+		  //   ChangeControl_Note: ''
+		  //   CreatedDate: '2020-04-15'
+		  //   CreatedBy: testuser1@jamfse.io
+		  //   LastModifiedTime: 37195
+		  //   CreatedTime: 37195
+		  //   ApprovedBy_User: ''
+		  //   Approved_Date: 0000-00-00
+		  //   Approved_Time: 0
+		  //   Approval_Requested: false
+		  //   LastModifiedBy: testuser1@jamfse.io
+		  //   Approved_YN: false
+		  //   Shared_YN: false
+		  //   Category: Security
+		
+		
+		
+		
 		
 		
 		QUERY:C277([XML:2];[XML:2]set_id:4=[Sets:1]ID:1)

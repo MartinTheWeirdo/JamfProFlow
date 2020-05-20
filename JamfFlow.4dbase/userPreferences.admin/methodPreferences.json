@@ -2,35 +2,35 @@
 	"Sources/Methods/import_GetItemListing_.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 53,
-		"lastSelectedLine": 53,
+		"firstSelectedLine": 95,
+		"lastSelectedLine": 95,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.836Z"
+		"stamp": "2020-05-15T05:57:03.523Z"
 	},
 	"Sources/Methods/API_GetItemXMLSavable.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 187,
-		"lastSelectedLine": 187,
+		"startSelection": 20,
+		"endSelection": 34,
+		"firstSelectedLine": 16,
+		"lastSelectedLine": 16,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.839Z"
+		"stamp": "2020-05-19T02:43:41.907Z"
 	},
 	"Sources/Methods/myStartup.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 34,
-		"lastSelectedLine": 34,
+		"firstSelectedLine": 39,
+		"lastSelectedLine": 39,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T13:01:54.765Z"
+		"stamp": "2020-05-15T00:01:14.690Z"
 	},
 	"Sources/Methods/import_GetItemListing.4dm": {
-		"startSelection": 76,
-		"endSelection": 76,
-		"firstSelectedLine": 31,
-		"lastSelectedLine": 31,
+		"startSelection": 11,
+		"endSelection": 11,
+		"firstSelectedLine": 35,
+		"lastSelectedLine": 35,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.849Z"
@@ -83,11 +83,11 @@
 	"Sources/Methods/_test.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 1,
-		"lastSelectedLine": 1,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.859Z"
+		"stamp": "2020-05-15T06:29:04.116Z"
 	},
 	"Sources/Methods/Import_Selected_GetIDs_.4dm": {
 		"startSelection": 15,
@@ -99,15 +99,13 @@
 		"stamp": "2020-05-06T12:53:44.860Z"
 	},
 	"Sources/Methods/Login.4dm": {
-		"startSelection": 36,
-		"endSelection": 36,
-		"firstSelectedLine": 44,
-		"lastSelectedLine": 44,
-		"folding": [
-			36
-		],
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 75,
+		"lastSelectedLine": 75,
+		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.862Z"
+		"stamp": "2020-05-07T04:55:22.102Z"
 	},
 	"Sources/Methods/login_localUser.4dm": {
 		"startSelection": 0,
@@ -155,13 +153,13 @@
 		"stamp": "2020-05-06T12:53:44.865Z"
 	},
 	"Sources/Methods/LogMessage.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 3,
-		"lastSelectedLine": 3,
+		"startSelection": 25,
+		"endSelection": 25,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 20,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.866Z"
+		"stamp": "2020-05-19T07:43:00.633Z"
 	},
 	"Sources/Methods/Import_UpdateExistingSet_Prep.4dm": {
 		"startSelection": 72,
@@ -173,13 +171,13 @@
 		"stamp": "2020-05-06T12:53:44.867Z"
 	},
 	"Sources/Methods/Import_SaveItemList.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 101,
-		"lastSelectedLine": 105,
+		"startSelection": 4,
+		"endSelection": 22,
+		"firstSelectedLine": 77,
+		"lastSelectedLine": 77,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.867Z"
+		"stamp": "2020-05-15T12:44:57.638Z"
 	},
 	"Sources/Methods/get_ItemDetailURL.4dm": {
 		"startSelection": 10,
@@ -191,13 +189,13 @@
 		"stamp": "2020-05-06T12:53:44.868Z"
 	},
 	"Sources/Methods/deploy.4dm": {
-		"startSelection": 18,
-		"endSelection": 18,
-		"firstSelectedLine": 87,
-		"lastSelectedLine": 87,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 81,
+		"lastSelectedLine": 81,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.872Z"
+		"stamp": "2020-05-15T06:35:42.818Z"
 	},
 	"Sources/Methods/deploy_jamfPro_precheck.4dm": {
 		"startSelection": 27,
@@ -218,46 +216,37 @@
 		"stamp": "2020-05-06T12:53:44.874Z"
 	},
 	"Sources/Methods/endpoint_getUniqueValue_URLs.4dm": {
-		"startSelection": 5,
-		"endSelection": 73,
-		"firstSelectedLine": 1,
-		"lastSelectedLine": 1,
+		"startSelection": 22,
+		"endSelection": 62,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.874Z"
 	},
-	"Sources/Methods/deploy_JamfPro_Push.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 4,
-		"lastSelectedLine": 4,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.877Z"
-	},
 	"Sources/Methods/_data_Fill_Endpoints.4dm": {
-		"startSelection": 28,
-		"endSelection": 28,
-		"firstSelectedLine": 349,
-		"lastSelectedLine": 349,
+		"startSelection": 15,
+		"endSelection": 16,
+		"firstSelectedLine": 290,
+		"lastSelectedLine": 290,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.879Z"
+		"stamp": "2020-05-13T06:02:40.240Z"
 	},
 	"Sources/Methods/api_get_urlToUniqueNameItem.4dm": {
-		"startSelection": 92,
-		"endSelection": 95,
-		"firstSelectedLine": 19,
-		"lastSelectedLine": 19,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.881Z"
-	},
-	"Sources/Methods/api_get_urlToItemByID.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 30,
-		"lastSelectedLine": 30,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-20T01:47:33.282Z"
+	},
+	"Sources/Methods/api_get_urlToItemByID.4dm": {
+		"startSelection": 100,
+		"endSelection": 104,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.881Z"
@@ -290,31 +279,31 @@
 		"stamp": "2020-05-06T12:53:44.883Z"
 	},
 	"Sources/Methods/import_GetItemListing_arrays.4dm": {
-		"startSelection": 29,
-		"endSelection": 51,
-		"firstSelectedLine": 33,
-		"lastSelectedLine": 33,
+		"startSelection": 20,
+		"endSelection": 34,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.884Z"
 	},
 	"Sources/Methods/sh_msg_Alert.4dm": {
-		"startSelection": 53,
-		"endSelection": 53,
-		"firstSelectedLine": 25,
-		"lastSelectedLine": 25,
+		"startSelection": 5,
+		"endSelection": 92,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T14:05:16.258Z"
+		"stamp": "2020-05-12T20:37:48.260Z"
 	},
 	"Sources/Methods/Import_GetDependencies_.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 200,
-		"lastSelectedLine": 200,
+		"startSelection": 15,
+		"endSelection": 15,
+		"firstSelectedLine": 19,
+		"lastSelectedLine": 19,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.887Z"
+		"stamp": "2020-05-15T06:00:16.042Z"
 	},
 	"Sources/Methods/Login_.4dm": {
 		"startSelection": 0,
@@ -326,58 +315,40 @@
 		"stamp": "2020-05-06T12:53:44.888Z"
 	},
 	"Sources/Methods/Import_GetJamfProServerList.4dm": {
-		"startSelection": 48,
-		"endSelection": 70,
-		"firstSelectedLine": 23,
-		"lastSelectedLine": 23,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 46,
+		"lastSelectedLine": 46,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.889Z"
+		"stamp": "2020-05-08T04:49:24.509Z"
 	},
 	"Sources/Methods/Import_GetJamfProServerLogin.4dm": {
-		"startSelection": 70,
-		"endSelection": 70,
-		"firstSelectedLine": 23,
-		"lastSelectedLine": 23,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 46,
+		"lastSelectedLine": 46,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.890Z"
+		"stamp": "2020-05-08T04:32:13.429Z"
 	},
 	"Sources/Methods/deploy_jamfPro.4dm": {
-		"startSelection": 7,
-		"endSelection": 7,
-		"firstSelectedLine": 13,
-		"lastSelectedLine": 13,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.891Z"
-	},
-	"Sources/Methods/deploy_JamfPro_Push_.4dm": {
-		"startSelection": 26,
-		"endSelection": 26,
-		"firstSelectedLine": 79,
-		"lastSelectedLine": 79,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.892Z"
-	},
-	"Sources/Methods/Progress_New.4dm": {
-		"startSelection": 29,
-		"endSelection": 29,
-		"firstSelectedLine": 2,
-		"lastSelectedLine": 2,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.893Z"
+		"stamp": "2020-05-18T09:27:39.063Z"
 	},
 	"Sources/Methods/deploy_SaveToDisk.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 17,
-		"lastSelectedLine": 17,
+		"firstSelectedLine": 75,
+		"lastSelectedLine": 75,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.894Z"
+		"stamp": "2020-05-15T13:09:02.440Z"
 	},
 	"Sources/Methods/myModUsers.4dm": {
 		"startSelection": 0,
@@ -434,22 +405,22 @@
 		"stamp": "2020-05-06T12:53:44.898Z"
 	},
 	"Sources/Methods/deploy_git.4dm": {
-		"startSelection": 26,
-		"endSelection": 29,
-		"firstSelectedLine": 15,
-		"lastSelectedLine": 15,
+		"startSelection": 14,
+		"endSelection": 40,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.899Z"
 	},
 	"Sources/Methods/git_get.4dm": {
 		"startSelection": 0,
-		"endSelection": 85,
-		"firstSelectedLine": 43,
-		"lastSelectedLine": 43,
+		"endSelection": 0,
+		"firstSelectedLine": 79,
+		"lastSelectedLine": 79,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.900Z"
+		"stamp": "2020-05-15T02:27:10.121Z"
 	},
 	"Sources/Methods/git_get_PathToExistingRepo.4dm": {
 		"startSelection": 14,
@@ -472,11 +443,11 @@
 	"Sources/Methods/deploy_git_saveToLocalRepo.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 24,
-		"lastSelectedLine": 24,
+		"firstSelectedLine": 75,
+		"lastSelectedLine": 75,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.902Z"
+		"stamp": "2020-05-15T06:33:12.662Z"
 	},
 	"Sources/Methods/deploy_git_push.4dm": {
 		"startSelection": 0,
@@ -524,13 +495,13 @@
 		"stamp": "2020-05-06T12:53:44.906Z"
 	},
 	"Sources/Methods/deploy_git_listOps.4dm": {
-		"startSelection": 0,
-		"endSelection": 25,
-		"firstSelectedLine": 31,
-		"lastSelectedLine": 31,
+		"startSelection": 43,
+		"endSelection": 43,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.906Z"
+		"stamp": "2020-05-15T02:15:15.740Z"
 	},
 	"Sources/Methods/deploy_git_listOps_import.4dm": {
 		"startSelection": 0,
@@ -556,15 +527,6 @@
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.908Z"
 	},
-	"Sources/Methods/deploy_JamfPro_Push_prune.4dm": {
-		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 15,
-		"lastSelectedLine": 48,
-		"folding": [],
-		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.909Z"
-	},
 	"Sources/Methods/deploy_JamfPro_Push_logSendErr.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
@@ -577,11 +539,11 @@
 	"Sources/Methods/_dataClean.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 13,
-		"lastSelectedLine": 13,
+		"firstSelectedLine": 18,
+		"lastSelectedLine": 18,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:44.910Z"
+		"stamp": "2020-05-20T05:39:01.928Z"
 	},
 	"Sources/DatabaseMethods/onStartup.4dm": {
 		"startSelection": 0,
@@ -594,9 +556,9 @@
 	},
 	"Sources/Forms/main/ObjectMethods/Tab Control.4dm": {
 		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 8,
-		"lastSelectedLine": 8,
+		"endSelection": 66,
+		"firstSelectedLine": 5,
+		"lastSelectedLine": 7,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:45.031Z"
@@ -620,22 +582,22 @@
 		"stamp": "2020-05-06T12:53:45.034Z"
 	},
 	"Sources/Forms/main/ObjectMethods/serverpopup.4dm": {
-		"startSelection": 75,
-		"endSelection": 75,
-		"firstSelectedLine": 27,
-		"lastSelectedLine": 27,
+		"startSelection": 50,
+		"endSelection": 50,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.037Z"
+		"stamp": "2020-05-13T09:26:09.176Z"
 	},
 	"Sources/Forms/main/ObjectMethods/SourceItemsClearButton.4dm": {
 		"startSelection": 0,
-		"endSelection": 23,
-		"firstSelectedLine": 3,
-		"lastSelectedLine": 11,
+		"endSelection": 0,
+		"firstSelectedLine": 17,
+		"lastSelectedLine": 17,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.038Z"
+		"stamp": "2020-05-13T09:27:27.302Z"
 	},
 	"Sources/Forms/main/ObjectMethods/SearchPicker.4dm": {
 		"startSelection": 12,
@@ -651,10 +613,10 @@
 		"stamp": "2020-05-06T12:53:45.039Z"
 	},
 	"Sources/Forms/main/ObjectMethods/sourceItemsListBox.4dm": {
-		"startSelection": 74,
-		"endSelection": 74,
-		"firstSelectedLine": 72,
-		"lastSelectedLine": 72,
+		"startSelection": 12,
+		"endSelection": 12,
+		"firstSelectedLine": 25,
+		"lastSelectedLine": 25,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:45.040Z"
@@ -670,12 +632,12 @@
 	},
 	"Sources/Forms/main/ObjectMethods/SelectSourceItemsButton.4dm": {
 		"startSelection": 0,
-		"endSelection": 78,
-		"firstSelectedLine": 6,
-		"lastSelectedLine": 9,
+		"endSelection": 0,
+		"firstSelectedLine": 28,
+		"lastSelectedLine": 28,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.043Z"
+		"stamp": "2020-05-12T07:39:25.208Z"
 	},
 	"Sources/Forms/main/ObjectMethods/ClearSelectedItemsButton.4dm": {
 		"startSelection": 129,
@@ -723,13 +685,16 @@
 		"stamp": "2020-05-06T12:53:45.052Z"
 	},
 	"Sources/Forms/main/ObjectMethods/ImportSetOperationsButtonFill.4dm": {
-		"startSelection": 60,
-		"endSelection": 60,
-		"firstSelectedLine": 52,
-		"lastSelectedLine": 52,
-		"folding": [],
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 27,
+		"lastSelectedLine": 27,
+		"folding": [
+			10,
+			15
+		],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.053Z"
+		"stamp": "2020-05-19T11:40:03.484Z"
 	},
 	"Sources/Forms/main/ObjectMethods/Popup Dropdown List.4dm": {
 		"startSelection": 74,
@@ -741,19 +706,19 @@
 		"stamp": "2020-05-06T12:53:45.055Z"
 	},
 	"Sources/Forms/main/ObjectMethods/SourceDataHierarcicalPopupMenu.4dm": {
-		"startSelection": 74,
-		"endSelection": 74,
-		"firstSelectedLine": 27,
-		"lastSelectedLine": 27,
+		"startSelection": 15,
+		"endSelection": 15,
+		"firstSelectedLine": 33,
+		"lastSelectedLine": 33,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.056Z"
+		"stamp": "2020-05-14T05:44:25.329Z"
 	},
 	"Sources/Forms/main/ObjectMethods/ImportSetOperationsButton.4dm": {
-		"startSelection": 113,
-		"endSelection": 113,
-		"firstSelectedLine": 67,
-		"lastSelectedLine": 67,
+		"startSelection": 0,
+		"endSelection": 19,
+		"firstSelectedLine": 92,
+		"lastSelectedLine": 92,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:45.057Z"
@@ -777,8 +742,8 @@
 		"stamp": "2020-05-06T12:53:45.059Z"
 	},
 	"Sources/Forms/main/ObjectMethods/bCopy.4dm": {
-		"startSelection": 47,
-		"endSelection": 47,
+		"startSelection": 23,
+		"endSelection": 46,
 		"firstSelectedLine": 0,
 		"lastSelectedLine": 0,
 		"folding": [],
@@ -786,13 +751,13 @@
 		"stamp": "2020-05-06T12:53:45.061Z"
 	},
 	"Sources/Forms/main/ObjectMethods/bCopy1.4dm": {
-		"startSelection": 42,
-		"endSelection": 42,
+		"startSelection": 23,
+		"endSelection": 23,
 		"firstSelectedLine": 0,
 		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.061Z"
+		"stamp": "2020-05-08T10:39:59.444Z"
 	},
 	"Sources/Forms/main/ObjectMethods/bCopy2.4dm": {
 		"startSelection": 44,
@@ -813,10 +778,10 @@
 		"stamp": "2020-05-06T12:53:45.063Z"
 	},
 	"Sources/Forms/main/ObjectMethods/Invisible Button.4dm": {
-		"startSelection": 74,
-		"endSelection": 74,
-		"firstSelectedLine": 4,
-		"lastSelectedLine": 4,
+		"startSelection": 33,
+		"endSelection": 37,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:45.064Z"
@@ -867,22 +832,22 @@
 		"stamp": "2020-05-06T12:53:45.072Z"
 	},
 	"Sources/Forms/main/ObjectMethods/bCopy4.4dm": {
-		"startSelection": 36,
-		"endSelection": 36,
+		"startSelection": 23,
+		"endSelection": 23,
 		"firstSelectedLine": 0,
 		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.074Z"
+		"stamp": "2020-05-08T10:52:35.907Z"
 	},
 	"Sources/Forms/main/ObjectMethods/DeployOps_ListTab.4dm": {
-		"startSelection": 61,
-		"endSelection": 61,
-		"firstSelectedLine": 4,
-		"lastSelectedLine": 4,
+		"startSelection": 22,
+		"endSelection": 33,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.076Z"
+		"stamp": "2020-05-13T11:19:28.211Z"
 	},
 	"Sources/Forms/main/ObjectMethods/Deploy_go_button.4dm": {
 		"startSelection": 0,
@@ -930,13 +895,13 @@
 		"stamp": "2020-05-06T12:53:45.091Z"
 	},
 	"Sources/Forms/main/ObjectMethods/bCopy3.4dm": {
-		"startSelection": 46,
-		"endSelection": 46,
+		"startSelection": 23,
+		"endSelection": 23,
 		"firstSelectedLine": 0,
 		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.092Z"
+		"stamp": "2020-05-08T10:51:04.527Z"
 	},
 	"Sources/Forms/main/ObjectMethods/List Box.4dm": {
 		"startSelection": 11,
@@ -957,19 +922,19 @@
 		"stamp": "2020-05-06T12:53:45.095Z"
 	},
 	"Sources/Forms/main/ObjectMethods/Button2.4dm": {
-		"startSelection": 80,
-		"endSelection": 80,
-		"firstSelectedLine": 2,
-		"lastSelectedLine": 2,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 7,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:45.096Z"
 	},
 	"Sources/Forms/main/ObjectMethods/Button3.4dm": {
 		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 5,
-		"lastSelectedLine": 5,
+		"endSelection": 17,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T13:45:40.218Z"
@@ -1002,22 +967,22 @@
 		"stamp": "2020-05-06T12:53:45.102Z"
 	},
 	"Sources/Forms/main/ObjectMethods/bCopy5.4dm": {
-		"startSelection": 33,
-		"endSelection": 33,
+		"startSelection": 23,
+		"endSelection": 23,
 		"firstSelectedLine": 0,
 		"lastSelectedLine": 0,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T12:53:45.104Z"
+		"stamp": "2020-05-08T10:51:16.435Z"
 	},
 	"Sources/Forms/main/ObjectMethods/Popup Dropdown List1.4dm": {
 		"startSelection": 0,
-		"endSelection": 0,
-		"firstSelectedLine": 4,
-		"lastSelectedLine": 5,
+		"endSelection": 71,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 27,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2020-05-06T13:45:20.442Z"
+		"stamp": "2020-05-15T02:09:27.436Z"
 	},
 	"Sources/Forms/Login/ObjectMethods/Variable.4dm": {
 		"startSelection": 30,
@@ -1234,5 +1199,470 @@
 		"folding": [],
 		"bookmarks": [],
 		"stamp": "2020-05-06T12:53:44.845Z"
+	},
+	"Sources/TableForms/5/In/ObjectMethods/S9_Field2.4dm": {
+		"startSelection": 3,
+		"endSelection": 3,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-07T04:41:06.206Z"
+	},
+	"Sources/Methods/API_GetItemXML.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-14T05:10:42.058Z"
+	},
+	"Sources/Methods/sh_prefs_getValueForKey.4dm": {
+		"startSelection": 27,
+		"endSelection": 27,
+		"firstSelectedLine": 56,
+		"lastSelectedLine": 56,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T04:34:57.348Z"
+	},
+	"Sources/Methods/myStartup_prefs.4dm": {
+		"startSelection": 82,
+		"endSelection": 82,
+		"firstSelectedLine": 22,
+		"lastSelectedLine": 22,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-15T00:10:56.132Z"
+	},
+	"Sources/TableForms/3/In/ObjectMethods/bValidate.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-07T21:05:41.071Z"
+	},
+	"Sources/TableForms/3/In/ObjectMethods/Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-07T21:14:00.670Z"
+	},
+	"Sources/TableForms/3/In/ObjectMethods/PasswordButton.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 32,
+		"lastSelectedLine": 32,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-15T00:09:00.209Z"
+	},
+	"Sources/TableForms/4/In/ObjectMethods/Input.4dm": {
+		"startSelection": 38,
+		"endSelection": 38,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T01:24:55.816Z"
+	},
+	"Sources/TableForms/4/In/ObjectMethods/Input1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T01:50:14.129Z"
+	},
+	"Sources/Forms/main/ObjectMethods/deploy_jp_PruneDeviceDetails.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T05:20:56.737Z"
+	},
+	"Sources/Methods/import_GetItemListing_arrays_.4dm": {
+		"startSelection": 5,
+		"endSelection": 5,
+		"firstSelectedLine": 41,
+		"lastSelectedLine": 41,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-15T06:01:10.925Z"
+	},
+	"Sources/Forms/main/ObjectMethods/bCopy6.4dm": {
+		"startSelection": 0,
+		"endSelection": 44,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T06:55:49.641Z"
+	},
+	"Sources/Forms/main/ObjectMethods/BevelButton5.4dm": {
+		"startSelection": 44,
+		"endSelection": 44,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T07:29:16.239Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 3,
+		"lastSelectedLine": 3,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:37:59.268Z"
+	},
+	"Sources/Forms/main/ObjectMethods/Import List Safari Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 7,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 34,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-06T12:53:45.064Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton1.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 34,
+		"lastSelectedLine": 34,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:49:58.285Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton2.4dm": {
+		"startSelection": 47,
+		"endSelection": 47,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:40:06.890Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton6.4dm": {
+		"startSelection": 51,
+		"endSelection": 51,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:51:10.847Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton5.4dm": {
+		"startSelection": 38,
+		"endSelection": 38,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:51:21.215Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton4.4dm": {
+		"startSelection": 47,
+		"endSelection": 47,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:52:40.693Z"
+	},
+	"Sources/Forms/main/ObjectMethods/Button5.4dm": {
+		"startSelection": 0,
+		"endSelection": 7,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 13,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-12T13:49:22.031Z"
+	},
+	"Sources/Forms/main/ObjectMethods/bDelete1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 16,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:54:09.962Z"
+	},
+	"Sources/Forms/main/ObjectMethods/Button4.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 36,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T10:59:18.561Z"
+	},
+	"Sources/Forms/main/ObjectMethods/Button7.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-20T01:44:21.657Z"
+	},
+	"Sources/Forms/main/ObjectMethods/magButton7.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 7,
+		"lastSelectedLine": 7,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-08T11:20:42.041Z"
+	},
+	"Sources/Methods/sh_str_positionOfLast.4dm": {
+		"startSelection": 54,
+		"endSelection": 54,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-13T07:50:31.457Z"
+	},
+	"Sources/Methods/deploy_jamfPro_precheck_Set.4dm": {
+		"startSelection": 7,
+		"endSelection": 0,
+		"firstSelectedLine": 103,
+		"lastSelectedLine": 68,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-06T12:53:44.875Z"
+	},
+	"Sources/Methods/sh_str_splitTextToArray.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-10T03:48:08.566Z"
+	},
+	"Sources/Methods/Import_SaveItemList_Anon.4dm": {
+		"startSelection": 14,
+		"endSelection": 40,
+		"firstSelectedLine": 41,
+		"lastSelectedLine": 41,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-11T05:11:03.381Z"
+	},
+	"Sources/Methods/Import_SaveItemList_Anon_R.4dm": {
+		"startSelection": 14,
+		"endSelection": 41,
+		"firstSelectedLine": 12,
+		"lastSelectedLine": 12,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-11T04:41:45.743Z"
+	},
+	"Sources/Methods/Import_SaveItemList_Anon_R_.4dm": {
+		"startSelection": 23,
+		"endSelection": 54,
+		"firstSelectedLine": 28,
+		"lastSelectedLine": 28,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-12T16:20:40.964Z"
+	},
+	"Sources/Methods/Import_SaveItemList_Anon_R_spec.4dm": {
+		"startSelection": 5,
+		"endSelection": 5,
+		"firstSelectedLine": 63,
+		"lastSelectedLine": 63,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-15T05:39:57.486Z"
+	},
+	"Sources/Methods/sh_xml_isNullElementRef.4dm": {
+		"startSelection": 96,
+		"endSelection": 96,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-11T04:20:28.711Z"
+	},
+	"Sources/TableForms/7/In/ObjectMethods/vRecNum.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-10T03:31:42.258Z"
+	},
+	"Sources/Methods/deploy_JamfPro_Push_Skip.4dm": {
+		"startSelection": 110,
+		"endSelection": 110,
+		"firstSelectedLine": 79,
+		"lastSelectedLine": 79,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T09:51:42.407Z"
+	},
+	"Sources/Forms/main/method.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 4,
+		"lastSelectedLine": 4,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-13T06:14:25.319Z"
+	},
+	"Sources/TableForms/7/In/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-14T08:57:58.635Z"
+	},
+	"Sources/TableForms/7/Out/ObjectMethods/Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-14T08:57:27.616Z"
+	},
+	"Sources/Methods/sh_prg_close.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-15T05:55:41.743Z"
+	},
+	"Trash/Methods/(Progress_Close).4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-06T12:53:44.893Z"
+	},
+	"Sources/Methods/sh_progress_new.4dm": {
+		"startSelection": 40,
+		"endSelection": 40,
+		"firstSelectedLine": 15,
+		"lastSelectedLine": 15,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-15T06:37:36.752Z"
+	},
+	"Sources/Methods/deploy_JamfPro_Push_showDialog.4dm": {
+		"startSelection": 0,
+		"endSelection": 86,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 22,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T03:04:36.930Z"
+	},
+	"Sources/Methods/deploy_JamfPro_Push_dlgArrays.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 24,
+		"lastSelectedLine": 24,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T09:45:04.210Z"
+	},
+	"Sources/Methods/deploy_JamfPro_1.4dm": {
+		"startSelection": 30,
+		"endSelection": 30,
+		"firstSelectedLine": 28,
+		"lastSelectedLine": 28,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-18T09:33:49.110Z"
+	},
+	"Sources/Methods/deploy_JamfPro_2.4dm": {
+		"startSelection": 17,
+		"endSelection": 17,
+		"firstSelectedLine": 62,
+		"lastSelectedLine": 62,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T09:46:38.284Z"
+	},
+	"Sources/Methods/deploy_JamfPro_3.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 190,
+		"lastSelectedLine": 190,
+		"folding": [
+			151,
+			154,
+			194
+		],
+		"bookmarks": [],
+		"stamp": "2020-05-20T05:40:20.911Z"
+	},
+	"Sources/Methods/deploy_JamfPro_3c.4dm": {
+		"startSelection": 5,
+		"endSelection": 22,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T02:53:23.740Z"
+	},
+	"Sources/Methods/deploy_JamfPro_3a_prepXML.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 287,
+		"lastSelectedLine": 287,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T12:26:51.926Z"
+	},
+	"Sources/Forms/deploy_outcome/ObjectMethods/magButton4.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-19T09:17:56.733Z"
+	},
+	"Sources/Methods/sh_http_urlEncode.4dm": {
+		"startSelection": 18,
+		"endSelection": 10,
+		"firstSelectedLine": 132,
+		"lastSelectedLine": 132,
+		"folding": [
+			27
+		],
+		"bookmarks": [],
+		"stamp": "2020-05-20T01:46:19.418Z"
+	},
+	"Sources/Methods/deploy_jamfPro_precheck_set_XML.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 38,
+		"lastSelectedLine": 38,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2020-05-20T01:47:42.042Z"
 	}
 }

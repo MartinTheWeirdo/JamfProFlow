@@ -1,7 +1,7 @@
 ﻿{
 	"destination": "detailScreen",
-	"rightMargin": 0,
-	"bottomMargin": 10,
+	"rightMargin": 20,
+	"bottomMargin": 20,
 	"menuBar": "Menu Bar #1",
 	"markerBody": 617,
 	"markerBreak": 617,
@@ -38,61 +38,24 @@
 		"paperHeight": "612pt"
 	},
 	"pages": [
-		null,
 		{
 			"objects": {
 				"Line5": {
 					"type": "line",
 					"top": 77,
 					"left": 0,
-					"width": 1416,
+					"width": 1506,
 					"sizingX": "grow",
 					"stroke": "#6495ED",
-					"strokeWidth": 2
-				},
-				"Rectangle1": {
-					"type": "rectangle",
-					"top": 709,
-					"left": 934,
-					"width": 482,
-					"height": 132,
-					"sizingX": "grow",
-					"sizingY": "move",
-					"fill": "#98FB98"
-				},
-				"Rectangle": {
-					"type": "rectangle",
-					"top": 709,
-					"left": 1,
-					"width": 935,
-					"height": 132,
-					"sizingY": "grow",
-					"fill": "#B1C4DD"
-				},
-				"Text76": {
-					"type": "text",
-					"top": 372,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Listing_XML_instance_xpath : "
-				},
-				"Text25": {
-					"type": "text",
-					"top": 372,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "/computers/computer"
+					"strokeWidth": 2,
+					"height": 0,
+					"startPoint": "topLeft"
 				},
 				"vRecNum": {
 					"type": "input",
 					"top": 52,
-					"left": 29,
-					"width": 100,
+					"left": 867,
+					"width": 54,
 					"height": 12,
 					"stroke": "#000000",
 					"fontFamily": "System Font Regular",
@@ -117,7 +80,7 @@
 				"ID": {
 					"type": "input",
 					"top": 48,
-					"left": 144,
+					"left": 949,
 					"width": 64,
 					"height": 17,
 					"dataSource": "[Endpoints:7]ID:1",
@@ -142,11 +105,325 @@
 						"onPrintingDetail"
 					]
 				},
+				"Button": {
+					"type": "button",
+					"top": 20,
+					"left": 916,
+					"width": 97,
+					"height": 22,
+					"sizingX": "move",
+					"text": "Show ASCII",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text18": {
+					"type": "text",
+					"top": 11,
+					"left": 15,
+					"width": 164,
+					"height": 57,
+					"stroke": "#000000",
+					"fontFamily": "System Font Regular",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"text": "Jamf Pro API Endpoints"
+				},
+				"Line19": {
+					"type": "line",
+					"top": 75,
+					"left": 0,
+					"width": 1506,
+					"sizingX": "grow",
+					"stroke": "#B1C4DD",
+					"strokeWidth": 2,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1025,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1088,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1151,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1214,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1295,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1370,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 7,
+					"left": 1443,
+					"width": 48,
+					"height": 48,
+					"sizingX": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text20": {
+					"type": "text",
+					"top": 48,
+					"left": 903,
+					"width": 40,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "ID : "
+				},
+				"bFirstlabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1011,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "First"
+				},
+				"bPreviouslabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1074,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Previous"
+				},
+				"bNextlabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1137,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Next"
+				},
+				"bLastlabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1200,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Last"
+				},
+				"bDeletelabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1282,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Delete"
+				},
+				"bCancellabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1358,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Cancel"
+				},
+				"bValidatelabel": {
+					"type": "text",
+					"top": 48,
+					"left": 1430,
+					"width": 72,
+					"height": 16,
+					"sizingX": "move",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 12,
+					"text": "Save"
+				},
+				"Tab Control": {
+					"type": "tab",
+					"text": "Tab control",
+					"top": 24,
+					"left": 506,
+					"width": 149,
+					"height": 23,
+					"labels": [
+						"Metadata",
+						"Paths"
+					],
+					"action": "gotoPage"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text76": {
+					"type": "text",
+					"top": 400,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Listing_XML_instance_xpath : "
+				},
+				"Text25": {
+					"type": "text",
+					"top": 400,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computers/computer"
+				},
 				"API_Endpoint_Name": {
 					"type": "input",
-					"top": 113,
+					"top": 125,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]API_Endpoint_Name:8",
 					"textAlign": "left",
@@ -169,9 +446,9 @@
 				},
 				"Category_ID": {
 					"type": "input",
-					"top": 141,
+					"top": 153,
 					"left": 402,
-					"width": 64,
+					"width": 56,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Category_ID:11",
 					"dataSourceTypeHint": "integer",
@@ -195,9 +472,9 @@
 				},
 				"Detail_Web_Page": {
 					"type": "input",
-					"top": 169,
+					"top": 181,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Detail_Web_Page:4",
 					"textAlign": "left",
@@ -220,9 +497,9 @@
 				},
 				"Human_Readable_Plural_Name": {
 					"type": "input",
-					"top": 199,
+					"top": 211,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Human_Readable_Plural_Name:2",
 					"textAlign": "left",
@@ -245,9 +522,9 @@
 				},
 				"Human_Readable_Singular_Name": {
 					"type": "input",
-					"top": 226,
+					"top": 238,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Human_Readable_Singular_Name:3",
 					"textAlign": "left",
@@ -270,7 +547,7 @@
 				},
 				"isSingleton": {
 					"type": "checkbox",
-					"top": 254,
+					"top": 266,
 					"left": 399,
 					"width": 28,
 					"height": 17,
@@ -292,8 +569,8 @@
 				},
 				"isDepreciated": {
 					"type": "checkbox",
-					"top": 254,
-					"left": 649,
+					"top": 266,
+					"left": 629,
 					"width": 28,
 					"height": 17,
 					"dataSource": "[Endpoints:7]isDepreciated:29",
@@ -312,9 +589,9 @@
 						"onPrintingDetail"
 					]
 				},
-				"push priority": {
+				"Push_Priority": {
 					"type": "input",
-					"top": 280,
+					"top": 292,
 					"left": 402,
 					"width": 56,
 					"height": 17,
@@ -339,7 +616,7 @@
 				},
 				"Has_Method_Get": {
 					"type": "checkbox",
-					"top": 304,
+					"top": 316,
 					"left": 398,
 					"width": 60,
 					"height": 17,
@@ -361,7 +638,7 @@
 				},
 				"Has_Method_Post": {
 					"type": "checkbox",
-					"top": 301,
+					"top": 313,
 					"left": 472,
 					"width": 64,
 					"height": 23,
@@ -383,7 +660,7 @@
 				},
 				"Has_Method_Put": {
 					"type": "checkbox",
-					"top": 304,
+					"top": 316,
 					"left": 546,
 					"width": 56,
 					"height": 17,
@@ -405,8 +682,8 @@
 				},
 				"Has_Mathod_Delete": {
 					"type": "checkbox",
-					"top": 304,
-					"left": 618,
+					"top": 316,
+					"left": 608,
 					"width": 55,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Has_Mathod_Delete:15",
@@ -427,9 +704,9 @@
 				},
 				"Example_XML4": {
 					"type": "input",
-					"top": 342,
+					"top": 370,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Import_XPathToRootElement:26",
 					"textAlign": "left",
@@ -452,9 +729,9 @@
 				},
 				"Listing_XML_instance_xpath": {
 					"type": "input",
-					"top": 372,
+					"top": 400,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Import_XPathToItemElement:6",
 					"textAlign": "left",
@@ -477,9 +754,9 @@
 				},
 				"Example_XML3": {
 					"type": "input",
-					"top": 401,
+					"top": 429,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Import_DisplayNameElementName:25",
 					"textAlign": "left",
@@ -502,9 +779,9 @@
 				},
 				"Detail_XML_Root_Element_xpath": {
 					"type": "input",
-					"top": 461,
+					"top": 493,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Detail_XML_Root_Element_xpath:5",
 					"textAlign": "left",
@@ -527,9 +804,9 @@
 				},
 				"detail_xml_scoping_xpath1": {
 					"type": "input",
-					"top": 489,
+					"top": 521,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]Detail_XML_ID_Element_xpath:31",
 					"textAlign": "left",
@@ -552,9 +829,9 @@
 				},
 				"detail_xml_scoping_xpath": {
 					"type": "input",
-					"top": 518,
+					"top": 550,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]detail_xml_scoping_xpath:7",
 					"textAlign": "left",
@@ -577,9 +854,9 @@
 				},
 				"xpath_to_displayed_Name": {
 					"type": "input",
-					"top": 545,
+					"top": 577,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]xpath_to_displayed_Name:19",
 					"textAlign": "left",
@@ -602,9 +879,9 @@
 				},
 				"xpath_to_lookup_by_Name": {
 					"type": "input",
-					"top": 572,
+					"top": 604,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]xpath_to_lookup_by_Name:22",
 					"textAlign": "left",
@@ -627,8 +904,8 @@
 				},
 				"Button1": {
 					"type": "button",
-					"top": 569,
-					"left": 903,
+					"top": 563,
+					"left": 975,
 					"width": 34,
 					"height": 22,
 					"text": "?",
@@ -640,9 +917,9 @@
 				},
 				"API_URL_to_lookup_by_id": {
 					"type": "input",
-					"top": 601,
+					"top": 633,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]API_URL_to_lookup_by_id:23",
 					"textAlign": "left",
@@ -665,9 +942,9 @@
 				},
 				"API_URL_to_lookup_by_Name": {
 					"type": "input",
-					"top": 628,
+					"top": 660,
 					"left": 402,
-					"width": 260,
+					"width": 359,
 					"height": 17,
 					"dataSource": "[Endpoints:7]API_URL_to_lookup_by_Name:21",
 					"textAlign": "left",
@@ -690,9 +967,9 @@
 				},
 				"Notes": {
 					"type": "input",
-					"top": 102,
-					"left": 948,
-					"width": 425,
+					"top": 104,
+					"left": 1038,
+					"width": 448,
 					"height": 81,
 					"sizingX": "grow",
 					"dataSource": "[Endpoints:7]Notes:30",
@@ -717,10 +994,10 @@
 				},
 				"Notes2": {
 					"type": "input",
-					"top": 238,
-					"left": 948,
-					"width": 422,
-					"height": 145,
+					"top": 220,
+					"left": 1038,
+					"width": 448,
+					"height": 177,
 					"sizingX": "grow",
 					"dataSource": "[Endpoints:7]Example_listing_XML:9",
 					"textAlign": "left",
@@ -745,10 +1022,10 @@
 				},
 				"Example_XML": {
 					"type": "input",
-					"top": 440,
-					"left": 948,
-					"width": 425,
-					"height": 177,
+					"top": 452,
+					"left": 1038,
+					"width": 448,
+					"height": 225,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "[Endpoints:7]Example_detail_XML:10",
@@ -772,13 +1049,660 @@
 						"onPrintingDetail"
 					]
 				},
-				"Example_XML1": {
-					"type": "input",
-					"top": 738,
-					"left": 25,
-					"width": 422,
-					"height": 65,
+				"Text59": {
+					"type": "text",
+					"top": 125,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "API_Endpoint_Name : "
+				},
+				"Text60": {
+					"type": "text",
+					"top": 633,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "API_URL_to_lookup_by_id : "
+				},
+				"Text61": {
+					"type": "text",
+					"top": 660,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "API_URL_to_lookup_by_Name : "
+				},
+				"Text62": {
+					"type": "text",
+					"top": 153,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Category_ID : "
+				},
+				"Text64": {
+					"type": "text",
+					"top": 181,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Detail_Web_Page : "
+				},
+				"Text65": {
+					"type": "text",
+					"top": 493,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Detail_XML_Root_Element_xpath : "
+				},
+				"Text66": {
+					"type": "text",
+					"top": 550,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "detail_xml_scoping_xpath : "
+				},
+				"Text72": {
+					"type": "text",
+					"top": 211,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Human_Readable_Plural_Name : "
+				},
+				"Text73": {
+					"type": "text",
+					"top": 238,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Human_Readable_Singular_Name : "
+				},
+				"Text75": {
+					"type": "text",
+					"top": 265,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "isSingleton : "
+				},
+				"Text79": {
+					"type": "text",
+					"top": 292,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Push_Priority : "
+				},
+				"Text82": {
+					"type": "text",
+					"top": 577,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "xpath_to_displayed_Name : "
+				},
+				"Text83": {
+					"type": "text",
+					"top": 604,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "xpath_to_lookup_by_Name : "
+				},
+				"Text4": {
+					"type": "text",
+					"top": 370,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "XPath to Root Element"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 429,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Name of DisplayName Element"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 316,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Methods : "
+				},
+				"Text33": {
+					"type": "text",
+					"top": 84,
+					"left": 1038,
+					"width": 59,
+					"height": 17,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Notes : "
+				},
+				"Text34": {
+					"type": "text",
+					"top": 429,
+					"left": 1038,
+					"width": 240,
+					"height": 17,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Example Item Detail XML : "
+				},
+				"Line1": {
+					"type": "line",
+					"top": 342,
+					"left": 0,
+					"width": 1009,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 463,
+					"left": 0,
+					"width": 1009,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 125,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "computers"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 633,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/JSSResource/computers/id/{id}"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 660,
+					"left": 781,
+					"width": 219,
+					"height": 33,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/JSSResource/computers​/serialnumber​/{serialnumber}"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 153,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "ID from Category table."
+				},
+				"Text11": {
+					"type": "text",
+					"top": 181,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computers.html?id={id}"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 493,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computer"
+				},
+				"Text13": {
+					"type": "text",
+					"top": 429,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "name"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 211,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "Human_Readable_Plural_Name : "
+				},
+				"Text15": {
+					"type": "text",
+					"top": 239,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "Human_Readable_Singular_Name : "
+				},
+				"Text16": {
+					"type": "text",
+					"top": 267,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "Yes or No"
+				},
+				"Text19": {
+					"type": "text",
+					"top": 292,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "lower numbers get configured first"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 577,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computer/general/name"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 604,
+					"left": 781,
+					"width": 208,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computer/general/serial_number"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 370,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computers"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 88,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "Example"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 105,
+					"left": 781,
+					"width": 228,
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 343,
+					"left": 0,
+					"width": 100,
+					"height": 17,
+					"fill": "#B1C4DD",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "  Listing XML :"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 550,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "detail_xml_scoping_xpath : "
+				},
+				"Text23": {
+					"type": "text",
+					"top": 464,
+					"left": 0,
+					"width": 100,
+					"height": 17,
+					"fill": "#B1C4DD",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "  Detail XML :"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 265,
+					"left": 523,
+					"width": 104,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "isDepreciated : "
+				},
+				"Text17": {
+					"type": "text",
+					"top": 196,
+					"left": 1038,
+					"width": 222,
+					"height": 17,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Example Listing XML :"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 105,
+					"left": 0,
+					"width": 763,
+					"height": 0,
+					"startPoint": "topLeft",
+					"right": 763
+				},
+				"Text29": {
+					"type": "text",
+					"top": 106,
+					"left": 0,
+					"width": 71,
+					"height": 16,
+					"fill": "#B1C4DD",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": " General :"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 400,
+					"left": 230,
+					"width": 160,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Instance xpath : ",
+					"right": 390
+				},
+				"Text32": {
+					"type": "text",
+					"top": 125,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Name",
+					"right": 390
+				},
+				"Text35": {
+					"type": "text",
+					"top": 632,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "API URL (by ID) : ",
+					"right": 390
+				},
+				"Text36": {
+					"type": "text",
+					"top": 659,
+					"left": 230,
+					"width": 160,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "API URL (by Name) : ",
+					"right": 390
+				},
+				"Text37": {
+					"type": "text",
+					"top": 153,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Category_ID : ",
+					"right": 390
+				},
+				"Text38": {
+					"type": "text",
+					"top": 181,
+					"left": 230,
+					"width": 160,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Jamf Pro Webapp Page",
+					"right": 390
+				},
+				"Text39": {
+					"type": "text",
+					"top": 492,
+					"left": 230,
+					"width": 160,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Root Element xpath : ",
+					"right": 390
+				},
+				"Text40": {
+					"type": "text",
+					"top": 549,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Scope XPath : ",
+					"right": 390
+				},
+				"Text41": {
+					"type": "text",
+					"top": 211,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Nickname - Plural",
+					"right": 390
+				},
+				"Text42": {
+					"type": "text",
+					"top": 238,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Nickname - Singular",
+					"right": 390
+				},
+				"Text43": {
+					"type": "text",
+					"top": 265,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "isSingleton : ",
+					"right": 390
+				},
+				"Text44": {
+					"type": "text",
+					"top": 292,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Push Order",
+					"right": 390
+				},
+				"Text45": {
+					"type": "text",
+					"top": 576,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Display Name XPath: ",
+					"right": 390
+				},
+				"Text46": {
+					"type": "text",
+					"top": 603,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Unique Name XPath : ",
+					"right": 390
+				},
+				"Text47": {
+					"type": "text",
+					"top": 370,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "XPath to Root Element",
+					"right": 390
+				},
+				"Text48": {
+					"type": "text",
+					"top": 428,
+					"left": 230,
+					"width": 160,
+					"height": 16,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "DisplayName Tag",
+					"right": 390
+				},
+				"Text49": {
+					"type": "text",
+					"top": 316,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "Available Methods : ",
+					"right": 390
+				},
+				"Text50": {
+					"type": "text",
+					"top": 521,
+					"left": 9,
+					"width": 208,
+					"height": 17,
+					"textAlign": "right",
+					"text": "Detail_XML_ID_Element_xpath : "
+				},
+				"Text51": {
+					"type": "text",
+					"top": 521,
+					"left": 781,
+					"width": 219,
+					"height": 17,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"text": "/computer/general/id"
+				},
+				"Text52": {
+					"type": "text",
+					"top": 520,
+					"left": 230,
+					"width": 160,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"text": "XPath to ID Element : ",
+					"right": 390
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 826,
+					"left": 0,
+					"width": 1009,
+					"height": 141,
+					"sizingX": "fixed",
 					"sizingY": "grow",
+					"fill": "#b1c4dd"
+				},
+				"Rectangle5": {
+					"type": "rectangle",
+					"top": 701,
+					"left": 0,
+					"width": 1009,
+					"height": 126,
+					"sizingY": "fixed",
+					"fill": "#6495ed",
+					"sizingX": "fixed"
+				},
+				"Example_XML5": {
+					"type": "input",
+					"top": 734,
+					"left": 19,
+					"width": 340,
+					"height": 65,
+					"sizingY": "fixed",
 					"dataSource": "[Endpoints:7]XML_UniquenessConstraint_Xpaths:17",
 					"textAlign": "left",
 					"fill": "#FFFFFF",
@@ -798,15 +1722,16 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
-				"Example_XML2": {
+				"Example_XML6": {
 					"type": "input",
-					"top": 738,
-					"left": 486,
-					"width": 422,
+					"top": 734,
+					"left": 399,
+					"width": 571,
 					"height": 65,
-					"sizingY": "grow",
+					"sizingY": "fixed",
 					"dataSource": "[Endpoints:7]XML_UniquenessConstraint_URLs:18",
 					"textAlign": "left",
 					"fill": "#FFFFFF",
@@ -826,14 +1751,15 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
-				"Notes1": {
+				"Notes5": {
 					"type": "input",
-					"top": 738,
-					"left": 948,
-					"width": 427,
-					"height": 65,
+					"top": 739,
+					"left": 1037,
+					"width": 449,
+					"height": 209,
 					"sizingX": "grow",
 					"sizingY": "move",
 					"dataSource": "[Endpoints:7]DeployJamfProPruningXpaths:24",
@@ -855,918 +1781,476 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"bottom": 948
 				},
-				"Button": {
-					"type": "button",
-					"top": 20,
-					"left": 826,
-					"width": 97,
-					"height": 22,
-					"sizingX": "move",
-					"text": "Show ASCII",
-					"focusable": false,
-					"method": "ObjectMethods/Button.4dm",
-					"events": [
-						"onClick"
-					]
-				},
-				"Text59": {
+				"Text55": {
 					"type": "text",
-					"top": 113,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "API_Endpoint_Name : "
-				},
-				"Text60": {
-					"type": "text",
-					"top": 601,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "API_URL_to_lookup_by_id : "
-				},
-				"Text61": {
-					"type": "text",
-					"top": 628,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "API_URL_to_lookup_by_Name : "
-				},
-				"Text62": {
-					"type": "text",
-					"top": 141,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Category_ID : "
-				},
-				"Text64": {
-					"type": "text",
-					"top": 169,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Detail_Web_Page : "
-				},
-				"Text65": {
-					"type": "text",
-					"top": 461,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Detail_XML_Root_Element_xpath : "
-				},
-				"Text66": {
-					"type": "text",
-					"top": 518,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "detail_xml_scoping_xpath : "
-				},
-				"Text72": {
-					"type": "text",
-					"top": 199,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Human_Readable_Plural_Name : "
-				},
-				"Text73": {
-					"type": "text",
-					"top": 226,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Human_Readable_Singular_Name : "
-				},
-				"Text75": {
-					"type": "text",
-					"top": 253,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "isSingleton : "
-				},
-				"Text79": {
-					"type": "text",
-					"top": 280,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "push priority : "
-				},
-				"Text82": {
-					"type": "text",
-					"top": 545,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "xpath_to_displayed_Name : "
-				},
-				"Text83": {
-					"type": "text",
-					"top": 572,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "xpath_to_lookup_by_Name : "
-				},
-				"Text4": {
-					"type": "text",
-					"top": 342,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "XPath to Root Element"
-				},
-				"Text6": {
-					"type": "text",
-					"top": 401,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Name of DisplayName Element"
-				},
-				"Text18": {
-					"type": "text",
-					"top": 16,
-					"left": 29,
-					"width": 410,
-					"height": 30,
-					"stroke": "#000000",
-					"fontFamily": "System Font Regular",
-					"fontSize": 24,
-					"fontWeight": "bold",
-					"text": "Jamf Pro API Endpoints"
-				},
-				"Line19": {
-					"type": "line",
-					"top": 75,
-					"left": 0,
-					"width": 1416,
-					"sizingX": "grow",
-					"stroke": "#B1C4DD",
-					"strokeWidth": 2
-				},
-				"bFirst": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 935,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/First Record"
-					},
-					"action": "firstRecord",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"bPrevious": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 998,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Previous Record"
-					},
-					"action": "previousRecord",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"bNext": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 1061,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Next Record"
-					},
-					"action": "nextRecord",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"bLast": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 1124,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Last Record"
-					},
-					"action": "lastRecord",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"bDelete": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 1205,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Delete Record"
-					},
-					"action": "deleteRecord",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"bCancel": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 1280,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Cancel"
-					},
-					"action": "cancel",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"bValidate": {
-					"type": "pictureButton",
-					"top": 7,
-					"left": 1353,
-					"width": 48,
-					"height": 48,
-					"sizingX": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/OK"
-					},
-					"action": "accept",
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"events": [
-						"onClick"
-					]
-				},
-				"Text20": {
-					"type": "text",
-					"top": 48,
-					"left": 98,
-					"width": 40,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "ID : "
-				},
-				"Text30": {
-					"type": "text",
-					"top": 304,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Methods : "
-				},
-				"Text33": {
-					"type": "text",
-					"top": 82,
-					"left": 948,
-					"width": 59,
-					"height": 17,
+					"top": 713,
+					"left": 19,
+					"width": 205,
+					"height": 16,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Notes : "
+					"text": "Unique value constraint XPaths",
+					"sizingY": "fixed",
+					"sizingX": "fixed"
 				},
-				"Text34": {
+				"Text56": {
 					"type": "text",
-					"top": 417,
-					"left": 948,
-					"width": 240,
-					"height": 17,
+					"top": 713,
+					"left": 398,
+					"width": 268,
+					"height": 16,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "Example Item Detail XML : "
+					"text": "Unique value constraint URLs",
+					"sizingY": "fixed",
+					"sizingX": "fixed"
 				},
-				"bFirstlabel": {
-					"type": "text",
-					"top": 48,
-					"left": 921,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "First"
-				},
-				"bPreviouslabel": {
-					"type": "text",
-					"top": 48,
-					"left": 984,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "Previous"
-				},
-				"bNextlabel": {
-					"type": "text",
-					"top": 48,
-					"left": 1047,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "Next"
-				},
-				"bLastlabel": {
-					"type": "text",
-					"top": 48,
-					"left": 1110,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "Last"
-				},
-				"bDeletelabel": {
-					"type": "text",
-					"top": 48,
-					"left": 1192,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "Delete"
-				},
-				"bCancellabel": {
-					"type": "text",
-					"top": 48,
-					"left": 1268,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "Cancel"
-				},
-				"bValidatelabel": {
-					"type": "text",
-					"top": 48,
-					"left": 1340,
-					"width": 72,
-					"height": 16,
-					"sizingX": "move",
-					"stroke": "#000000",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 12,
-					"text": "Save"
-				},
-				"Text1": {
+				"Text57": {
 					"type": "text",
 					"top": 718,
-					"left": 25,
-					"width": 422,
-					"height": 17,
-					"textAlign": "left",
-					"fontWeight": "bold",
-					"text": "Unique value constraint XPaths"
-				},
-				"Text2": {
-					"type": "text",
-					"top": 718,
-					"left": 488,
-					"width": 422,
-					"height": 17,
-					"textAlign": "left",
-					"fontWeight": "bold",
-					"text": "Unique value constraint URLs"
-				},
-				"Text5": {
-					"type": "text",
-					"top": 718,
-					"left": 948,
-					"width": 422,
-					"height": 17,
-					"sizingX": "grow",
+					"left": 1037,
+					"width": 424,
+					"height": 16,
+					"sizingX": "fixed",
 					"sizingY": "move",
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "When deploying to Jamf Pro, prune these XPaths (One per line...) : "
+					"text": "XPaths to prune pre-Jamf Pro deploment (One per line...)"
 				},
-				"Line1": {
-					"type": "line",
-					"top": 330,
+				"Notes6": {
+					"type": "input",
+					"top": 854,
+					"left": 19,
+					"width": 313,
+					"height": 81,
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"dataSource": "[Endpoints:7]Detail_XML_PII_XPaths:32",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text58": {
+					"type": "text",
+					"top": 833,
+					"left": 19,
+					"width": 154,
+					"height": 16,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Detail XML PII XPaths"
+				},
+				"Notes7": {
+					"type": "input",
+					"top": 854,
+					"left": 366,
+					"width": 176,
+					"height": 81,
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"dataSource": "[Endpoints]Detail_XML_PII_Replacements",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text63": {
+					"type": "text",
+					"top": 833,
+					"left": 366,
+					"width": 300,
+					"height": 16,
+					"sizingX": "grow",
+					"sizingY": "fixed",
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Detail XML PII Replacement Values"
+				},
+				"Text67": {
+					"type": "text",
+					"text": "\"mac_＜digest-10＞\"  == string literal+last 10 digits of value hash\r\r\"-\" (minus) == Prune the element\r\r\"＜serial＞\", \"＜mac＞\", \"＜udid＞\", \"＜ip＞\" == hash formatting",
+					"top": 851,
+					"left": 570,
+					"width": 425,
+					"height": 92,
+					"sizingY": "fixed"
+				},
+				"Text68": {
+					"type": "text",
+					"top": 713,
+					"left": 229,
+					"width": 150,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "normal",
+					"text": "/computer/general/udid",
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"fontStyle": "italic"
+				},
+				"Text69": {
+					"type": "text",
+					"top": 713,
+					"left": 712,
+					"width": 283,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "normal",
+					"text": "/JSSResource/computers/udid/{udid}/subset/general",
+					"sizingY": "fixed",
+					"sizingX": "fixed",
+					"fontStyle": "italic"
+				}
+			},
+			"entryOrder": [
+				"API_Endpoint_Name",
+				"Category_ID",
+				"Detail_Web_Page",
+				"Human_Readable_Plural_Name",
+				"Human_Readable_Singular_Name",
+				"isSingleton",
+				"isDepreciated",
+				"Push_Priority",
+				"Has_Method_Get",
+				"Has_Method_Post",
+				"Has_Method_Put",
+				"Has_Mathod_Delete",
+				"Example_XML4",
+				"Listing_XML_instance_xpath",
+				"Example_XML3",
+				"Detail_XML_Root_Element_xpath",
+				"detail_xml_scoping_xpath1",
+				"detail_xml_scoping_xpath",
+				"xpath_to_displayed_Name",
+				"Button1",
+				"xpath_to_lookup_by_Name",
+				"API_URL_to_lookup_by_id",
+				"API_URL_to_lookup_by_Name",
+				"Example_XML5",
+				"Example_XML6",
+				"Notes6",
+				"Notes7",
+				"Notes",
+				"Notes2",
+				"Example_XML",
+				"Notes5"
+			]
+		},
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 319,
 					"left": 0,
-					"width": 919
+					"width": 984,
+					"height": 459,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#ffb6c1"
 				},
-				"Line2": {
-					"type": "line",
-					"top": 439,
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 79,
+					"left": 983,
+					"width": 523,
+					"height": 699,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"fill": "#98FB98"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 79,
 					"left": 0,
-					"width": 910,
-					"height": 2
+					"width": 984,
+					"height": 241,
+					"sizingY": "fixed",
+					"fill": "#B1C4DD",
+					"sizingX": "grow"
 				},
-				"Text7": {
+				"Example_XML1": {
+					"type": "input",
+					"top": 112,
+					"left": 19,
+					"width": 439,
+					"height": 177,
+					"sizingY": "fixed",
+					"dataSource": "[Endpoints:7]XML_UniquenessConstraint_Xpaths:17",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"sizingX": "grow"
+				},
+				"Example_XML2": {
+					"type": "input",
+					"top": 112,
+					"left": 506,
+					"width": 439,
+					"height": 177,
+					"sizingY": "fixed",
+					"dataSource": "[Endpoints:7]XML_UniquenessConstraint_URLs:18",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"sizingX": "grow"
+				},
+				"Notes1": {
+					"type": "input",
+					"top": 112,
+					"left": 1009,
+					"width": 463,
+					"height": 625,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "[Endpoints:7]DeployJamfProPruningXpaths:24",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					],
+					"bottom": 737
+				},
+				"Text1": {
 					"type": "text",
-					"top": 113,
-					"left": 691,
-					"width": 219,
+					"top": 91,
+					"left": 19,
+					"width": 205,
+					"height": 16,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "Unique value constraint XPaths",
+					"sizingY": "fixed"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 91,
+					"left": 506,
+					"width": 300,
 					"height": 17,
 					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "computers"
+					"fontWeight": "bold",
+					"text": "Unique value constraint URLs",
+					"sizingY": "fixed",
+					"sizingX": "grow"
 				},
-				"Text8": {
+				"Text5": {
 					"type": "text",
-					"top": 601,
-					"left": 691,
-					"width": 219,
-					"height": 17,
+					"top": 91,
+					"left": 1009,
+					"width": 380,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "fixed",
 					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "/JSSResource/computers/id/{id}"
+					"fontWeight": "bold",
+					"text": "XPaths to prune pre-Jamf Pro deploment (One per line...)"
 				},
-				"Text9": {
-					"type": "text",
-					"top": 628,
-					"left": 691,
-					"width": 219,
-					"height": 33,
+				"Notes3": {
+					"type": "input",
+					"top": 347,
+					"left": 19,
+					"width": 441,
+					"height": 401,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Endpoints:7]Detail_XML_PII_XPaths:32",
 					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "/JSSResource/computers​/serialnumber​/{serialnumber}"
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
 				},
-				"Text10": {
+				"Text53": {
 					"type": "text",
-					"top": 141,
-					"left": 691,
-					"width": 219,
-					"height": 17,
+					"top": 326,
+					"left": 19,
+					"width": 154,
+					"height": 16,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "ID from Category table."
+					"fontWeight": "bold",
+					"text": "Detail XML PII XPaths"
 				},
-				"Text11": {
-					"type": "text",
-					"top": 169,
-					"left": 691,
-					"width": 219,
-					"height": 17,
+				"Notes4": {
+					"type": "input",
+					"top": 347,
+					"left": 506,
+					"width": 441,
+					"height": 353,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Endpoints]Detail_XML_PII_Replacements",
 					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "/computers.html?id={id}"
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
 				},
-				"Text12": {
+				"Text54": {
 					"type": "text",
-					"top": 461,
-					"left": 691,
-					"width": 219,
-					"height": 17,
+					"top": 326,
+					"left": 506,
+					"width": 300,
+					"height": 16,
+					"sizingX": "grow",
+					"sizingY": "fixed",
 					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "Detail_XML_Root_Element_xpath : "
+					"fontWeight": "bold",
+					"text": "Detail XML PII Replacement Values"
 				},
-				"Text13": {
-					"type": "text",
-					"top": 401,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "name"
+				"Splitter": {
+					"type": "splitter",
+					"left": 490,
+					"top": 0,
+					"width": 6,
+					"height": 778,
+					"sizingY": "grow",
+					"splitterMode": "move"
 				},
-				"Text14": {
+				"Static Picture3": {
+					"type": "picture",
+					"top": 416,
+					"left": 480,
+					"width": 19,
+					"height": 24,
+					"picture": "Images/Static Picture3.tif",
+					"sizingX": "move"
+				},
+				"Text": {
 					"type": "text",
+					"text": "\"mac_<digest-10>\"  == string literal+last 10 digits of value hash\r\"-\" (minus) == Prune the element\rTags with \"serial\", \"mac\", \"udid\", \"ip\" == convert hash to expected format",
+					"top": 721,
+					"left": 509,
+					"width": 454,
+					"height": 46,
+					"sizingY": "move"
+				},
+				"Static Picture1": {
+					"type": "picture",
 					"top": 199,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "Human_Readable_Plural_Name : "
-				},
-				"Text15": {
-					"type": "text",
-					"top": 227,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "Human_Readable_Singular_Name : "
-				},
-				"Text16": {
-					"type": "text",
-					"top": 255,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "Yes or No"
-				},
-				"Text19": {
-					"type": "text",
-					"top": 280,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "lower numbers get configured first"
-				},
-				"Text21": {
-					"type": "text",
-					"top": 545,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "xpath_to_displayed_Name : "
-				},
-				"Text22": {
-					"type": "text",
-					"top": 572,
-					"left": 691,
-					"width": 208,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "/computer/general/serial_number"
-				},
-				"Text24": {
-					"type": "text",
-					"top": 342,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "/computers"
-				},
-				"Text27": {
-					"type": "text",
-					"top": 86,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "Example"
-				},
-				"Line3": {
-					"type": "line",
-					"top": 103,
-					"left": 691,
-					"width": 208
-				},
-				"Text28": {
-					"type": "text",
-					"top": 322,
-					"left": 0,
-					"width": 100,
-					"height": 17,
-					"fill": "#B1C4DD",
-					"textAlign": "left",
-					"fontWeight": "bold",
-					"text": "  Listing XML :"
-				},
-				"Text3": {
-					"type": "text",
-					"top": 518,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "detail_xml_scoping_xpath : "
-				},
-				"Text23": {
-					"type": "text",
-					"top": 431,
-					"left": 0,
-					"width": 100,
-					"height": 17,
-					"fill": "#B1C4DD",
-					"textAlign": "left",
-					"fontWeight": "bold",
-					"text": "  Detail XML :"
-				},
-				"Text26": {
-					"type": "text",
-					"top": 253,
-					"left": 439,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "isDepreciated : "
-				},
-				"Text17": {
-					"type": "text",
-					"top": 214,
-					"left": 948,
-					"width": 222,
-					"height": 17,
-					"textAlign": "left",
-					"fontWeight": "bold",
-					"text": "Example Listing XML :"
-				},
-				"Line4": {
-					"type": "line",
-					"top": 103,
-					"left": 0,
-					"width": 662
-				},
-				"Text29": {
-					"type": "text",
-					"top": 95,
-					"left": 0,
-					"width": 100,
-					"height": 17,
-					"fill": "#B1C4DD",
-					"textAlign": "left",
-					"fontWeight": "bold",
-					"text": " General :"
-				},
-				"Text31": {
-					"type": "text",
-					"top": 372,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Listing_XML_instance_xpath : "
-				},
-				"Text32": {
-					"type": "text",
-					"top": 113,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Name"
-				},
-				"Text35": {
-					"type": "text",
-					"top": 601,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "API_URL_to_lookup_by_id : "
-				},
-				"Text36": {
-					"type": "text",
-					"top": 628,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "API_URL_to_lookup_by_Name : "
-				},
-				"Text37": {
-					"type": "text",
-					"top": 141,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Category_ID : "
-				},
-				"Text38": {
-					"type": "text",
-					"top": 169,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Jamf Pro Webapp Page"
-				},
-				"Text39": {
-					"type": "text",
-					"top": 461,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Detail_XML_Root_Element_xpath : "
-				},
-				"Text40": {
-					"type": "text",
-					"top": 518,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "detail_xml_scoping_xpath : "
-				},
-				"Text41": {
-					"type": "text",
-					"top": 199,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Nickname - Plural"
-				},
-				"Text42": {
-					"type": "text",
-					"top": 226,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Nickname - Singular"
-				},
-				"Text43": {
-					"type": "text",
-					"top": 253,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "isSingleton : "
-				},
-				"Text44": {
-					"type": "text",
-					"top": 280,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Push Order"
-				},
-				"Text45": {
-					"type": "text",
-					"top": 545,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "xpath_to_displayed_Name : "
-				},
-				"Text46": {
-					"type": "text",
-					"top": 572,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "xpath_to_lookup_by_Name : "
-				},
-				"Text47": {
-					"type": "text",
-					"top": 342,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "XPath to Root Element"
-				},
-				"Text48": {
-					"type": "text",
-					"top": 401,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Name of DisplayName Element"
-				},
-				"Text49": {
-					"type": "text",
-					"top": 304,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "Available Methods : "
-				},
-				"Text50": {
-					"type": "text",
-					"top": 489,
-					"left": 9,
-					"width": 208,
-					"height": 17,
-					"textAlign": "right",
-					"text": "Detail_XML_ID_Element_xpath : "
-				},
-				"Text51": {
-					"type": "text",
-					"top": 489,
-					"left": 691,
-					"width": 219,
-					"height": 17,
-					"textAlign": "left",
-					"fontStyle": "italic",
-					"text": "detail_xml_scoping_xpath : "
-				},
-				"Text52": {
-					"type": "text",
-					"top": 489,
-					"left": 225,
-					"width": 170,
-					"height": 17,
-					"textAlign": "right",
-					"fontWeight": "bold",
-					"text": "XPath to ID Element : "
+					"left": 480,
+					"width": 19,
+					"height": 24,
+					"picture": "Images/Static Picture3.tif",
+					"sizingX": "move"
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"method": "method.4dm"
 }

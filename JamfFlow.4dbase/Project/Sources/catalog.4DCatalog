@@ -40,6 +40,7 @@
 		<field name="SourceServerItemDetailURL" uuid="B2EB7C7199704E7F92A106A8AC87F154" type="10" limiting_length="255" never_null="true" id="8"/>
 		<field name="HumanReadableItemName" uuid="91C805FBE77041778764B5B0BDE390C2" type="10" limiting_length="255" never_null="true" id="9"/>
 		<field name="Endpoint_Type_ID" uuid="0E21BA7BF80740B3845D55F5AD8F1B91" type="4" never_null="true" id="10"/>
+		<field name="PushPriority" uuid="E5CEBFFDDE424B2581199832947EE432" type="3" never_null="true" id="11"/>
 		<primary_key field_name="ID" field_uuid="F869AA88CF46429281EBD1D71693A006"/>
 		<table_extra input_form="In" output_form="Out">
 			<editor_table_info displayable_fields_count="11">
@@ -67,8 +68,9 @@
 	<table name="KeyValuePairs" uuid="148D72B287864EA98CFAE29552383365" id="4">
 		<field name="ID" uuid="86E398EC167347959EA2E48E694C0887" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="KeyName" uuid="BCFF8363B4F342F492EF4C11C4FF73B0" type="10" limiting_length="40" never_null="true" id="2"/>
-		<field name="ValueString" uuid="4B32B39B810A415E9947A59C27D3324A" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="ValueString" uuid="4B32B39B810A415E9947A59C27D3324A" type="10" never_null="true" id="3"/>
 		<field name="ExampleValue" uuid="C20C50F434B840BEAD41F24B20444333" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Blob" uuid="C6AE1D4B79E143D8BCD2E206B93C2F4A" type="18" never_null="true" id="5"/>
 		<primary_key field_name="ID" field_uuid="86E398EC167347959EA2E48E694C0887"/>
 		<table_extra input_form="In" output_form="Out">
 			<editor_table_info displayable_fields_count="5">
@@ -92,6 +94,7 @@
 		<field name="User_Initials" uuid="89B210330C454D4D9F2EDEB40192CBE9" type="10" limiting_length="255" never_null="true" id="12"/>
 		<field name="isApprover" uuid="05CC01FD8226464781AB41F4CCD51FF1" type="1" never_null="true" id="13"/>
 		<field name="isAdmin" uuid="52010C777BA645869A4C267E8B8E1CDC" type="1" never_null="true" id="14"/>
+		<field name="hasSeenWelcomeScrren" uuid="9ABE7DE1794742E8B0712275AA914F6C" type="1" never_null="true" id="15"/>
 		<primary_key field_name="ID" field_uuid="CA7C6BB9444F4E8F876B0B23C9112BCC"/>
 		<table_extra input_form="In" output_form="Out">
 			<editor_table_info displayable_fields_count="15">
@@ -137,23 +140,23 @@
 		<field name="XML_UniquenessConstraint_Xpaths" uuid="BDFB8933215140F58CB274B1279147EE" type="10" never_null="true" id="17"/>
 		<field name="XML_UniquenessConstraint_URLs" uuid="C2BF2056BBC745FAACD076372B2AEFCC" type="10" never_null="true" id="18"/>
 		<field name="xpath_to_displayed_Name" uuid="410D1FF4F9AB469B94D0E8DA37A70CB3" type="10" limiting_length="255" never_null="true" id="19"/>
-		<field name="push priority" uuid="207023FD7ABE44FD98926F165EBF1D9B" type="3" never_null="true" id="20"/>
+		<field name="Push_Priority" uuid="207023FD7ABE44FD98926F165EBF1D9B" type="3" never_null="true" id="20"/>
 		<field name="API_URL_to_lookup_by_Name" uuid="F9E7BF00A9BF4A1792EE4BA463573302" type="10" limiting_length="255" never_null="true" id="21"/>
 		<field name="xpath_to_lookup_by_Name" uuid="C924C3AB9D7343779DAAEB86B08B92F3" type="10" limiting_length="255" never_null="true" id="22"/>
 		<field name="API_URL_to_lookup_by_id" uuid="A02DC3B3FA5048E5A6CDBE484DC6011F" type="10" limiting_length="255" never_null="true" id="23"/>
 		<field name="DeployJamfProPruningXpaths" uuid="433FEF14F6B8440196593B3A2C4C444D" type="10" never_null="true" id="24"/>
 		<field name="Import_DisplayNameElementName" uuid="FA4EBD631FA248A1B15F2DDC365529A5" type="10" limiting_length="255" never_null="true" id="25"/>
 		<field name="Import_XPathToRootElement" uuid="E8CE621988B34521B08A895E49BFADC1" type="10" limiting_length="255" never_null="true" id="26"/>
-		<field name="_ListingXmlDisplayNameElement" uuid="12F69C970A6A4486B8A6F7C98F8C116C" type="10" limiting_length="255" never_null="true" id="27"/>
-		<field name="_Import_ItemElementName" uuid="30EB0A2658294ED0A8D59ABB7DAC3D3C" type="10" limiting_length="255" never_null="true" id="28"/>
 		<field name="isDepreciated" uuid="E42F7DDDE3244DD89A4CC70EA3431974" type="1" never_null="true" id="29"/>
 		<field name="Notes" uuid="4BA274371DD24B66971A31AE5CC09ADE" type="10" never_null="true" id="30"/>
 		<field name="Detail_XML_ID_Element_xpath" uuid="A68DBB42D08D45058E0B7F15A402F472" type="10" limiting_length="255" never_null="true" id="31"/>
+		<field name="Detail_XML_PII_XPaths" uuid="10578B601C1A4E4C85B706A8F8100747" type="10" never_null="true" id="32"/>
+		<field name="Detail_XML_PII_Replacements" uuid="4E129CDE36CA492F85E0FB52E99AA70E" type="10" never_null="true" id="33"/>
 		<primary_key field_name="ID" field_uuid="EADFA66ACDD54133907CDC8CDC98DB0E"/>
 		<table_extra input_form="In" output_form="Out">
-			<editor_table_info displayable_fields_count="32">
+			<editor_table_info displayable_fields_count="36">
 				<color red="255" green="255" blue="255" alpha="0"/>
-				<coordinates left="23.12890625" top="471.9140625" width="249.04296875" height="716.58203125"/>
+				<coordinates left="23.12890625" top="471.9140625" width="249.04296875" height="800.90625"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -244,6 +247,11 @@
 			</editor_relation_info>
 		</relation_extra>
 	</relation>
+	<index kind="regular" uuid="08EBFDBF5E7E46E9B4CA09643FD62155" type="7">
+		<field_ref uuid="63C7070F2CC3461A85A4D750B3C62B46" name="Detail_XML_Root_Element_xpath">
+			<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
+		</field_ref>
+	</index>
 	<index kind="regular" uuid="1559220B842C4593B1159659641C64C8" type="7">
 		<field_ref uuid="03B8C34F0FBD4355B62F92F066C47D60" name="set_id">
 			<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
@@ -290,7 +298,7 @@
 		</field_ref>
 	</index>
 	<index kind="regular" uuid="B039A08608674373832AFB6494965028" type="7">
-		<field_ref uuid="207023FD7ABE44FD98926F165EBF1D9B" name="push priority">
+		<field_ref uuid="207023FD7ABE44FD98926F165EBF1D9B" name="Push_Priority">
 			<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
 		</field_ref>
 	</index>
@@ -302,6 +310,11 @@
 	<index kind="regular" unique_keys="true" uuid="B967705801A44D2AA197FAE0A16C3FCB" type="7">
 		<field_ref uuid="EADFA66ACDD54133907CDC8CDC98DB0E" name="ID">
 			<table_ref uuid="EA5718E663BB4189813EAD91B1FF1D8F" name="Endpoints"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="CA88F80ACC62449293E7E71C38F8C3A5" type="7">
+		<field_ref uuid="E5CEBFFDDE424B2581199832947EE432" name="PushPriority">
+			<table_ref uuid="F5BCBB0FD6064D16902D7F5322D82686" name="XML"/>
 		</field_ref>
 	</index>
 	<index kind="regular" uuid="E968DD21404040E499F6E61A6A52566A" type="7">

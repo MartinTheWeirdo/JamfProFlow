@@ -125,14 +125,6 @@
 					"stroke": "#B1C4DD",
 					"strokeWidth": 2
 				},
-				"Round Rectangle3": {
-					"type": "rectangle",
-					"top": 527,
-					"left": 816,
-					"width": 25,
-					"height": 25,
-					"borderRadius": 5
-				},
 				"Rectangle4": {
 					"type": "rectangle",
 					"top": 65,
@@ -156,15 +148,6 @@
 					"stroke": "#B1C4DD",
 					"strokeWidth": 2
 				},
-				"Picture26": {
-					"type": "picture",
-					"top": 534,
-					"left": 382,
-					"width": 15,
-					"height": 20,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture26.tif"
-				},
 				"Tab Control1": {
 					"type": "tab",
 					"top": 82,
@@ -184,33 +167,6 @@
 						"onLoad",
 						"onClick"
 					]
-				},
-				"Picture27": {
-					"type": "picture",
-					"top": 573,
-					"left": 977,
-					"width": 15,
-					"height": 20,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture27.tif"
-				},
-				"Picture25": {
-					"type": "picture",
-					"top": 534,
-					"left": 672,
-					"width": 15,
-					"height": 20,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture25.tif"
-				},
-				"Picture30": {
-					"type": "picture",
-					"top": 162,
-					"left": 413,
-					"width": 32,
-					"height": 32,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture30.tif"
 				},
 				"Round Rectangle": {
 					"type": "rectangle",
@@ -305,10 +261,10 @@
 					"type": "text",
 					"top": 538,
 					"left": 46,
-					"width": 325,
-					"height": 17,
+					"width": 370,
+					"height": 16,
 					"fontWeight": "bold",
-					"text": "Item Details (Double-click items above to show...)"
+					"text": "Item Details (Double-click an item above to view XML)"
 				},
 				"Text10": {
 					"type": "text",
@@ -354,7 +310,8 @@
 					"method": "ObjectMethods/SourceItemsClearButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"SearchPicker": {
 					"type": "subform",
@@ -433,7 +390,7 @@
 						{
 							"name": "sourceItemLB.c.Names",
 							"dataSource": "at_sourceItemLB_Names",
-							"width": 349,
+							"width": 310,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
@@ -515,23 +472,25 @@
 					"type": "button",
 					"top": 92,
 					"left": 495,
-					"width": 153,
+					"width": 160,
 					"height": 24,
 					"shortcutKey": "[right arrow]",
 					"shortcutAccel": true,
 					"shortcutAlt": true,
-					"text": "Add Items [⌥⌘→]",
+					"text": "Add Item(s) [⌥⌘→]",
 					"focusable": false,
 					"method": "ObjectMethods/SelectSourceItemsButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office",
+					"tooltip": "Shift-click adds just one of each type"
 				},
 				"ClearSelectedItemsButton": {
 					"type": "button",
 					"top": 127,
 					"left": 495,
-					"width": 153,
+					"width": 160,
 					"height": 24,
 					"tooltip": {
 						"$ref": "/SOURCES/tips.json#/RemoveSelected"
@@ -539,12 +498,13 @@
 					"shortcutKey": "[left arrow]",
 					"shortcutAccel": true,
 					"shortcutAlt": true,
-					"text": "[⌥⌘←] Remove Item(s)",
+					"text": "Remove Item(s) [⌥⌘←]",
 					"focusable": false,
 					"method": "ObjectMethods/ClearSelectedItemsButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"SelectSourceItemsDependencies": {
 					"type": "button",
@@ -559,7 +519,8 @@
 					"method": "ObjectMethods/SelectSourceItemsDependencies.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"Check Box2": {
 					"type": "checkbox",
@@ -658,7 +619,7 @@
 					"type": "input",
 					"top": 560,
 					"left": 495,
-					"width": 330,
+					"width": 329,
 					"height": 225,
 					"sizingY": "grow",
 					"dataSource": "vt_selectedItemsSummary",
@@ -741,7 +702,7 @@
 				},
 				"Popup Dropdown List": {
 					"type": "dropdown",
-					"top": 256,
+					"top": 296,
 					"left": 982,
 					"width": 128,
 					"height": 22,
@@ -755,10 +716,10 @@
 				},
 				"ImportOps_NewSet_F2": {
 					"type": "input",
-					"top": 291,
+					"top": 331,
 					"left": 982,
 					"width": 323,
-					"height": 145,
+					"height": 97,
 					"sizingX": "grow",
 					"dataSource": "vt_NewConfigSetDescription",
 					"dragging": "none",
@@ -804,18 +765,24 @@
 				},
 				"ImportSetOperationsButton": {
 					"type": "button",
-					"top": 535,
+					"top": 528,
 					"left": 1205,
 					"width": 100,
-					"height": 28,
+					"height": 24,
 					"sizingX": "move",
-					"text": "Save",
+					"text": "Save [⌘S]",
 					"focusable": false,
 					"method": "ObjectMethods/ImportSetOperationsButton.4dm",
 					"events": [
 						"onLoad",
 						"onClick"
-					]
+					],
+					"style": "office",
+					"shortcutAccel": true,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "s"
 				},
 				"ImportOps_NewSet_L1": {
 					"type": "text",
@@ -828,7 +795,7 @@
 				},
 				"ImportOps_NewSet_L2": {
 					"type": "text",
-					"top": 289,
+					"top": 329,
 					"left": 899,
 					"width": 78,
 					"height": 17,
@@ -900,15 +867,15 @@
 					"type": "text",
 					"top": 575,
 					"left": 899,
-					"width": 83,
-					"height": 17,
+					"width": 68,
+					"height": 16,
 					"fontWeight": "bold",
 					"text": "Transcript"
 				},
 				"Picture17": {
 					"type": "picture",
 					"top": 129,
-					"left": 637,
+					"left": 645,
 					"width": 9,
 					"height": 10,
 					"pictureFormat": "scaled",
@@ -933,7 +900,7 @@
 				},
 				"Onglet3": {
 					"type": "tab",
-					"top": 221,
+					"top": 261,
 					"left": 982,
 					"width": 134,
 					"height": 25,
@@ -954,7 +921,7 @@
 				},
 				"ImportOps_Set_Category": {
 					"type": "text",
-					"top": 256,
+					"top": 296,
 					"left": 899,
 					"width": 63,
 					"height": 17,
@@ -969,54 +936,6 @@
 					"height": 10,
 					"pictureFormat": "scaled",
 					"picture": "Images/ImportOps_Modify_ListTabTip.tif"
-				},
-				"bCopy": {
-					"type": "button",
-					"top": 534,
-					"left": 672,
-					"width": 15,
-					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Clipboard"
-					},
-					"display": false,
-					"method": "ObjectMethods/bCopy.4dm",
-					"events": [
-						"onClick",
-						"onMouseMove"
-					]
-				},
-				"bCopy1": {
-					"type": "button",
-					"top": 534,
-					"left": 381,
-					"width": 15,
-					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Clipboard"
-					},
-					"display": false,
-					"method": "ObjectMethods/bCopy1.4dm",
-					"events": [
-						"onClick",
-						"onMouseMove"
-					]
-				},
-				"bCopy2": {
-					"type": "button",
-					"top": 572,
-					"left": 977,
-					"width": 15,
-					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Clipboard"
-					},
-					"display": false,
-					"method": "ObjectMethods/bCopy2.4dm",
-					"events": [
-						"onClick",
-						"onMouseMove"
-					]
 				},
 				"Picture24": {
 					"type": "picture",
@@ -1041,35 +960,144 @@
 						"onMouseMove"
 					]
 				},
-				"Invisible Button": {
+				"magButton": {
 					"type": "button",
-					"top": 164,
-					"left": 413,
-					"width": 30,
-					"height": 29,
-					"display": false,
-					"method": "ObjectMethods/Invisible Button.4dm",
+					"top": 566,
+					"left": 1280,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
 					"events": [
 						"onClick"
-					]
+					],
+					"method": "ObjectMethods/magButton.4dm",
+					"sizingX": "move"
 				},
-				"Picture34": {
-					"type": "picture",
-					"top": 530,
-					"left": 820,
-					"width": 20,
-					"height": 18,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture34.tif"
+				"BevelButton7": {
+					"type": "button",
+					"top": 566,
+					"left": 1241,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/clip22.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BevelButton7.4dm",
+					"sizingX": "move"
 				},
-				"Picture38": {
+				"magButton1": {
+					"type": "button",
+					"top": 165,
+					"left": 421,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/safari.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"method": "ObjectMethods/magButton1.4dm"
+				},
+				"magButton2": {
+					"type": "button",
+					"top": 528,
+					"left": 421,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"method": "ObjectMethods/magButton2.4dm"
+				},
+				"magButton3": {
+					"type": "button",
+					"top": 528,
+					"left": 816,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					],
+					"method": "ObjectMethods/magButton3.4dm"
+				},
+				"Check Box5": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 982,
+					"width": 245,
+					"height": 21,
+					"dataSource": "vl_ImportAnonymize",
+					"text": "Anonomize Data",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"tooltip": "Sensative values like names and emails will be hashed"
+				},
+				"Picture1": {
 					"type": "picture",
-					"top": 530,
-					"left": 758,
-					"width": 50,
-					"height": 19,
+					"top": 94,
+					"left": 644,
+					"width": 9,
+					"height": 10,
 					"pictureFormat": "scaled",
-					"picture": "Images/Picture38.tif"
+					"picture": "Images/Picture17.tif"
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 220,
+					"left": 1101,
+					"width": 9,
+					"height": 10,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture17.tif"
 				}
 			}
 		},
@@ -1111,11 +1139,12 @@
 						"onSelectionChange",
 						"onHeaderClick"
 					],
+					"sizingX": "grow",
 					"columns": [
 						{
 							"name": "Column7",
 							"dataSource": "[Sets:1]Category:18",
-							"width": 120,
+							"width": 188,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"events": [
@@ -1321,7 +1350,7 @@
 						{
 							"name": "Column3",
 							"dataSource": "[XML:2]ItemType:6",
-							"width": 129,
+							"width": 140,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"events": [
@@ -1340,7 +1369,7 @@
 						{
 							"name": "Column6",
 							"dataSource": "[XML:2]HumanReadableItemName:9",
-							"width": 321,
+							"width": 299,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"events": [
@@ -1354,6 +1383,18 @@
 							"footer": {
 								"name": "Footer12",
 								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"header": {
+								"name": "Header22",
+								"text": "Priority"
+							},
+							"name": "Column22",
+							"dataSource": "[XML:2]PushPriority:11",
+							"width": 54,
+							"footer": {
+								"name": "Footer28"
 							}
 						},
 						{
@@ -1373,35 +1414,39 @@
 							"footer": {
 								"name": "Footer11",
 								"timeFormat": "hh_mm_ss"
-							}
+							},
+							"wordwrap": "none"
 						}
 					]
 				},
 				"Button": {
 					"type": "button",
 					"top": 51,
-					"left": 1202,
-					"width": 120,
-					"height": 29,
+					"left": 1221,
+					"width": 101,
+					"height": 25,
 					"text": "Show All",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office",
+					"sizingX": "move"
 				},
 				"Button1": {
 					"type": "button",
 					"top": 466,
-					"left": 561,
-					"width": 120,
-					"height": 29,
+					"left": 581,
+					"width": 100,
+					"height": 25,
 					"text": "Show All",
 					"focusable": false,
 					"method": "ObjectMethods/Button1.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"Text1": {
 					"type": "text",
@@ -1414,25 +1459,6 @@
 					"fontWeight": "bold",
 					"text": "Set Components"
 				},
-				"bDelete": {
-					"type": "pictureButton",
-					"top": 52,
-					"left": 1158,
-					"width": 24,
-					"height": 27,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Delete Record"
-					},
-					"rowCount": 4,
-					"picture": "/RESOURCES/Images/Buttons/LightGrey/SmallDeleteRecord.png",
-					"switchWhenRollover": true,
-					"switchBackWhenReleased": true,
-					"useLastFrameAsDisabled": true,
-					"method": "ObjectMethods/bDelete.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"Variable1": {
 					"type": "input",
 					"top": 504,
@@ -1443,7 +1469,7 @@
 					"sizingY": "grow",
 					"dataSource": "vt_manageXMLDisplay",
 					"focusable": false,
-					"fill": "#B1C4DD",
+					"fill": "#C5F1E8",
 					"borderStyle": "sunken",
 					"enterable": false,
 					"scrollbarVertical": "automatic",
@@ -1466,45 +1492,75 @@
 					"fontWeight": "bold",
 					"text": "XML"
 				},
-				"Picture15": {
-					"type": "picture",
-					"top": 475,
-					"left": 797,
-					"width": 15,
-					"height": 20,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture15.tif"
-				},
-				"bCopy4": {
+				"magButton4": {
 					"type": "button",
-					"top": 475,
-					"left": 797,
-					"width": 15,
-					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Clipboard"
-					},
-					"display": false,
-					"method": "ObjectMethods/bCopy4.4dm",
+					"top": 470,
+					"left": 1297,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
 					"events": [
-						"onClick",
-						"onMouseMove"
-					]
+						"onClick"
+					],
+					"method": "ObjectMethods/magButton4.4dm",
+					"sizingX": "move"
+				},
+				"Button5": {
+					"type": "button",
+					"top": 51,
+					"left": 1176,
+					"width": 25,
+					"height": 25,
+					"text": "",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "office",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/SmallDeleteRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"sizingX": "move",
+					"tooltip": "Pressing [option] will skip the warning dialog"
+				},
+				"Button7": {
+					"type": "button",
+					"top": 466,
+					"left": 533,
+					"width": 25,
+					"height": 25,
+					"text": "",
+					"focusable": false,
+					"method": "ObjectMethods/Button7.4dm",
+					"events": [
+						"onClick"
+					],
+					"style": "office",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/SmallDeleteRecord.png",
+					"iconFrames": 4,
+					"textPlacement": "right"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 49,
+					"left": 1194,
+					"width": 9,
+					"height": 10,
+					"pictureFormat": "scaled",
+					"picture": "Images/Picture17.tif",
+					"sizingX": "move"
 				}
 			}
 		},
 		{
 			"objects": {
-				"Picture14": {
-					"type": "picture",
-					"top": 460,
-					"left": 773,
-					"width": 15,
-					"height": 20,
-					"sizingY": "move",
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture14.tif"
-				},
 				"DeployOps_ListTab": {
 					"type": "tab",
 					"top": 457,
@@ -1530,7 +1586,7 @@
 					"top": 745,
 					"left": 515,
 					"width": 120,
-					"height": 28,
+					"height": 25,
 					"sizingY": "move",
 					"dataSource": "vl_Deploy_go_button",
 					"text": "Upload",
@@ -1538,7 +1594,8 @@
 					"method": "ObjectMethods/Deploy_go_button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"DeploySetsLIstBox": {
 					"type": "listbox",
@@ -1584,7 +1641,7 @@
 						{
 							"name": "Column23",
 							"dataSource": "[Sets:1]Category:18",
-							"width": 98,
+							"width": 142,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"events": [
@@ -1643,7 +1700,7 @@
 						{
 							"name": "Column14",
 							"dataSource": "[Sets:1]LastModifiedBy:15",
-							"width": 103,
+							"width": 88,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"events": [
@@ -1652,7 +1709,7 @@
 							],
 							"header": {
 								"name": "Header14",
-								"text": "Last Modified By"
+								"text": "Last Mod. By"
 							},
 							"footer": {
 								"name": "Footer20",
@@ -1663,7 +1720,7 @@
 							"name": "Column11",
 							"dataSource": "[Sets:1]LastModifiedDate:5",
 							"dataSourceTypeHint": "date",
-							"width": 91,
+							"width": 75,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"enterable": false,
@@ -1673,7 +1730,7 @@
 							],
 							"header": {
 								"name": "Header11",
-								"text": "Last Modified"
+								"text": "Last Mod."
 							},
 							"footer": {
 								"name": "Footer17",
@@ -1704,7 +1761,7 @@
 						{
 							"name": "Column20",
 							"dataSource": "[Sets:1]ApprovedBy_User:11",
-							"width": 102,
+							"width": 89,
 							"minWidth": 10,
 							"maxWidth": 32000,
 							"events": [
@@ -1727,7 +1784,7 @@
 					"top": 524,
 					"left": 166,
 					"width": 272,
-					"height": 28,
+					"height": 29,
 					"sizingY": "move",
 					"dataSource": "at_SelectTargetJamfProServers",
 					"method": "ObjectMethods/deploy_jp_serverpopup1.4dm",
@@ -1739,7 +1796,7 @@
 				},
 				"deploy_jp_svrpopup lable": {
 					"type": "text",
-					"top": 530,
+					"top": 529,
 					"left": 55,
 					"width": 105,
 					"height": 17,
@@ -1819,7 +1876,7 @@
 					"dataSource": "vt_deployedItemsSummary",
 					"fontFamily": "Courier",
 					"fontSize": 13,
-					"fill": "transparent",
+					"fill": "#DAE5F1",
 					"scrollbarVertical": "automatic",
 					"dragging": "none",
 					"dropping": "none",
@@ -1828,26 +1885,9 @@
 						"onLoad"
 					]
 				},
-				"bCopy3": {
-					"type": "button",
-					"top": 460,
-					"left": 773,
-					"width": 15,
-					"height": 20,
-					"sizingY": "move",
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Clipboard"
-					},
-					"display": false,
-					"method": "ObjectMethods/bCopy3.4dm",
-					"events": [
-						"onClick",
-						"onMouseMove"
-					]
-				},
 				"Text8": {
 					"type": "text",
-					"top": 462,
+					"top": 465,
 					"left": 694,
 					"width": 74,
 					"height": 17,
@@ -1857,7 +1897,7 @@
 				},
 				"Text13": {
 					"type": "text",
-					"top": 658,
+					"top": 655,
 					"left": 694,
 					"width": 175,
 					"height": 17,
@@ -1874,7 +1914,7 @@
 					"sizingY": "move",
 					"dataSource": "vl_DeployPruneDeviceDetails",
 					"tooltip": "Remove all but the basic device data and let the rest populate on first recon",
-					"text": "Pune Device Details",
+					"text": "Prune Device Details",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1888,7 +1928,7 @@
 					"height": 21,
 					"sizingY": "move",
 					"dataSource": "vl_DeployPruneDeviceUser",
-					"text": "Pune Device User and Location",
+					"text": "Prune Device User and Location",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -1914,7 +1954,7 @@
 							"name": "Column16",
 							"dataSource": "at_DeployLinks_Names",
 							"width": 250,
-							"minWidth": 10,
+							"minWidth": 200,
 							"maxWidth": 32000,
 							"enterable": false,
 							"stroke": "#000000",
@@ -1973,21 +2013,6 @@
 					"fontWeight": "bold",
 					"text": "Line Endings :"
 				},
-				"Button2": {
-					"type": "button",
-					"top": 649,
-					"left": 1259,
-					"width": 70,
-					"height": 23,
-					"sizingX": "move",
-					"sizingY": "move",
-					"text": "Show",
-					"focusable": false,
-					"method": "ObjectMethods/Button2.4dm",
-					"events": [
-						"onClick"
-					]
-				},
 				"deploy_setlist_label": {
 					"type": "text",
 					"top": 48,
@@ -2041,15 +2066,15 @@
 					"type": "input",
 					"top": 280,
 					"left": 974,
-					"width": 339,
+					"width": 338,
 					"height": 156,
 					"sizingX": "grow",
 					"sizingY": "move",
 					"dataSource": "vt_gitInfo",
 					"fontFamily": "Courier",
 					"fontSize": 13,
-					"fill": "transparent",
-					"borderStyle": "solid",
+					"fill": "#DAE5F1",
+					"borderStyle": "system",
 					"scrollbarVertical": "automatic",
 					"dragging": "none",
 					"dropping": "none",
@@ -2077,35 +2102,40 @@
 					"fontFamily": "System Font Regular",
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"text": "Sync Status"
+					"text": "Sync Status",
+					"sizingX": "fixed",
+					"sizingY": "move"
 				},
 				"Button3": {
 					"type": "button",
-					"top": 249,
-					"left": 1245,
+					"top": 248,
+					"left": 1199,
 					"width": 84,
-					"height": 23,
+					"height": 25,
 					"sizingX": "move",
-					"text": "Show",
+					"text": "Update",
 					"focusable": false,
 					"method": "ObjectMethods/Button3.4dm",
 					"events": [
 						"onLoad",
 						"onClick"
-					]
+					],
+					"style": "office",
+					"sizingY": "move"
 				},
 				"Button6": {
 					"type": "button",
 					"top": 43,
 					"left": 834,
 					"width": 120,
-					"height": 27,
+					"height": 25,
 					"text": "Show All",
 					"focusable": false,
 					"method": "ObjectMethods/Button6.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"deploy_git_saveLocalOnly": {
 					"type": "radio",
@@ -2139,35 +2169,10 @@
 						"onClick"
 					]
 				},
-				"Picture1": {
-					"type": "picture",
-					"top": 251,
-					"left": 1085,
-					"width": 15,
-					"height": 20,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture1.tif"
-				},
-				"bCopy5": {
-					"type": "button",
-					"top": 251,
-					"left": 1085,
-					"width": 15,
-					"height": 20,
-					"tooltip": {
-						"$ref": "/SOURCES/tips.json#/Clipboard"
-					},
-					"display": false,
-					"method": "ObjectMethods/bCopy5.4dm",
-					"events": [
-						"onClick",
-						"onMouseMove"
-					]
-				},
 				"Popup Dropdown List1": {
 					"type": "dropdown",
 					"top": 44,
-					"left": 1169,
+					"left": 1171,
 					"width": 158,
 					"height": 26,
 					"dataSource": "at_gitOpsDropdownMenu",
@@ -2183,145 +2188,78 @@
 						"onLoad",
 						"onClick",
 						"onDataChange"
-					]
+					],
+					"sizingX": "move"
 				},
 				"deploy_jp_helpavailDot1": {
 					"type": "picture",
 					"top": 643,
-					"left": 304,
+					"left": 308,
 					"width": 9,
 					"height": 10,
 					"sizingY": "move",
 					"pictureFormat": "scaled",
 					"picture": "Images/deploy_jp_helpavailDot1.tif"
-				}
-			}
-		},
-		{
-			"objects": {
-				"Picture5": {
-					"type": "picture",
-					"top": 390,
-					"left": 14,
-					"width": 484,
-					"height": 303,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture5.tif"
 				},
-				"Text4": {
-					"type": "text",
-					"top": 592,
-					"left": 549,
-					"width": 229,
-					"height": 161,
-					"text": "A tool to migrate data granularly between Jamf Pro servers\r\ralt text\r\rMigrate items from one Jamf server, or XML file(s), to another. If an item (based on name) within a category exists on both source and destination, the destination item will be updated with values from the source server. alt text\r\rGroups, Policies, and Configuration Profiles can be targeted to a particular site. alt text\r\rFeedback in the GUI gives a simplistic overview of the success of a transfer:\r\rGreen - everything transferred.\rYellow - some items transferred.\rRed - nothing transferred.\rWhite - nothing to transfer.\rLimitations/requirements to be aware of:\r\rPasswords can not be extracted through the API which impacts migrating distribution points, computer management account, account used for LDAP - credentials must be reset on the destination server.\rIcons associated with Mac App Store apps are not migrated (can't be migrated).\rOnly AFP and SMB shares can be migrated.\rPatch management is not available through the API impacting smart groups dependent on patch management extension attributes.\rBuildings - the API only allows the name to be migrated.\rIf endpoints (computers, policies, configuration profiles...) have duplicate names on the source server issues will arise if the app is used to update those items from the source to destination server. As each item is migrited it will overwrite the previous item with the same name.\rMigrating smart/static groups with criteria containing groups will fail if the parent group tries to migrate before the group in the criteria. Migrating groups several times should allow all the nested groups to migrate before the parent group.\rInstitutional disk encryptions that contain the private key cannot be migrated.\rApproved Kernel Extension payloads that contain bundle IDs will be dropped from the Configuration Profile.\rApproved Kernel Extension - the display name for the Approved Team ID does not migrate.\rThe 'Selective' tab provides the ability to select a subset of items within a category. For example you might only want to transfer 4 new scripts from a larger pool of existing scripts. alt text\r\rNote: Policies are listed along with the their ID. They'll be listed with a format of: policy name (ID)\r\rAlso, policies may have their dependencies checked/migrated using the Migrate Dependencies button. Only 'top-level' dependencies are checked. i.e. if the scope is being migrated and contains nested computer groups or groups assigned to a site that doesn't exist on the destination server the policy migration will likely fail. Adding smart migrations is planned for other items. alt text\r\rWhen importing XML files they must be organized into folders that, for the most part, mirror their respective API nodes. i.e. computer XML files in a folder labeled computers, mobile devices in a folder called mobiledevices. Exceptions to this are group items, for example computer groups are split into a smartcomputergroups folder and staticcomputergroups folder. This is also how jamf-migrator exports files. Then when importing, select the folder that contains the API nodes we wish to update. For example, if selecting files generated by exporting data with jamf-migrator we would select the folder called raw.\r\ralt text\r\rImportant: Trimmed XML files cannot be used as they are missing data required for the migration.\r\rPreferences:\r\rmacOS Configuration Profiles\rmacOS Applications\rRestrictions\rPolicies\rMobile Device Configuration Profiles\rMobile Device Applications\rStatic Computer Groups\rStatic Mobile Device Groups\rStatic User Groups\rIn addition, Policies can be copied in a disabled state.\r\r\r\rOptions to export XML from the source server are also available.\r\r\r\rRaw Source XML gives you the XML from the source server before any modifications, like removing the id tag(s) and value(s).\rTrimmed Source XML give you the XML that is sent to the destination server.\rSave only saves the XML files and does not send them to the destination server.\rSave the object XML either with or without its scope. Unchecked removes the scope.\rNote Save only and Raw Source XML options should not be selected when File Import is being used.\rOptions for migrating object(s) (groups, policies, and configuration profiles) to a particular site can be set.\r\r\r\rWhen copying an object to a site, the site name is appended to the object name.\rGroups with groups as a criteria will not copy properly, moving them should be fine.\rMigration Summary:\r\rTo get details on how many items were created/updated or failed to migrate type ⌘S, or select Show Summary under the File menu.\r\ralt text\r\rAdditional information about each count can be obtained by clicking on the number. For example, if we want to see a list of the 28 failed scripts, click on the 28.\r\ralt text\r\rInformation about successes/failures can be found in the log, located in\r\r~/Library/Containers/com.jamf.jamf-migrator/Data/Library/Logs/jamf-migrator/<date>_<time>_migration.log\rIf you have used jamf-migrator and saved passwords you will see the following after launching a new version. alt text\r\rIf you'd like the new version to access existing credentials select the desired option.\r\rImportant:\r\rThere are many dependencies between items, if they are not met transfers fail. For example, if a policy is site specific the site must be migrated before the policy; if a distribution point has a building and/or department defined those need to migrate first... If everything is migrated the order of sections is already taken care of, if you choose not to move some items that's where you can have issues.\rSummary window doesn't seem to be the most responsive. May need to click the window or give the cursor some extra motion before the detailed summary appears.\rNote: the app can also be used to clear out a Jamf server. Typing the following after launching the app will set it into removal mode. Items from the destination server are deleted once Go is clicked.\r\rtouch ~/Library/Containers/com.jamf.jamf-migrator/Data/Library/Application\\ Support/jamf-migrator/delete\rYou can also toggle the mode using ⌘D.\r"
+				"magButton5": {
+					"type": "button",
+					"top": 248,
+					"left": 1304,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/magButton5.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
 				},
-				"Picture12": {
-					"type": "picture",
-					"top": 290,
-					"left": 549,
-					"width": 480,
-					"height": 282,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture12.tif"
+				"magButton6": {
+					"type": "button",
+					"top": 460,
+					"left": 1304,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/magButton6.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
 				},
-				"Picture13": {
-					"type": "picture",
-					"top": 63,
-					"left": 549,
-					"width": 420,
-					"height": 216,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture13.tif"
-				},
-				"Picture2": {
-					"type": "picture",
-					"top": 51,
-					"left": 25,
-					"width": 462,
-					"height": 298,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture2.tif"
-				},
-				"Picture4": {
-					"type": "picture",
-					"top": 609,
-					"left": 817,
-					"width": 499,
-					"height": 127,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture4.tif"
-				}
-			}
-		},
-		{
-			"objects": {
-				"Picture7": {
-					"type": "picture",
-					"top": 55,
-					"left": 41,
-					"width": 720,
-					"height": 448,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture7.tif"
-				},
-				"Picture6": {
-					"type": "picture",
-					"top": 462,
-					"left": 705,
-					"width": 614,
-					"height": 325,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture6.tif"
-				}
-			}
-		},
-		{
-			"objects": {
-				"Picture3": {
-					"type": "picture",
-					"top": 15,
-					"left": 21,
-					"width": 800,
-					"height": 190,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture3.tif"
-				},
-				"Picture8": {
-					"type": "picture",
-					"top": 15,
-					"left": 849,
-					"width": 360,
-					"height": 334,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture8.tif"
-				},
-				"Picture9": {
-					"type": "picture",
-					"top": 387,
-					"left": 926,
-					"width": 360,
-					"height": 334,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture9.tif"
-				},
-				"Picture10": {
-					"type": "picture",
-					"top": 422,
-					"left": 426,
-					"width": 480,
-					"height": 282,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture10.tif"
-				},
-				"Picture11": {
-					"type": "picture",
-					"top": 422,
-					"left": 21,
-					"width": 360,
-					"height": 344,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture11.tif"
+				"magButton7": {
+					"type": "button",
+					"top": 648,
+					"left": 1304,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/magButton7.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
 				}
 			}
 		}
@@ -2333,5 +2271,10 @@
 				"deploy_git_saveAndPush"
 			]
 		}
-	}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"method": "method.4dm"
 }

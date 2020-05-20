@@ -4,6 +4,11 @@ $vt_password:=$2
 
 $vb_successfulLogin:=Login_ (vt_username;vt_password)
 
+  // Get a list of existing nicknames so we can check for duplicates if we end up creating a user record
+ALL RECORDS:C47([UserTable:5])
+SELECTION TO ARRAY:C260([UserTable:5]User_Initials:12;$at_existingNickNames)
+
+
 If ($vb_successfulLogin)
 	QUERY:C277([UserTable:5];[UserTable:5]user_name:2=vt_username)
 	
@@ -17,12 +22,6 @@ If ($vb_successfulLogin)
 		If (($vl_positionOfAtSignInUsername>0) & (Length:C16(vt_username)>($vl_positionOfAtSignInUsername+1)))
 			[UserTable:5]ad_server_name:4:=Substring:C12(vt_username;$vl_positionOfAtSignInUsername+1)
 		End if 
-		
-		  // First time user... show them a warning
-		$vl_licenseWinID:=Open form window:C675("License")
-		DIALOG:C40("License")
-		CLOSE WINDOW:C154($vl_licenseWinID)
-		
 	End if 
 	
 	[UserTable:5]login_count_ok:5:=[UserTable:5]login_count_ok:5+1
@@ -47,13 +46,6 @@ If ($vb_successfulLogin)
 				$vt_nickname:=$vt_firstName+" "+$vt_lastInitial
 			End if 
 		End if 
-		
-		  // Get a list of existing nicknames so we can check for duplicates
-		SAVE RECORD:C53([UserTable:5])  // Save the updated user record before we ditch the selection and loose our edits
-		ALL RECORDS:C47([UserTable:5])
-		SELECTION TO ARRAY:C260([UserTable:5]User_Initials:12;$at_existingNickNames)
-		QUERY:C277([UserTable:5];[UserTable:5]user_name:2=vt_username)  // Get the user's record back
-		
 		$vt_nickNameRequestMessage:="Please enter your initials or a nickname..."
 		While ([UserTable:5]User_Initials:12="")
 			$vt_nickNameEntry:=Request:C163($vt_nickNameRequestMessage;$vt_nickname)
@@ -70,9 +62,18 @@ If ($vb_successfulLogin)
 		
 	End if   // If ([UserTable]User_Initials="")
 	
-	SAVE RECORD:C53([UserTable:5])
+	  // First time user... show them a warning
+	If (Not:C34([UserTable:5]hasSeenWelcomeScrren:15))
+		$vl_licenseWinID:=Open form window:C675("License")
+		DIALOG:C40("License")
+		CLOSE WINDOW:C154($vl_licenseWinID)
+		[UserTable:5]hasSeenWelcomeScrren:15:=True:C214
+	End if 
+	
 	<>vt_currentUser:=vt_username
 	<>vt_currentUser_Nickname:=[UserTable:5]User_Initials:12
+	SAVE RECORD:C53([UserTable:5])
+	UNLOAD RECORD:C212([UserTable:5])
 End if   // If ($vb_successfulLogin)
 
 $0:=$vb_successfulLogin

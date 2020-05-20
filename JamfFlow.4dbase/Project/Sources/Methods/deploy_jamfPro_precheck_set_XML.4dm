@@ -36,7 +36,7 @@ Else
 			  // So we can see if we get a record back when we call that against the target Jamf Pro
 			  // If there is, we have a collision
 			  // $vt_xpathBase:=substring($vt_xpath;1;position("/";$vt_xpath;2))
-			$vt_url:=$vt_targetServer+$vt_url+"/"+sh_http_urlEncode ($vt_Value)
+			$vt_url:=$vt_targetServer+$vt_url+"/"+sh_http_urlEncode ($vt_Value;"WWW FORM")
 			
 			$vt_userPipePass:=Import_GetJamfProServerLogin ($vt_selectedSourceServer)
 			If ($vt_userPipePass="")

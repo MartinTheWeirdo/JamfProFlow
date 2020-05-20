@@ -12,10 +12,8 @@ ALL RECORDS:C47([UserTable:5])
   //QUERY SELECTION([UserTable];[UserTable]user_name#"Designer")
 DELETE SELECTION:C66([UserTable:5])
 
-ALL RECORDS:C47([JamfProServers:3])
+QUERY:C277([JamfProServers:3];[JamfProServers:3]URL:2#"https://jamfproflow.jamfcloud.com")
 DELETE SELECTION:C66([JamfProServers:3])
 
 ALL RECORDS:C47([LogItems:6])
 DELETE SELECTION:C66([LogItems:6])
-
-

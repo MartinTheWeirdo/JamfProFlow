@@ -8,29 +8,7 @@
 	"markerFooter": 423,
 	"events": [
 		"onLoad",
-		"onValidate",
-		"onClick",
-		"onHeader",
-		"onPrintingBreak",
-		"onPrintingFooter",
-		"onDisplayDetail",
-		"onOutsideCall",
-		"onDoubleClick",
-		"onDrop",
-		"onMenuSelect",
-		"onPluginArea",
-		"onDataChange",
-		"onDragOver",
-		"onPrintingDetail",
-		"onOpenDetail",
-		"onCloseDetail",
-		"onTimer",
-		"onAfterKeystroke",
-		"onLoadRecord",
-		"onAfterEdit",
-		"onBeginDragOver",
-		"onBoundVariableChange",
-		"onPageChange"
+		"onClick"
 	],
 	"pageFormat": {
 		"paperName": "US Letter",
@@ -85,7 +63,9 @@
 					"top": 77,
 					"left": 19,
 					"width": 644,
-					"sizingX": "grow"
+					"sizingX": "grow",
+					"height": 0,
+					"startPoint": "topLeft"
 				},
 				"bFirst": {
 					"type": "pictureButton",
@@ -104,7 +84,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bPrevious": {
 					"type": "pictureButton",
@@ -123,7 +104,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bNext": {
 					"type": "pictureButton",
@@ -142,7 +124,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bLast": {
 					"type": "pictureButton",
@@ -161,7 +144,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bDelete": {
 					"type": "pictureButton",
@@ -180,7 +164,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bCancel": {
 					"type": "pictureButton",
@@ -199,7 +184,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bValidate": {
 					"type": "pictureButton",
@@ -218,7 +204,8 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"Text16": {
 					"type": "text",
@@ -227,7 +214,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": "ID : ",
+					"sizingX": "fixed"
 				},
 				"Text17": {
 					"type": "text",
@@ -236,7 +224,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "user_name : "
+					"text": "user_name : ",
+					"sizingX": "fixed"
 				},
 				"Text18": {
 					"type": "text",
@@ -245,7 +234,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ad_server_name : "
+					"text": "ad_server_name : ",
+					"sizingX": "fixed"
 				},
 				"Text19": {
 					"type": "text",
@@ -254,7 +244,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "first_login_ok_date : "
+					"text": "first_login_ok_date : ",
+					"sizingX": "fixed"
 				},
 				"Text20": {
 					"type": "text",
@@ -263,7 +254,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "first_login_ok_time : "
+					"text": "first_login_ok_time : ",
+					"sizingX": "fixed"
 				},
 				"Text21": {
 					"type": "text",
@@ -272,7 +264,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "last_login_ok_date : "
+					"text": "last_login_ok_date : ",
+					"sizingX": "fixed"
 				},
 				"Text22": {
 					"type": "text",
@@ -281,7 +274,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "last_login_ok_time : "
+					"text": "last_login_ok_time : ",
+					"sizingX": "fixed"
 				},
 				"Text23": {
 					"type": "text",
@@ -290,7 +284,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "last_password_update_date : "
+					"text": "last_password_update_date : ",
+					"sizingX": "fixed"
 				},
 				"Text24": {
 					"type": "text",
@@ -299,7 +294,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "login_count_ok : "
+					"text": "login_count_ok : ",
+					"sizingX": "fixed"
 				},
 				"Text25": {
 					"type": "text",
@@ -308,7 +304,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "login_count_fail : "
+					"text": "login_count_fail : ",
+					"sizingX": "fixed"
 				},
 				"Text26": {
 					"type": "text",
@@ -317,7 +314,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "user_password_hash : "
+					"text": "user_password_hash : ",
+					"sizingX": "fixed"
 				},
 				"ID": {
 					"type": "input",
@@ -345,7 +343,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"user_name": {
 					"type": "input",
@@ -370,7 +369,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"ad_server_name": {
 					"type": "input",
@@ -395,7 +395,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"first_login_ok_date": {
 					"type": "input",
@@ -421,7 +422,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"first_login_ok_time": {
 					"type": "input",
@@ -447,7 +449,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"last_login_ok_date": {
 					"type": "input",
@@ -473,7 +476,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"last_login_ok_time": {
 					"type": "input",
@@ -499,7 +503,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"last_password_update_date": {
 					"type": "input",
@@ -525,7 +530,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"login_count_ok": {
 					"type": "input",
@@ -551,7 +557,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"login_count_fail": {
 					"type": "input",
@@ -577,7 +584,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"user_password_hash": {
 					"type": "input",
@@ -602,7 +610,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"bFirstlabel": {
 					"type": "text",
@@ -614,7 +623,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "First"
+					"text": "First",
+					"sizingX": "move"
 				},
 				"bPreviouslabel": {
 					"type": "text",
@@ -626,7 +636,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "Previous"
+					"text": "Previous",
+					"sizingX": "move"
 				},
 				"bNextlabel": {
 					"type": "text",
@@ -638,7 +649,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "Next"
+					"text": "Next",
+					"sizingX": "move"
 				},
 				"bLastlabel": {
 					"type": "text",
@@ -650,7 +662,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "Last"
+					"text": "Last",
+					"sizingX": "move"
 				},
 				"bDeletelabel": {
 					"type": "text",
@@ -662,7 +675,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "Delete"
+					"text": "Delete",
+					"sizingX": "move"
 				},
 				"bCancellabel": {
 					"type": "text",
@@ -674,7 +688,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "Cancel"
+					"text": "Cancel",
+					"sizingX": "move"
 				},
 				"bValidatelabel": {
 					"type": "text",
@@ -686,7 +701,8 @@
 					"textAlign": "center",
 					"fontFamily": "System Font Regular",
 					"fontSize": 12,
-					"text": "Save"
+					"text": "Save",
+					"sizingX": "move"
 				},
 				"Text1": {
 					"type": "text",
@@ -695,7 +711,8 @@
 					"width": 181,
 					"height": 17,
 					"textAlign": "right",
-					"text": "User Initials : "
+					"text": "User Initials : ",
+					"sizingX": "fixed"
 				},
 				"user_password_hash1": {
 					"type": "input",
@@ -720,7 +737,8 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"sizingX": "fixed"
 				},
 				"S9_Text1": {
 					"type": "text",
@@ -728,7 +746,7 @@
 					"left": 100,
 					"width": 97,
 					"height": 17,
-					"sizingX": "grow",
+					"sizingX": "fixed",
 					"textAlign": "right",
 					"text": "Approver?"
 				},
@@ -738,8 +756,39 @@
 					"left": 208,
 					"width": 97,
 					"height": 17,
-					"sizingX": "grow",
+					"sizingX": "fixed",
 					"dataSource": "[UserTable:5]isApprover:13",
+					"text": " ",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Text2": {
+					"type": "text",
+					"top": 444,
+					"left": 100,
+					"width": 97,
+					"height": 17,
+					"sizingX": "fixed",
+					"textAlign": "right",
+					"text": "Admin?"
+				},
+				"S9_Field2": {
+					"type": "checkbox",
+					"top": 444,
+					"left": 208,
+					"width": 97,
+					"height": 17,
+					"sizingX": "fixed",
+					"dataSource": "[UserTable:5]isAdmin:14",
 					"text": " ",
 					"events": [
 						"onLoad",
@@ -755,5 +804,9 @@
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

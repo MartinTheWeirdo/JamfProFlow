@@ -1,1 +1,0 @@
-SET TEXT TO PASTEBOARD:C523(vt_sourceSetSummary)

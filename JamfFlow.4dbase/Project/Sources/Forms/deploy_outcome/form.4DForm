@@ -77,7 +77,8 @@
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"List Box3": {
 					"type": "listbox",
@@ -141,7 +142,7 @@
 						},
 						{
 							"name": "Column8",
-							"dataSource": "at_deployed_Outcome",
+							"dataSource": "at_deployed_Status",
 							"width": 106,
 							"minWidth": 10,
 							"maxWidth": 32000,
@@ -174,8 +175,32 @@
 							}
 						}
 					]
+				},
+				"magButton4": {
+					"type": "button",
+					"top": 30,
+					"left": 904,
+					"width": 25,
+					"height": 25,
+					"dataSource": "vButton08",
+					"focusable": false,
+					"text": "",
+					"icon": "/RESOURCES/Images/mag20.png",
+					"iconFrames": 1,
+					"textPlacement": "right",
+					"style": "office",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/magButton4.4dm",
+					"sizingX": "move",
+					"tooltip": "Open as a spreadsheet"
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

@@ -66,7 +66,9 @@
 					"left": 1244,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				}
 			}
 		},
@@ -76,9 +78,9 @@
 					"type": "text",
 					"top": 17,
 					"left": 12,
-					"width": 270,
-					"height": 30,
-					"sizingX": "grow",
+					"width": 136,
+					"height": 57,
+					"sizingX": "fixed",
 					"fontFamily": "System Font Regular",
 					"fontSize": 24,
 					"fontWeight": "bold",
@@ -86,8 +88,8 @@
 				},
 				"bAdd": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 293,
+					"top": 15,
+					"left": 536,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -106,8 +108,8 @@
 				},
 				"bAddlabel": {
 					"type": "text",
-					"top": 56,
-					"left": 281,
+					"top": 63,
+					"left": 524,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -117,8 +119,8 @@
 				},
 				"bDelete": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 365,
+					"top": 15,
+					"left": 608,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -137,8 +139,8 @@
 				},
 				"bDeletelabel": {
 					"type": "text",
-					"top": 56,
-					"left": 353,
+					"top": 63,
+					"left": 596,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -148,8 +150,8 @@
 				},
 				"bShowAll": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 437,
+					"top": 15,
+					"left": 680,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -168,8 +170,8 @@
 				},
 				"bShowAlllabel": {
 					"type": "text",
-					"top": 56,
-					"left": 425,
+					"top": 63,
+					"left": 668,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -179,8 +181,8 @@
 				},
 				"bShowSubSet": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 509,
+					"top": 15,
+					"left": 752,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -199,8 +201,8 @@
 				},
 				"bShowSubSetlabel": {
 					"type": "text",
-					"top": 56,
-					"left": 497,
+					"top": 63,
+					"left": 740,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -210,8 +212,8 @@
 				},
 				"bQuery": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 581,
+					"top": 15,
+					"left": 824,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -230,8 +232,8 @@
 				},
 				"bQuerylabel": {
 					"type": "text",
-					"top": 56,
-					"left": 569,
+					"top": 63,
+					"left": 812,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -241,8 +243,8 @@
 				},
 				"bOrderBy": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 653,
+					"top": 15,
+					"left": 896,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -261,8 +263,8 @@
 				},
 				"bOrderBylabel": {
 					"type": "text",
-					"top": 56,
-					"left": 641,
+					"top": 63,
+					"left": 884,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -272,8 +274,8 @@
 				},
 				"bReport": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 725,
+					"top": 15,
+					"left": 968,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -292,8 +294,8 @@
 				},
 				"bReportlabel": {
 					"type": "text",
-					"top": 56,
-					"left": 713,
+					"top": 63,
+					"left": 956,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -303,8 +305,8 @@
 				},
 				"bLabels": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 797,
+					"top": 15,
+					"left": 1040,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -323,8 +325,8 @@
 				},
 				"bLabelslabel": {
 					"type": "text",
-					"top": 56,
-					"left": 785,
+					"top": 63,
+					"left": 1028,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -334,8 +336,8 @@
 				},
 				"bPrint": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 869,
+					"top": 15,
+					"left": 1112,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -354,8 +356,8 @@
 				},
 				"bPrintlabel": {
 					"type": "text",
-					"top": 56,
-					"left": 857,
+					"top": 63,
+					"left": 1100,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -365,8 +367,8 @@
 				},
 				"bDone": {
 					"type": "pictureButton",
-					"top": 8,
-					"left": 941,
+					"top": 15,
+					"left": 1184,
 					"width": 48,
 					"height": 48,
 					"sizingX": "move",
@@ -385,8 +387,8 @@
 				},
 				"bDonelabel": {
 					"type": "text",
-					"top": 56,
-					"left": 929,
+					"top": 63,
+					"left": 1172,
 					"width": 72,
 					"height": 17,
 					"sizingX": "move",
@@ -530,17 +532,9 @@
 					"contextMenu": "none",
 					"dragging": "none",
 					"dropping": "none",
-					"events": [
-						"onLoad",
-						"onValidate",
-						"onClick",
-						"onHeader",
-						"onPrintingBreak",
-						"onPrintingFooter",
-						"onDisplayDetail",
-						"onDataChange",
-						"onPrintingDetail"
-					]
+					"events": [],
+					"enterable": false,
+					"fontStyle": "italic"
 				},
 				"S5_Field": {
 					"type": "input",
@@ -572,14 +566,18 @@
 					"top": 100,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Line11": {
 					"type": "line",
 					"top": 100,
 					"left": 776,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Splitter2": {
 					"type": "button",
@@ -598,7 +596,9 @@
 					"top": 100,
 					"left": 479,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Splitter3": {
 					"type": "button",
@@ -617,7 +617,9 @@
 					"top": 100,
 					"left": 317,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Splitter4": {
 					"type": "button",
@@ -636,7 +638,9 @@
 					"top": 100,
 					"left": 94,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Splitter5": {
 					"type": "button",
@@ -689,7 +693,9 @@
 					"top": 100,
 					"left": 1016,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Splitter1": {
 					"type": "button",
@@ -738,7 +744,9 @@
 					"top": 100,
 					"left": 623,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "#A8A8A8",
+					"width": 0,
+					"startPoint": "topLeft"
 				},
 				"Splitter6": {
 					"type": "button",
@@ -754,5 +762,9 @@
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

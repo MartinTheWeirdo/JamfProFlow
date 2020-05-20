@@ -1,0 +1,3 @@
+//%attributes = {}
+  // If DOM find, etc. returns no match, the resulting element reference looks like all zeros...
+$0:=($1="00000000000000000000000000000000")

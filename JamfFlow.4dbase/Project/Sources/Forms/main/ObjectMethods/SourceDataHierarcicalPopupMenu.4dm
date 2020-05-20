@@ -6,9 +6,12 @@ Case of
 	: (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		$vt_selectedSourceDataTypeName:=""
-		$vlItemPos:=Selected list items:C379(vl_selectSourceData)
+		
+		  //$vlItemPos:=Selected list items(vl_selectSourceData)
+		$vlItemPos:=Selected list items:C379(*;"SourceDataHierarcicalPopupMenu")
 		If ($vlItemPos>0)
-			GET LIST ITEM:C378(vl_selectSourceData;$vlItemPos;$vlItemRef;$vt_selectedSourceDataTypeName;$hSublist;$vbExpanded)
+			  //GET LIST ITEM(vl_selectSourceData;$vlItemPos;$vlItemRef;$vt_selectedSourceDataTypeName;$hSublist;$vbExpanded)
+			GET LIST ITEM:C378(*;"SourceDataHierarcicalPopupMenu";$vlItemPos;$vlItemRef;$vt_selectedSourceDataTypeName;$hSublist;$vbExpanded)
 		End if 
 		
 		  // vt_selectSourceData hold the previously selected value. See if they changed the data type...
@@ -21,7 +24,9 @@ Case of
 				  // Clear the search box
 				vt_SourceItemSearch:=""
 				  // Reset the Data Type popup menu
-				SELECT LIST ITEMS BY POSITION:C381(vl_selectSourceData;Count list items:C380(vl_selectSourceData))
+				  // Select the last item in the list -- the blank one
+				  //SELECT LIST ITEMS BY POSITION(vl_selectSourceData;Count list items(vl_selectSourceData))
+				SELECT LIST ITEMS BY POSITION:C381(*;"SourceDataHierarcicalPopupMenu";Count list items:C380(*;"SourceDataHierarcicalPopupMenu"))
 				vt_selectSourceData:=""
 			Else   //They picked something not blank
 				vt_selectSourceData:=$vt_selectedSourceDataTypeName  // Keep track of what has been selected. 

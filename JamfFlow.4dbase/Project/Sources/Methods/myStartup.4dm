@@ -6,18 +6,19 @@ C_TEXT:C284($1)
 Case of 
 	: (Count parameters:C259=0)
 		
-		  // Preload some resources into memory
+		  // Array of server credentials that we'll build as we need them so we can avoid repetative keychain reads...
+		ARRAY TEXT:C222(<>at_credentialCache;0)
 		
+		  // Will hold preference lookup values cache
+		ARRAY TEXT:C222(<>as40_keyValuePairs_Keys;0)
+		ARRAY TEXT:C222(<>as40_keyValuePairs_Values;0)
 		  // Load keypairs table into an array
 		ALL RECORDS:C47([KeyValuePairs:4])
 		ORDER BY:C49([KeyValuePairs:4];[KeyValuePairs:4]KeyName:2)
-		ARRAY TEXT:C222(<>as40_keyValuePairs_Keys;0)
-		ARRAY TEXT:C222(<>as40_keyValuePairs_Values;0)
 		SELECTION TO ARRAY:C260([KeyValuePairs:4]KeyName:2;<>as40_keyValuePairs_Keys)
 		SELECTION TO ARRAY:C260([KeyValuePairs:4]ValueString:3;<>as40_keyValuePairs_Values)
-		
-		  // Array of server credentials that we'll build as we need them so we can avoid repetative keychain reads...
-		ARRAY TEXT:C222(<>at_credentialCache;0)
+		  // Init prefs table if anything is missing...
+		myStartup_prefs 
 		
 		<>CRLF:=Char:C90(Line feed:K15:40)
 		<>DQ:=Char:C90(Double quote:K15:41)

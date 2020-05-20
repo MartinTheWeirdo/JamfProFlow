@@ -83,7 +83,9 @@
 					"top": 77,
 					"left": 19,
 					"width": 644,
-					"sizingX": "grow"
+					"sizingX": "grow",
+					"height": 0,
+					"startPoint": "topLeft"
 				},
 				"bFirst": {
 					"type": "pictureButton",
@@ -440,8 +442,44 @@
 						"onDataChange",
 						"onPrintingDetail"
 					]
+				},
+				"Input": {
+					"type": "input",
+					"left": 334,
+					"top": 247,
+					"width": 137,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"events": [
+						"onLoad"
+					],
+					"method": "ObjectMethods/Input.4dm",
+					"dataSource": "vt"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 334,
+					"top": 295,
+					"width": 380,
+					"height": 289,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"events": [
+						"onLoad"
+					],
+					"method": "ObjectMethods/Input1.4dm",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"dataSource": "vt1"
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

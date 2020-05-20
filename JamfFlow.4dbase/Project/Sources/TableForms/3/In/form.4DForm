@@ -8,29 +8,7 @@
 	"markerFooter": 278,
 	"events": [
 		"onLoad",
-		"onValidate",
-		"onClick",
-		"onHeader",
-		"onPrintingBreak",
-		"onPrintingFooter",
-		"onDisplayDetail",
-		"onOutsideCall",
-		"onDoubleClick",
-		"onDrop",
-		"onMenuSelect",
-		"onPluginArea",
-		"onDataChange",
-		"onDragOver",
-		"onPrintingDetail",
-		"onOpenDetail",
-		"onCloseDetail",
-		"onTimer",
-		"onAfterKeystroke",
-		"onLoadRecord",
-		"onAfterEdit",
-		"onBeginDragOver",
-		"onBoundVariableChange",
-		"onPageChange"
+		"onClick"
 	],
 	"pageFormat": {
 		"paperName": "US Letter",
@@ -41,10 +19,21 @@
 		null,
 		{
 			"objects": {
+				"Text8": {
+					"type": "text",
+					"top": 29,
+					"left": 30,
+					"width": 167,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "Jamf Pro Servers",
+					"fontWeight": "bold"
+				},
 				"vRecNum": {
 					"type": "input",
-					"top": 113,
-					"left": 589,
+					"top": 66,
+					"left": 30,
 					"width": 100,
 					"height": 12,
 					"stroke": "#000000",
@@ -67,27 +56,19 @@
 						"onPrintingBreak"
 					]
 				},
-				"Text8": {
-					"type": "text",
-					"top": 110,
-					"left": 24,
-					"width": 550,
-					"height": 17,
-					"sizingX": "grow",
-					"stroke": "#000000",
-					"text": "Jamf Pro Servers"
-				},
 				"Line9": {
 					"type": "line",
 					"top": 94,
 					"left": 19,
 					"width": 679,
-					"sizingX": "grow"
+					"sizingX": "grow",
+					"height": 0,
+					"startPoint": "topLeft"
 				},
 				"bFirst": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 21,
+					"top": 18,
+					"left": 206,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -101,22 +82,24 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bFirstlabel": {
 					"type": "text",
-					"top": 64,
-					"left": 9,
+					"top": 66,
+					"left": 194,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "First"
+					"text": "First",
+					"sizingX": "move"
 				},
 				"bPrevious": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 93,
+					"top": 18,
+					"left": 278,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -130,22 +113,24 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bPreviouslabel": {
 					"type": "text",
-					"top": 64,
-					"left": 81,
+					"top": 66,
+					"left": 266,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "Previous"
+					"text": "Previous",
+					"sizingX": "move"
 				},
 				"bNext": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 165,
+					"top": 18,
+					"left": 350,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -159,22 +144,24 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bNextlabel": {
 					"type": "text",
-					"top": 64,
-					"left": 153,
+					"top": 66,
+					"left": 338,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "Next"
+					"text": "Next",
+					"sizingX": "move"
 				},
 				"bLast": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 237,
+					"top": 18,
+					"left": 422,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -188,22 +175,24 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bLastlabel": {
 					"type": "text",
-					"top": 64,
-					"left": 225,
+					"top": 66,
+					"left": 410,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "Last"
+					"text": "Last",
+					"sizingX": "move"
 				},
 				"bDelete": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 309,
+					"top": 18,
+					"left": 494,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -217,22 +206,24 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bDeletelabel": {
 					"type": "text",
-					"top": 64,
-					"left": 297,
+					"top": 66,
+					"left": 482,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "Delete"
+					"text": "Delete",
+					"sizingX": "move"
 				},
 				"bCancel": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 381,
+					"top": 18,
+					"left": 566,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -246,22 +237,24 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"sizingX": "move"
 				},
 				"bCancellabel": {
 					"type": "text",
-					"top": 64,
-					"left": 369,
+					"top": 66,
+					"left": 554,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "Cancel"
+					"text": "Cancel",
+					"sizingX": "move"
 				},
 				"bValidate": {
 					"type": "pictureButton",
-					"top": 16,
-					"left": 453,
+					"top": 18,
+					"left": 638,
 					"width": 48,
 					"height": 48,
 					"tooltip": {
@@ -275,22 +268,29 @@
 					"useLastFrameAsDisabled": true,
 					"events": [
 						"onClick"
-					]
+					],
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[Enter]",
+					"sizingX": "move"
 				},
 				"bValidatelabel": {
 					"type": "text",
-					"top": 64,
-					"left": 441,
+					"top": 66,
+					"left": 626,
 					"width": 72,
 					"height": 17,
 					"stroke": "#000000",
 					"textAlign": "center",
-					"text": "Validate"
+					"text": "Validate",
+					"sizingX": "move"
 				},
 				"Text10": {
 					"type": "text",
-					"top": 143,
-					"left": 224,
+					"top": 157,
+					"left": 87,
 					"width": 123,
 					"height": 17,
 					"textAlign": "right",
@@ -298,8 +298,8 @@
 				},
 				"Text11": {
 					"type": "text",
-					"top": 170,
-					"left": 224,
+					"top": 191,
+					"left": 87,
 					"width": 123,
 					"height": 17,
 					"textAlign": "right",
@@ -307,8 +307,8 @@
 				},
 				"Text12": {
 					"type": "text",
-					"top": 197,
-					"left": 224,
+					"top": 225,
+					"left": 87,
 					"width": 123,
 					"height": 17,
 					"textAlign": "right",
@@ -316,8 +316,8 @@
 				},
 				"Text13": {
 					"type": "text",
-					"top": 224,
-					"left": 224,
+					"top": 260,
+					"left": 87,
 					"width": 123,
 					"height": 17,
 					"textAlign": "right",
@@ -325,8 +325,8 @@
 				},
 				"Text14": {
 					"type": "text",
-					"top": 251,
-					"left": 224,
+					"top": 295,
+					"left": 87,
 					"width": 123,
 					"height": 17,
 					"textAlign": "right",
@@ -334,8 +334,8 @@
 				},
 				"ID": {
 					"type": "input",
-					"top": 143,
-					"left": 352,
+					"top": 157,
+					"left": 215,
 					"width": 64,
 					"height": 17,
 					"dataSource": "[JamfProServers:3]ID:1",
@@ -362,8 +362,8 @@
 				},
 				"URL": {
 					"type": "input",
-					"top": 170,
-					"left": 352,
+					"top": 191,
+					"left": 215,
 					"width": 322,
 					"height": 17,
 					"dataSource": "[JamfProServers:3]URL:2",
@@ -387,8 +387,8 @@
 				},
 				"API_User_Name": {
 					"type": "input",
-					"top": 197,
-					"left": 352,
+					"top": 225,
+					"left": 215,
 					"width": 322,
 					"height": 17,
 					"dataSource": "[JamfProServers:3]API_User_Name:4",
@@ -412,13 +412,13 @@
 				},
 				"API_Password": {
 					"type": "input",
-					"top": 224,
-					"left": 352,
-					"width": 322,
+					"top": 260,
+					"left": 215,
+					"width": 200,
 					"height": 17,
 					"dataSource": "[JamfProServers:3]API_Password:5",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "transparent",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -433,12 +433,13 @@
 						"onDisplayDetail",
 						"onDataChange",
 						"onPrintingDetail"
-					]
+					],
+					"enterable": false
 				},
 				"Owner_UserName": {
 					"type": "input",
-					"top": 251,
-					"left": 352,
+					"top": 295,
+					"left": 215,
 					"width": 322,
 					"height": 17,
 					"dataSource": "[JamfProServers:3]CreatedBy_UserName:3",
@@ -459,8 +460,24 @@
 						"onDataChange",
 						"onPrintingDetail"
 					]
+				},
+				"PasswordButton": {
+					"type": "button",
+					"text": "Update",
+					"top": 256,
+					"left": 435,
+					"width": 101,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/PasswordButton.4dm"
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

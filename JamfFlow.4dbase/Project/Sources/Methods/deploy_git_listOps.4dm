@@ -32,4 +32,21 @@ Case of
 	: ($vt_selectedOperation="Import git set into database")
 		deploy_git_listOps_import 
 		
+	: ($vt_selectedOperation="Add your local git repo folder...")
+		git_get ("LocalRepoPathPosix")
+		
+	: ($vt_selectedOperation="Reset local git repo folder...")
+		git_get ("LocalRepoPathPosix")
+		
 End case   // : ($vt_selectedOperation=)
+
+
+FOLDER LIST:C473(git_get ("LocalRepoPathSystem");at_deployLocalGitSetNames)
+  // Don't show the git file
+$vl_indexOfDotGitEntry:=Find in array:C230(at_deployLocalGitSetNames;".git")
+If ($vl_indexOfDotGitEntry>0)
+	DELETE FROM ARRAY:C228(at_deployLocalGitSetNames;$vl_indexOfDotGitEntry)
+End if 
+git_getSyncStatus 
+vt_deployedItemsSummary:=Replace string:C233(vt_deployedItemsSummary;"\n\n\n";"\n\n")
+vt_deployedItemsSummary:=vt_deployedItemsSummary+"Local git repo items listing was updated."

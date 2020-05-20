@@ -18,7 +18,7 @@ $vb_valueNeeded:=False:C215
 $vb_valueNeeded:=Match regex:C1019("\\{.*\\}";$vt_uniqueNameEndpointURL;1;$vl_position;$vl_length)
 
 If ($vb_valueNeeded)
-	$vt_uniqueNameEndpointURL:=Delete string:C232($vt_uniqueNameEndpointURL;$vl_position;$vl_length)+sh_http_urlEncode ($vt_itemUniqueNameValue)
+	$vt_uniqueNameEndpointURL:=Delete string:C232($vt_uniqueNameEndpointURL;$vl_position;$vl_length)+sh_http_urlEncode ($vt_itemUniqueNameValue;"WWW FORM")
 End if 
 
 $0:=$vt_uniqueNameEndpointURL

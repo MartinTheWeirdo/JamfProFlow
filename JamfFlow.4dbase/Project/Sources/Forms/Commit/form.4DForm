@@ -181,7 +181,8 @@
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				},
 				"Button1": {
 					"type": "button",
@@ -194,9 +195,14 @@
 					"focusable": false,
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office"
 				}
 			}
 		}
-	]
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

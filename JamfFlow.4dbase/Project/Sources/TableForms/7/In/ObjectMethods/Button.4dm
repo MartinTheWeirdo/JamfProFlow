@@ -1,4 +1,4 @@
-  //$vt:=Request("Enter char...")
+﻿  //$vt:=Request("Enter char...")
   //myAlert(String(Character code($vt)))
 
 $pf:=OBJECT Get pointer:C1124(Object with focus:K67:3)  // Save the pointer to the last area

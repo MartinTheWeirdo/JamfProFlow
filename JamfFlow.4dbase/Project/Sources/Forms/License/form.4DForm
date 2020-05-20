@@ -1,7 +1,7 @@
 ﻿{
 	"destination": "detailScreen",
 	"rightMargin": 35,
-	"bottomMargin": 35,
+	"bottomMargin": 30,
 	"markerHeader": 15,
 	"markerBody": 200,
 	"markerBreak": 220,
@@ -38,14 +38,14 @@
 					"top": 87,
 					"left": 36,
 					"width": 664,
-					"height": 126,
+					"height": 140,
 					"fontFamily": "Courier",
 					"fontSize": 14,
-					"text": "Please see the important warnings in the readme that accompanies this project. \r\r\rBy continuing, you agree that you will not use this with a Jamf Pro instance that manages production devices. If you read items from a server that you do not intend to modify, always use a read-only (\"Auditor\") user account. "
+					"text": "Please see the important warnings in the readme that accompanies this project. \r\r\rBy continuing, you agree that you will not use this with a Jamf Pro instance that manages production devices unless you completely trust the inputs you use and have thoroughly tested your planned changes. If you read items from a server that you do not intend to modify, always use a read-only (\"Auditor\") user account to safeguard against mistakes. "
 				},
 				"Button": {
 					"type": "button",
-					"top": 370,
+					"top": 390,
 					"left": 588,
 					"width": 112,
 					"height": 36,
@@ -58,7 +58,8 @@
 					"defaultButton": true,
 					"events": [
 						"onLoad"
-					]
+					],
+					"style": "office"
 				},
 				"Text2": {
 					"type": "text",
@@ -74,7 +75,7 @@
 				},
 				"Text1": {
 					"type": "text",
-					"top": 220,
+					"top": 230,
 					"left": 36,
 					"width": 664,
 					"height": 130,

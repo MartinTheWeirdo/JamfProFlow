@@ -59,7 +59,6 @@ Progress SET FONT SIZES (13;12;13)
 Progress SET TITLE ($vl_progressProcessRef;"Reading data from "+$vt_selectedSourceServer)
 Progress SET BUTTON ENABLED ($vl_progressProcessRef;True:C214)
 
-
   // Now loop through the list of selected data types 
 $vl_countOfDataItemTypesToReadIn:=Size of array:C274($at_selectedItemTypes)
 For ($vl_selectedDataTypesIterator;1;$vl_countOfDataItemTypesToReadIn)
@@ -94,13 +93,4 @@ If (vt_sourceSetSummary=$vt)
 	vt_sourceSetSummary:=Substring:C12(vt_sourceSetSummary;1;Length:C16(vt_sourceSetSummary)-1)
 End if 
 
-Case of 
-	: ($vl_progressProcessRef=1)
-		Progress QUIT ($vl_progressProcessRef)
-	: ($vl_progressProcessRef>1)
-		ON ERR CALL:C155("sh_err_call")
-		For ($i;1;$vl_progressProcessRef)
-			Progress QUIT ($i)
-		End for 
-		ON ERR CALL:C155("")
-End case 
+sh_prg_close ($vl_progressProcessRef)  // Close progress window

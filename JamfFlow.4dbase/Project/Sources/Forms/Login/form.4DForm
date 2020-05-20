@@ -18,19 +18,10 @@
 	"pages": [
 		{
 			"objects": {
-				"Picture7": {
-					"type": "picture",
-					"top": 192,
-					"left": 319,
-					"width": 22,
-					"height": 29,
-					"pictureFormat": "scaled",
-					"picture": "Images/Picture7.tif"
-				},
 				"Picture2": {
 					"type": "picture",
-					"top": 25,
-					"left": 28,
+					"top": 21,
+					"left": 325,
 					"width": 126,
 					"height": 76,
 					"pictureFormat": "scaled",
@@ -38,33 +29,36 @@
 				},
 				"Rectangle": {
 					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 441,
+					"top": 1,
+					"left": 1,
+					"width": 478,
 					"height": 338,
 					"stroke": "transparent"
 				},
-				"Rectangle2": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 511,
-					"height": 338,
-					"fill": "#434552"
+				"Static Picture1": {
+					"type": "picture",
+					"top": 29,
+					"left": 32,
+					"width": 38,
+					"height": 38,
+					"picture": "Images/Static Picture3.tif",
+					"pictureFormat": "scaled"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Sign In",
+					"top": 36,
+					"left": 90,
+					"width": 115,
+					"height": 31,
+					"fontWeight": "bold",
+					"fontFamily": "Helvetica",
+					"fontSize": 24
 				}
 			}
 		},
 		{
 			"objects": {
-				"Rectangle4": {
-					"type": "rectangle",
-					"top": 176,
-					"left": 235,
-					"width": 43,
-					"height": 17,
-					"fill": "transparent",
-					"stroke": "#C0C0C0"
-				},
 				"Variable": {
 					"type": "input",
 					"top": 135,
@@ -72,7 +66,7 @@
 					"width": 242,
 					"height": 17,
 					"dataSource": "vt_username",
-					"stroke": "#FFFFFF",
+					"stroke": "#696969",
 					"fill": "transparent",
 					"borderStyle": "none",
 					"placeholder": "username",
@@ -88,7 +82,7 @@
 					"top": 152,
 					"left": 36,
 					"width": 242,
-					"stroke": "#C0C0C0",
+					"stroke": "#696969",
 					"height": 0,
 					"startPoint": "topLeft"
 				},
@@ -99,7 +93,7 @@
 					"width": 185,
 					"height": 17,
 					"dataSource": "vt_password",
-					"stroke": "#FFFFFF",
+					"stroke": "#696969",
 					"fill": "transparent",
 					"borderStyle": "none",
 					"placeholder": "password",
@@ -115,43 +109,24 @@
 					"top": 192,
 					"left": 36,
 					"width": 185,
-					"stroke": "#C0C0C0",
+					"stroke": "#696969",
 					"height": 0,
 					"startPoint": "topLeft"
 				},
-				"Rectangle1": {
-					"type": "rectangle",
-					"top": 272,
-					"left": 371,
-					"width": 106,
-					"height": 31,
-					"fill": "#0067B8",
-					"stroke": "transparent"
-				},
-				"Text": {
-					"type": "text",
-					"top": 279,
-					"left": 371,
-					"width": 106,
-					"height": 18,
-					"stroke": "#FFFFFF",
-					"textAlign": "center",
-					"fontFamily": "System Font Regular",
-					"fontSize": 14,
-					"text": "Login"
-				},
 				"Button": {
 					"type": "button",
-					"top": 272,
-					"left": 371,
+					"top": 286,
+					"left": 348,
 					"width": 106,
 					"height": 31,
 					"shortcutKey": "[Enter]",
-					"display": false,
+					"display": true,
 					"method": "ObjectMethods/Button.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"style": "office",
+					"text": "Login"
 				},
 				"Variable4": {
 					"type": "input",
@@ -160,7 +135,7 @@
 					"width": 295,
 					"height": 81,
 					"dataSource": "vt_login_error",
-					"stroke": "#B1C4DD",
+					"stroke": "#191970",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -184,39 +159,19 @@
 						"onClick"
 					]
 				},
-				"Text1": {
-					"type": "text",
-					"top": 176,
-					"left": 235,
-					"width": 43,
-					"height": 17,
-					"stroke": "#C0C0C0",
-					"textAlign": "center",
-					"text": "Save"
-				},
 				"Button2": {
 					"type": "button",
-					"top": 176,
+					"top": 174,
 					"left": 235,
 					"width": 43,
-					"height": 17,
-					"display": false,
+					"height": 20,
+					"display": true,
 					"method": "ObjectMethods/Button2.4dm",
 					"events": [
 						"onClick"
-					]
-				},
-				"Text2": {
-					"type": "text",
-					"text": "Flow.",
-					"top": 30,
-					"left": 36,
-					"width": 185,
-					"height": 52,
-					"fontWeight": "bold",
-					"stroke": "#b1c4dd",
-					"fontFamily": "Helvetica Bold",
-					"fontSize": 52
+					],
+					"text": "Save",
+					"style": "office"
 				}
 			}
 		}

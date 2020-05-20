@@ -45,6 +45,7 @@ If ($vt_userPipePass="")  // Not yet found
 	End if 
 End if 
 
+
 $vt_userPipePass:=Replace string:C233($vt_userPipePass;Char:C90(Carriage return:K15:38);"")  // strip off possible trailing return
 $vt_userPipePass:=Replace string:C233($vt_userPipePass;Char:C90(Line feed:K15:40);"")  // strip off possible trailing feed
 
